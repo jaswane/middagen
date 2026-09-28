@@ -15,3 +15,42 @@
 .serving-buttons button{width:44px;height:44px}
 @media(max-width:365px){.site-header .brand{font-size:30px}.site-header nav{font-size:13px}}
 
+/* Meal photos support the decision; mobile keeps three compact choices. */
+.meal-photo{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:cover}
+.hero-visual img{height:auto;aspect-ratio:3/2;object-fit:cover}
+.card-heading{padding:18px 22px 0}.card-heading h3{font-size:29px;overflow-wrap:break-word}
+.display-tags{font-size:14px;line-height:1.45;color:var(--muted)}.card-heading .display-tags{margin-bottom:8px}
+.card-content{padding:0 22px 20px}.card-content>p{margin-top:10px}.meal-meta{flex-wrap:wrap;gap:6px 18px;font-size:14px;margin-top:14px}
+.card-content .time-note{font-size:13px;line-height:1.45;margin-top:9px}
+.meal-choose{font-size:14px}.meal-card{min-height:0}
+.single-result .card-preview{display:grid;grid-template-columns:1fr 1fr;align-items:center}
+.single-result .card-heading{padding:20px}.single-result h3{font-size:35px}
+.single-result .card-content{padding-top:7px}
+.recipe-with-photo{max-width:none;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,430px);column-gap:48px;align-content:start;padding:16px 0 28px}
+.recipe-with-photo h1{font-size:50px;grid-column:1;line-height:1.1}
+.recipe-figure{grid-column:2;grid-row:1/4;align-self:start}
+.recipe-main-photo{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;border-radius:2px}
+.recipe-figure figcaption{font-size:12px;color:var(--muted);margin-top:5px}
+.recipe-with-photo>.recipe-description{grid-column:1;font-size:17px;line-height:1.5;margin-top:16px}
+.recipe-facts{grid-column:1}.recipe-facts .recipe-meta{margin-top:18px;font-size:14px}
+.recipe-facts .display-tags{margin-top:10px}.recipe-time-note{margin-top:12px;font-size:14px;line-height:1.5}
+.recipe-equipment{font-size:14px;color:var(--muted);margin-top:10px;line-height:1.5}
+@media(max-width:1050px) and (min-width:761px){.card-heading{padding:16px 17px 0}.card-heading h3{font-size:26px}.card-content{padding-left:17px;padding-right:17px}.recipe-with-photo{grid-template-columns:1.2fr 1fr;gap:0 30px}.recipe-with-photo h1{font-size:44px}}
+@media(max-width:760px){
+  .card-preview{display:grid;grid-template-columns:minmax(0,1fr) 104px;gap:12px;align-items:start;padding:16px 16px 0}
+  .card-preview>.meal-photo{grid-column:2;grid-row:1;width:104px;border-radius:2px}
+  .card-heading{grid-column:1;grid-row:1;padding:0}.card-heading h3{font-size:25px;line-height:1.13}
+  .card-heading .display-tags{font-size:13px;margin-bottom:6px}
+  .card-content{padding:0 16px 15px}.card-content>p{font-size:14px;line-height:1.5;margin-top:10px}
+  .meal-meta{font-size:14px;gap:5px 16px;margin-top:12px}.meal-choose{padding:12px 16px;min-height:48px}
+  .single-result .card-preview{display:flex;flex-direction:column;padding:0;gap:0;align-items:stretch}
+  .single-result .card-preview>.meal-photo{width:100%}.single-result .card-heading{padding:18px 16px 0}.single-result h3{font-size:31px}
+  .recipe-with-photo{grid-template-columns:minmax(0,1fr) 140px;column-gap:16px;row-gap:16px;padding:18px 0 24px}
+  .recipe-with-photo h1{grid-column:1/-1;font-size:37px}
+  .recipe-figure{grid-column:2;grid-row:2;align-self:start}.recipe-figure figcaption{font-size:11px;line-height:1.4}
+  .recipe-with-photo>.recipe-description{grid-column:1;grid-row:2;font-size:16px;line-height:1.5;margin:0}
+  .recipe-facts{grid-column:1/-1}.recipe-facts .recipe-meta{margin:0}.recipe-facts .display-tags{margin-top:8px}
+  .recipe-body{padding-top:24px}
+}
+@media(max-width:365px){.card-preview{grid-template-columns:minmax(0,1fr) 96px;gap:10px}.card-preview>.meal-photo{width:96px}.card-heading h3{font-size:24px}.recipe-with-photo{grid-template-columns:minmax(0,1fr) 124px;column-gap:12px}.recipe-with-photo h1{font-size:34px}}
+

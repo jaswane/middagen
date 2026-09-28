@@ -1,8 +1,15 @@
 export type CostTier = 'billig' | 'vanlig' | 'litt-ekstra';
 export type Category = 'kjott' | 'fisk' | 'vegetar';
 export interface Ingredient { name: string; quantity: number | null; unit: string }
+export const displayTagLabels = {
+  vegetar: 'Vegetar', fisk: 'Fisk', ovnsrett: 'Ovnsrett',
+  'en-panne': 'Én panne', 'en-gryte': 'Én gryte', 'uten-varme': 'Uten koking',
+} as const;
+export type DisplayTag = keyof typeof displayTagLabels;
+export interface MealImageData { src: string; alt: string; width: number; height: number }
 export interface Meal {
   id: string; slug: string; title: string; shortDescription: string;
+  image: MealImageData; displayTags: DisplayTag[];
   timeMinutes: number; costTier: CostTier; difficulty: 'enkel' | 'middels';
   familyFriendly: boolean; category: Category; mealTags: string[];
   mainIngredients: string[]; secondaryIngredients: string[]; pantryIngredients: string[];

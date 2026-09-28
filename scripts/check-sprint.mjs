@@ -2,6 +2,8 @@ import fs from 'node:fs';
 import assert from 'node:assert/strict';
 import { load } from './test-support.mjs';
 const meals=JSON.parse(fs.readFileSync('lib/meals.json','utf8'));
+// Match the client payload: recipe-only fields are intentionally omitted.
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const summaries=meals.map(({ingredients,instructions,tip,pantryIngredients,baseServings,...m})=>m);
 const {filterMeals,matchIngredient,suggest}=load('lib/engine.ts');
 const {initialDecision,showDecision,refreshDecision,decideDinner,undoDinner,serializeDecision,restoreDecision}=load('lib/decision.ts');

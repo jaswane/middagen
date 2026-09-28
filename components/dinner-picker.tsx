@@ -4,8 +4,9 @@ import Link from 'next/link';
 import { ArrowRight, Clock3, SlidersHorizontal, Search, RotateCw, ArrowUpRight, Utensils } from 'lucide-react';
 import { NativeSelect, NativeSelectOption } from '@/components/ui/native-select';
 import { Empty, EmptyHeader, EmptyTitle, EmptyDescription, EmptyContent } from '@/components/ui/empty';
-import { type MealSummary, type Filters, defaultFilters, costLabels, categoryLabels } from '@/lib/types';
-import { filterMeals, matchIngredient, reason } from '@/lib/engine';
+import { type MealSummary, defaultFilters, costLabels, displayTagLabels } from '@/lib/types';
+import { filterMeals, matchIngredient } from '@/lib/engine';
+import { MealImage } from '@/components/meal-image';
 import { type Mode, initialDecision, showDecision, refreshDecision, decideDinner, undoDinner, serializeDecision, restoreDecision, decisionStorageKey } from '@/lib/decision';
 import { track } from '@/lib/analytics';
 
@@ -23,8 +24,11 @@ export function DinnerPicker({ meals }: { meals: MealSummary[] }) {
     let raw = memoryDecision;
     try { raw = sessionStorage.getItem(decisionStorageKey) ?? raw; } catch { /* Storage can be disabled. */ }
     const saved = restoreDecision(raw, meals);
+    // Restore the saved decision before paint, so Back does not flash fresh suggestions.
+    /* eslint-disable react-hooks/set-state-in-effect */
     if (saved) { setState(saved.state); restoreScroll.current = saved.scrollY; }
     setReady(true);
+    /* eslint-enable react-hooks/set-state-in-effect */
   }, [meals]);
   useEffect(() => {
     if (!ready) return;
@@ -42,12 +46,15 @@ export function DinnerPicker({ meals }: { meals: MealSummary[] }) {
     return () => cancelAnimationFrame(frame);
   }, [ready, results, mode]);
   const compact = mode !== null;
+  const heroMeal = meals.find(meal => meal.id === 'laks-med-poteter')!;
   function focusResults() { requestAnimationFrame(() => {
     const heading = resultHeading.current;
     heading?.focus({ preventScroll: true });
-    if (window.matchMedia('(max-width: 760px)').matches) heading?.scrollIntoView({ block: 'start', behavior: 'instant' });
+    heading?.scrollIntoView({ block: 'start', behavior: 'instant' });
   }); }
   function rememberSelection(meal: MealSummary) {
+    // This handler runs on link activation, never during render.
+    // eslint-disable-next-line react-hooks/globals
     memoryDecision = serializeDecision(state, meals, window.scrollY);
     try { sessionStorage.setItem(decisionStorageKey, memoryDecision); } catch { /* See memory fallback. */ }
     track('meal_selected', { meal_id: meal.id, mode: mode ?? 'instant' });
@@ -86,17 +93,17 @@ export function DinnerPicker({ meals }: { meals: MealSummary[] }) {
     <section className={`hero ${compact ? 'hero-compact' : ''}`} aria-labelledby="hero-title">
       <div className="hero-copy"><p className="eyebrow"><span className="small-rule"/> MIDDAGSTIPS PÅ SEKUNDET</p>
         <h1 id="hero-title">Hva skal vi ha<br className="desktop-break"/> til <em>middag?</em></h1>
-        <p className="hero-description">Du trenger ikke flere valg.<br/> Bare noen gode forslag.</p>
+        <p className="hero-description">Tre middager å velge mellom.</p>
         <button className="button button-primary hero-button" onClick={instant}>Gi meg middagstips <ArrowRight size={21}/></button>
         {!compact && <p className="button-note">Ett trykk. Tre forslag. Ingen konto.</p>}
       </div>
-      {!compact && <figure className="hero-visual"><div className="photo-backdrop"/><img src="/images/laks.webp" width="768" height="512" alt="Laks med poteter, brokkoli og sitron på en hvit tallerken" fetchPriority="high"/><figcaption>Det trenger ikke være vanskelig.<span>Det trenger bare å bli middag.</span></figcaption><span className="photo-label">HELT VANLIG. VELDIG GODT.</span></figure>}
+      {!compact && <figure className="hero-visual"><div className="photo-backdrop"/><MealImage image={heroMeal.image} sizes="(max-width: 1050px) 40vw, 510px" eager/><figcaption>Laks med poteter<span>Brokkoli, sitron og rømme ved siden av.</span></figcaption></figure>}
     </section>
     <div className="entry-points" aria-label="Tilpass middagstipsene"><span className="entry-label">Eller ta utgangspunkt i …</span>
       <button aria-expanded={mode === 'guided' && results === null} onClick={() => open('guided')} className={mode === 'guided' ? 'active' : ''}><SlidersHorizontal size={20}/><span>Hjelp meg å velge</span><ArrowUpRight size={19}/></button>
       <button aria-expanded={mode === 'ingredient' && results === null} onClick={() => open('ingredient')} className={mode === 'ingredient' ? 'active' : ''}><Search size={20}/><span>Jeg har en ingrediens</span><ArrowUpRight size={19}/></button>
     </div>
-    {mode === 'guided' && results === null && <section className="picker-panel" aria-labelledby="guided-heading"><div className="panel-intro"><p className="eyebrow">LITT MER DEG</p><h2 id="guided-heading" ref={formHeading} tabIndex={-1}>Hva passer i dag?</h2><p>Velg det som betyr noe. Resten finner vi ut av.</p></div>
+    {mode === 'guided' && results === null && <section className="picker-panel" aria-labelledby="guided-heading"><div className="panel-intro"><p className="eyebrow">DINE ØNSKER</p><h2 id="guided-heading" ref={formHeading} tabIndex={-1}>Hva passer i dag?</h2><p>Velg tid og type middag.</p></div>
       <form onSubmit={guided} className="guided-form"><div className="form-fields"><label htmlFor="time">Hvor god tid har du?<NativeSelect id="time" value={filters.time} onChange={e => setState({ ...state, filters:{ ...filters, time:e.target.value } })}><NativeSelectOption value="15">Maks 15 minutter</NativeSelectOption><NativeSelectOption value="30">Maks 30 minutter</NativeSelectOption><NativeSelectOption value="all">God tid / ingen grense</NativeSelectOption></NativeSelect></label>
       <label htmlFor="type">Hva frister?<NativeSelect id="type" value={filters.type} onChange={e => setState({ ...state, filters:{ ...filters, type:e.target.value } })}><NativeSelectOption value="all">Åpen for alt</NativeSelectOption><NativeSelectOption value="kjott">Kjøtt</NativeSelectOption><NativeSelectOption value="fisk">Fisk</NativeSelectOption><NativeSelectOption value="vegetar">Vegetarisk</NativeSelectOption></NativeSelect></label></div>
       <details className="price-details"><summary>Vil du også velge prisnivå?</summary><label htmlFor="price">Prisnivå<NativeSelect id="price" value={filters.price} onChange={e => setState({ ...state, filters:{ ...filters, price:e.target.value } })}><NativeSelectOption value="all">Spiller ingen rolle</NativeSelectOption><NativeSelectOption value="billig">Rimelig</NativeSelectOption><NativeSelectOption value="vanlig">Vanlig eller rimelig</NativeSelectOption></NativeSelect></label><p>Relative nivåer, ikke oppdaterte butikkpriser.</p></details>
@@ -104,12 +111,14 @@ export function DinnerPicker({ meals }: { meals: MealSummary[] }) {
     {mode === 'ingredient' && results === null && <section className="picker-panel ingredient-panel" aria-labelledby="ingredient-heading"><div className="panel-intro"><p className="eyebrow">BRUK DET DU HAR</p><h2 id="ingredient-heading">Hva har du på kjøkkenet?</h2><p>Én ingrediens er nok til å komme i gang.</p></div><div><form onSubmit={e => search(e)} className="ingredient-form"><label htmlFor="ingredient">Jeg har …</label><div className="search-row"><input ref={searchInput} id="ingredient" maxLength={60} value={query} onChange={e => setState({ ...state, query:e.target.value, error:'' })} placeholder="For eksempel kylling" aria-invalid={!!error} aria-describedby={error ? 'search-error' : 'search-hint'}/><button className="button button-primary" type="submit">Finn middag <ArrowRight size={18}/></button></div><p id={error ? 'search-error' : 'search-hint'} className={error ? 'form-error' : 'field-hint'} role={error ? 'alert' : undefined}>{error || 'Søk på én råvare. Du kan også skrive vegetar.'}</p></form><div className="quick-ingredients"><span>Eller prøv:</span>{['kylling','kjøttdeig','laks','pasta','egg','poteter'].map(i => <button key={i} onClick={() => search(undefined,i)}>{i}<ArrowUpRight size={14}/></button>)}</div></div></section>}
     {results !== null && <section className="results-section" aria-labelledby="results-heading"><div className="results-heading"><div><p className="eyebrow">{single ? 'DAGENS MIDDAG' : mode === 'instant' ? 'LITT MINDRE Å TENKE PÅ' : 'DINE MIDDAGSFORSLAG'}</p><h2 id="results-heading" ref={resultHeading} tabIndex={-1}>{resultTitle}</h2></div>{results.length > 0 && !single && <span className="result-count">{results.length} forslag. Du velger.</span>}</div>
       <div className="result-context" aria-live="polite">{corrected && ingredient && <p>Vi tolket «{searched}» som {ingredient}. <button className="inline-link" onClick={() => open('ingredient')}>Endre søket</button></p>}{mode === 'guided' && <p>{applied.time === 'all' ? 'Ingen tidsgrense' : `Maks ${applied.time} min`} · {({all:'Alle typer',familie:'Familievennlig',kjott:'Kjøtt',fisk:'Fisk',vegetar:'Vegetarisk',lett:'Noe lett'} as Record<string,string>)[applied.type]} · {applied.price === 'all' ? 'Alle prisnivåer' : applied.price === 'billig' ? 'Rimelig' : 'Vanlig eller rimelig'}</p>}{notice && <p>{notice}</p>}</div>
-      {results.length > 0 ? <><div className="decision-actions">{!single && pool.length > 3 && <button className="button button-secondary" onClick={refresh}><RotateCw size={18}/>Vis tre nye</button>}{!single && results.length > 1 && <button className="text-button" onClick={decide}>Bare bestem for meg <ArrowRight size={17}/></button>}{single && <button className="text-button undo-decision" onClick={undo}>Vis de samme alternativene igjen</button>}</div><div className={`meal-grid ${single ? 'single-result' : ''}`}>{results.map((meal,index) => <article key={meal.id} className={`meal-card category-${meal.category}`}><div className="card-top"><span>{categoryLabels[meal.category]}</span>{!single && <span className="card-number">0{index+1}</span>}</div><div className="card-content"><h3>{meal.title}</h3><p>{meal.shortDescription}</p><div className="meal-meta"><span><Clock3 size={16}/>{meal.timeMinutes} min</span><span>{costLabels[meal.costTier]}</span></div>{meal.timeNote && <p className="time-note">{meal.timeNote}</p>}{mode !== 'instant' && reason(meal,applied,ingredient) && <p className="match-reason">{reason(meal,applied,ingredient)}</p>}</div><Link prefetch={false} href={`/middag/${meal.slug}`} className="meal-choose" onClick={() => rememberSelection(meal)}>{single ? 'Se oppskriften' : 'Velg denne'}<ArrowRight size={18}/></Link></article>)}</div>
+      {results.length > 0 ? <><div className="decision-actions">{!single && pool.length > 3 && <button className="button button-secondary" onClick={refresh}><RotateCw size={18}/>Vis tre nye</button>}{!single && results.length > 1 && <button className="text-button" onClick={decide}>Bare bestem for meg <ArrowRight size={17}/></button>}{single && <button className="text-button undo-decision" onClick={undo}>Vis de samme alternativene igjen</button>}</div><div className={`meal-grid ${single ? 'single-result' : ''}`}>{results.map((meal,index) => <article key={meal.id} className={`meal-card category-${meal.category}`}>
+        <div className="card-preview"><MealImage image={meal.image} className="meal-photo" eager={index === 0} sizes={single ? '(max-width: 760px) calc(100vw - 44px), 680px' : '(max-width: 760px) 104px, (max-width: 1050px) 30vw, 382px'}/><div className="card-heading">{meal.displayTags.length > 0 && <p className="display-tags">{meal.displayTags.map(tag => displayTagLabels[tag]).join(' · ')}</p>}<h3>{meal.title}</h3></div></div>
+        <div className="card-content"><p>{meal.shortDescription}</p><div className="meal-meta"><span><Clock3 size={16}/>Ca. {meal.timeMinutes} min</span><span>{costLabels[meal.costTier]}</span></div>{meal.timeNote && <p className="time-note">{meal.timeNote}</p>}</div><Link prefetch={false} href={`/middag/${meal.slug}`} className="meal-choose" onClick={() => rememberSelection(meal)}>Se oppskriften<ArrowRight size={18}/></Link></article>)}</div>
       {pool.length < 3 && <p className="small-note">Vi fant {pool.length === 1 ? 'bare én rett' : 'bare to retter'} med disse ønskene. Endre {mode === 'ingredient' ? 'ingrediensen' : 'valgene'} for flere forslag.</p>}
       {mode !== 'instant' && <div className="result-actions"><button className="text-button" onClick={() => open(mode ?? 'guided')}>Endre {mode === 'ingredient' ? 'ingrediensen' : 'valgene'}</button></div>}</> : <Empty className="no-results"><EmptyHeader><Utensils size={30}/><EmptyTitle>{mode === 'ingredient' ? `Ingen treff på «${searched}» ennå.` : 'Prøv litt mer tid eller en annen type.'}</EmptyTitle><EmptyDescription>{mode === 'ingredient' ? 'Vi har et lite utvalg middager. Prøv en annen råvare, eller få tre tips uten ingrediensvalg.' : 'Vi beholder ønskene dine. Du bestemmer om du vil endre dem.'}</EmptyDescription></EmptyHeader><EmptyContent><button className="button button-primary" onClick={() => open(mode??'guided')}>{mode === 'ingredient' ? 'Prøv en annen ingrediens' : 'Endre valgene'}<ArrowRight size={18}/></button><button className="text-button" onClick={instant}>Gi meg tre middagstips</button></EmptyContent></Empty>}
     </section>}
     {!compact && <section className="everyday-note"><div className="note-heading"><span className="note-symbol">16:20</span><h2>Mindre leting.<br/><em>Mer middag.</em></h2></div><p>Vanlige råvarer. Middager det går an å lage.<br/>Vi hjelper deg fra «aner ikke» til «den tar vi».</p><Link href="/slik-velger-vi">Slik velger vi forslagene <ArrowUpRight size={17}/></Link></section>}
     {compact && <p className="method-link">Forslag fra vårt lille middagsutvalg. <Link href="/slik-velger-vi">Slik velger vi</Link></p>}
-    <noscript><p>Slå på JavaScript for å få forslag, eller gå rett til <a href="/middag/laks-med-poteter">laks med poteter</a>.</p></noscript>
+    <noscript><p>Slå på JavaScript for å få forslag, eller gå rett til <Link prefetch={false} href="/middag/laks-med-poteter">laks med poteter</Link>.</p></noscript>
   </div>;
 }
