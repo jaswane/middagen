@@ -1,3 +1,5 @@
+> Historisk status før implementeringssprint 01. Gjeldende endringer og kontroller: [Sprint 01](sprint-01.md).
+
 # Samlet kvalitetssjekk – 28. september 2026
 
 ## Verifisert

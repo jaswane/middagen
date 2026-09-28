@@ -86,21 +86,26 @@
       "Ha resten av oljen i pannen. Stek grønnsakene i 4–5 minutter. Tilsett soyasaus og vann og la småkoke i 2 minutter.",
       "Vend inn kyllingen, varm alt godt gjennom og smak til med pepper. Server med ris."
     ],
-    "tip": "Frosne wokgrønnsaker kan erstatte de friske; la overskuddsvannet koke bort."
+    "tip": "Frosne wokgrønnsaker kan erstatte de friske; la overskuddsvannet koke bort.",
+    "ingredientForms": {
+      "kylling": [
+        "kyllingfilet"
+      ]
+    },
+    "timeNote": "Kok risen mens du tilbereder kylling og grønnsaker."
   },
   {
     "id": "kyllingfajitas",
     "slug": "kyllingfajitas",
     "title": "Kyllingfajitas",
     "shortDescription": "Varme lefser med kylling, paprika og rømme.",
-    "timeMinutes": 30,
+    "timeMinutes": 35,
     "costTier": "vanlig",
     "difficulty": "enkel",
     "familyFriendly": true,
     "category": "kjott",
     "mealTags": [
-      "hverdag",
-      "rask"
+      "hverdag"
     ],
     "mainIngredients": [
       "kylling"
@@ -174,14 +179,19 @@
       "Stek kyllingen i resten av oljen, gjerne i to omganger, i 5–7 minutter per omgang. Tilsett krydder det siste minuttet, og stek til kyllingen er helt gjennomstekt.",
       "Vend grønnsakene tilbake i pannen og varm i 2 minutter. Varm lefsene etter pakkens anvisning og fyll med kyllingblandingen og rømme."
     ],
-    "tip": "Sett rømme og eventuelt sterk saus på bordet, så kan alle velge selv."
+    "tip": "Sett rømme og eventuelt sterk saus på bordet, så kan alle velge selv.",
+    "ingredientForms": {
+      "kylling": [
+        "kyllingfilet"
+      ]
+    }
   },
   {
     "id": "ovnskylling-med-rotgronnsaker",
     "slug": "ovnskylling-med-rotgronnsaker",
     "title": "Ovnskylling med rotgrønnsaker",
     "shortDescription": "Kyllinglår og poteter stekes sammen i langpannen.",
-    "timeMinutes": 55,
+    "timeMinutes": 60,
     "costTier": "vanlig",
     "difficulty": "enkel",
     "familyFriendly": true,
@@ -258,7 +268,13 @@
       "Stek midt i ovnen i 35–45 minutter. Vend grønnsakene etter omtrent 25 minutter.",
       "Kontroller at kyllingen er gjennomstekt; et steketermometer skal vise minst 75 °C i den tykkeste delen uten å treffe beinet. La den hvile i 5 minutter før servering."
     ],
-    "tip": "Store kyllinglår kan trenge mer tid; la kjernetemperaturen avgjøre."
+    "tip": "Store kyllinglår kan trenge mer tid; la kjernetemperaturen avgjøre.",
+    "ingredientForms": {
+      "kylling": [
+        "kyllinglår"
+      ]
+    },
+    "timeNote": "Store kyllinglår kan trenge mer tid enn anslaget."
   },
   {
     "id": "pasta-med-kjottsaus",
@@ -349,7 +365,14 @@
       "Kok pastaen etter pakkens anvisning. Ta vare på litt kokevann før du heller av resten.",
       "Smak sausen til med salt og pepper. Vend inn pastaen og litt kokevann dersom sausen er for tykk."
     ],
-    "tip": "Revne gulrøtter gir fylde uten at sausen trenger lang koketid."
+    "tip": "Revne gulrøtter gir fylde uten at sausen trenger lang koketid.",
+    "ingredientForms": {
+      "pasta": [
+        "spaghetti",
+        "penne",
+        "makaroni"
+      ]
+    }
   },
   {
     "id": "tacopanne-med-ris",
@@ -791,7 +814,12 @@
       "Skjær pølsene i biter. Bland pølser, makaroni, frosne erter og saus i en ildfast form, og dryss resten av osten over.",
       "Stek midt i ovnen i 18–20 minutter, til gratengen bobler og osten er gyllen."
     ],
-    "tip": "En bred form gir mer gyllen overflate og kortere vei for varmen."
+    "tip": "En bred form gir mer gyllen overflate og kortere vei for varmen.",
+    "ingredientForms": {
+      "pasta": [
+        "makaroni"
+      ]
+    }
   },
   {
     "id": "svinekoteletter-med-eple",
@@ -958,7 +986,14 @@
       "Tilsett resten av løken, tomatene og oregano. La småkoke under lokk i 12–15 minutter, til kjøttbollene er gjennomstekte.",
       "Kok pastaen etter pakkens anvisning mens sausen putrer. Hell av vannet og server pastaen med kjøttboller og saus."
     ],
-    "tip": "Fukt hendene med kaldt vann når du former kjøttbollene."
+    "tip": "Fukt hendene med kaldt vann når du former kjøttbollene.",
+    "ingredientForms": {
+      "pasta": [
+        "spaghetti",
+        "penne",
+        "makaroni"
+      ]
+    }
   },
   {
     "id": "skinkeomelett",
@@ -1123,7 +1158,8 @@
       "Bak laksen i 12–18 minutter, avhengig av tykkelse, til den er gjennomvarm og flaker seg lett.",
       "Hell vannet av potetene og brokkolien. Server med laks og rømme."
     ],
-    "tip": "Tiden gjelder tint fisk; tin frossen laks i kjøleskap på forhånd."
+    "tip": "Tiden gjelder tint fisk; tin frossen laks i kjøleskap på forhånd.",
+    "timeNote": "Forutsetter tint laks. Kok potetene mens fisken er i ovnen."
   },
   {
     "id": "kremet-laksepasta",
@@ -1207,7 +1243,15 @@
       "Vend inn spinaten og la den falle sammen i 1–2 minutter. Ha i pastaen og litt kokevann om sausen er tykk.",
       "Smak til med sitronsaft, salt og pepper og server straks."
     ],
-    "tip": "Vend forsiktig etter at fisken er tilsatt, så holder laksebitene seg hele."
+    "tip": "Vend forsiktig etter at fisken er tilsatt, så holder laksebitene seg hele.",
+    "ingredientForms": {
+      "pasta": [
+        "spaghetti",
+        "penne",
+        "makaroni"
+      ]
+    },
+    "timeNote": "Forutsetter tint laks. Kok pasta og lag saus samtidig."
   },
   {
     "id": "laks-med-couscous",
@@ -1716,7 +1760,15 @@
       "Tilsett avrent tunfisk og mais og varm i 2–3 minutter. Del tunfisken forsiktig med en stekespade.",
       "Ta vare på litt pastavann til å spe retten, og hell av resten. Vend pastaen inn i pannen med litt kokevann, sitronsaft, salt og pepper."
     ],
-    "tip": "15 minutter forutsetter pasta med kort koketid og rask oppkoking."
+    "tip": "15 minutter forutsetter pasta med kort koketid og rask oppkoking.",
+    "ingredientForms": {
+      "pasta": [
+        "spaghetti",
+        "penne",
+        "makaroni"
+      ]
+    },
+    "timeNote": "15 min forutsetter pasta med 8 min koketid og rask oppkoking. Lag fyllet samtidig."
   },
   {
     "id": "tunfiskwraps",
@@ -1882,7 +1934,8 @@
       "Varm oljen i en stor panne. Stek gulrot og sukkererter i 3 minutter. Tilsett soyasaus og vann.",
       "Hell av nudlene og vend dem i pannen sammen med godt avrente reker. Varm i 1–2 minutter, til rekene er varme, og smak til med pepper."
     ],
-    "tip": "Bruk ferdig pillede, kokte og tinte reker for at retten skal være klar på 15 minutter."
+    "tip": "Bruk ferdig pillede, kokte og tinte reker for at retten skal være klar på 15 minutter.",
+    "timeNote": "Forutsetter kokte, pillede og tinte reker. Kok nudler mens grønnsakene steker."
   },
   {
     "id": "egg-og-potetpanne",
@@ -1994,7 +2047,7 @@
       "salt"
     ],
     "equipmentTags": [
-      "kasserolle"
+      "to kasseroller"
     ],
     "baseServings": 4,
     "ingredients": [
@@ -2050,7 +2103,8 @@
       "Tilsett tomater, kokosmelk og kikerter. La gryten småkoke uten lokk i 12 minutter, og rør underveis.",
       "Vend inn spinaten og la den falle sammen i 2 minutter. Smak til med salt og server med ris."
     ],
-    "tip": "Ønsker du en tykkere gryte, mos noen av kikertene mot kanten med en sleiv."
+    "tip": "Ønsker du en tykkere gryte, mos noen av kikertene mot kanten med en sleiv.",
+    "timeNote": "Kok risen samtidig med gryten, i en egen kjele."
   },
   {
     "id": "tomatsuppe",
@@ -2083,7 +2137,7 @@
       "pepper"
     ],
     "equipmentTags": [
-      "kasserolle",
+      "tre kasseroller",
       "stavmikser"
     ],
     "baseServings": 4,
@@ -2141,7 +2195,13 @@
       "Kjør suppen glatt med stavmikser, og smak til med pepper. Spe med litt vann hvis den er for tykk.",
       "Skrell og del eggene. Fordel avrent makaroni i skåler, hell over suppen og legg egg på toppen."
     ],
-    "tip": "Hold makaronien separat hvis du planlegger å spare suppe til en annen dag."
+    "tip": "Hold makaronien separat hvis du planlegger å spare suppe til en annen dag.",
+    "ingredientForms": {
+      "pasta": [
+        "makaroni"
+      ]
+    },
+    "timeNote": "25 min forutsetter at suppe, egg og makaroni koker samtidig i tre kjeler."
   },
   {
     "id": "pestopasta-med-erter",
@@ -2211,14 +2271,22 @@
       "Ta vare på litt kokevann til å spe pestoen og hell av resten.",
       "Rør pestoen ut med litt av kokevannet. Vend inn pasta, erter og tomater, og smak til med salt og pepper."
     ],
-    "tip": "Velg pesto merket vegetarisk; noen varianter inneholder ost laget med animalsk løpe."
+    "tip": "Velg pesto merket vegetarisk; noen varianter inneholder ost laget med animalsk løpe.",
+    "ingredientForms": {
+      "pasta": [
+        "spaghetti",
+        "penne",
+        "makaroni"
+      ]
+    },
+    "timeNote": "15 min forutsetter pasta med 8 min koketid og rask oppkoking."
   },
   {
     "id": "soppomelett",
     "slug": "soppomelett",
     "title": "Soppomelett med brød",
     "shortDescription": "En enkel omelett med sopp, spinat og brød.",
-    "timeMinutes": 15,
+    "timeMinutes": 20,
     "costTier": "billig",
     "difficulty": "enkel",
     "familyFriendly": true,
@@ -2292,7 +2360,8 @@
       "Tilsett spinaten og vend til den faller sammen. Hell over eggene og senk varmen.",
       "Legg på lokk og stek på lav varme i 6–8 minutter, til eggene har stivnet. Server med brød."
     ],
-    "tip": "En bred panne gir en tynn omelett som stivner raskt."
+    "tip": "En bred panne gir en tynn omelett som stivner raskt.",
+    "timeNote": "Bruk en bred stekepanne med lokk, så omeletten stivner jevnt."
   },
   {
     "id": "stekt-ris-med-egg",
@@ -2369,7 +2438,8 @@
       "Tilsett risen og soyasausen, og stek under omrøring i 4–5 minutter til risen er rykende varm. Følg også oppvarmingsanvisningen på rispakken.",
       "Vend inn egg og vårløk, varm i 1 minutt og server straks."
     ],
-    "tip": "15 minutter gjelder ferdigkokt ris; koketid for rå ris kommer i tillegg."
+    "tip": "15 minutter gjelder ferdigkokt ris; koketid for rå ris kommer i tillegg.",
+    "timeNote": "Forutsetter ferdigkokt ris. Koketid for rå ris kommer i tillegg."
   },
   {
     "id": "bonnewraps",
@@ -2462,7 +2532,8 @@
       "Varm lefsene etter pakkens anvisning, og press halvparten av limesaften over avokadoen.",
       "Fyll lefsene med bønner, avokado, tomat og yoghurt. Server med resten av limen i båter."
     ],
-    "tip": "Bønnene blir lettere å fordele i lefsene når en liten del moses."
+    "tip": "Bønnene blir lettere å fordele i lefsene når en liten del moses.",
+    "timeNote": "Bruk ferdigkokte bønner. Varm lefsene mens bønnene er i pannen."
   },
   {
     "id": "couscous-med-kikerter",
@@ -2556,7 +2627,8 @@
       "Skjær agurk og paprika i små terninger og smuldre fetaen.",
       "Løsne couscousen med en gaffel. Vend inn olje, sitronsaft, grønnsaker og feta, og smak til med pepper."
     ],
-    "tip": "Bruk en feta med vegetarisk løpe for at hele retten skal være vegetarisk."
+    "tip": "Bruk en feta med vegetarisk løpe for at hele retten skal være vegetarisk.",
+    "timeNote": "Bruk ferdigkokte kikerter og couscous som trekker på 5 min."
   },
   {
     "id": "rod-linsesuppe",
@@ -2848,7 +2920,12 @@
       "Legg tomatsaus, lasagneplater og spinatblanding lagvis i en ildfast form tilpasset mengden, slik at lasagnen får omtrent samme høyde uansett porsjonsantall. Avslutt med tomatsaus og revet ost; alle platene skal være dekket.",
       "Stek midt i ovnen i 30–35 minutter, eller til platene er møre. La lasagnen hvile i 5 minutter før servering."
     ],
-    "tip": "Velg lasagneplater beregnet på rundt 30 minutters steking."
+    "tip": "Velg lasagneplater beregnet på rundt 30 minutters steking.",
+    "ingredientForms": {
+      "pasta": [
+        "lasagneplater"
+      ]
+    }
   },
   {
     "id": "blomkalkarri",
@@ -3163,7 +3240,8 @@
       "Varm tørre stekepanner på middels varme. Fordel lefsene i ett lag med god plass; stek i flere omganger ved behov. Stek i 3–4 minutter på hver side, til lefsene er gylne og fyllet gjennomvarmt.",
       "Del quesadillaene i trekanter og server med salsa."
     ],
-    "tip": "15 minutter forutsetter to romslige panner; med én panne tar stekingen omtrent dobbelt så lang tid."
+    "tip": "15 minutter forutsetter to romslige panner; med én panne tar stekingen omtrent dobbelt så lang tid.",
+    "timeNote": "15 min forutsetter to romslige panner. Én panne gir lengre steketid."
   },
   {
     "id": "kremet-sopppasta",
@@ -3248,7 +3326,14 @@
       "Tilsett løken og stek i 3 minutter. Ha i timian og fløte og la småkoke i 3 minutter.",
       "Vend inn pastaen, spe med litt kokevann og smak til med salt og pepper."
     ],
-    "tip": "En stor panne og god varme gjør at soppen steker fremfor å koke i egen væske."
+    "tip": "En stor panne og god varme gjør at soppen steker fremfor å koke i egen væske.",
+    "ingredientForms": {
+      "pasta": [
+        "spaghetti",
+        "penne",
+        "makaroni"
+      ]
+    }
   },
   {
     "id": "egg-i-tomatsaus",
@@ -3549,7 +3634,7 @@
       "pepper"
     ],
     "equipmentTags": [
-      "kasserolle"
+      "to kasseroller"
     ],
     "baseServings": 4,
     "ingredients": [
@@ -3601,6 +3686,14 @@
       "La sausen småkoke i 4–5 minutter. Ta kjelen av platen og rør inn osten til den smelter. Smak til med salt og pepper.",
       "Hell vannet av pasta og brokkoli, og vend begge deler inn i ostesausen."
     ],
-    "tip": "Tilsett en skvett pastavann hvis sausen blir tykk når pastaen blandes inn."
+    "tip": "Tilsett en skvett pastavann hvis sausen blir tykk når pastaen blandes inn.",
+    "ingredientForms": {
+      "pasta": [
+        "spaghetti",
+        "penne",
+        "makaroni"
+      ]
+    },
+    "timeNote": "Kok pasta og lag ostesaus samtidig i to kjeler."
   }
 ]

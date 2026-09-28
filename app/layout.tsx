@@ -8,5 +8,5 @@ export const metadata: Metadata = {
   robots: { index: false, follow: false }, icons: { icon: '/favicon.svg' },
 };
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return <html lang="nb"><body><a className="skip-link" href="#hovedinnhold">Hopp til innhold</a><div className="site-shell"><Header/>{children}<Footer/></div></body></html>;
+  return <html lang="nb" data-scroll-behavior="smooth"><body><a className="skip-link" href="#hovedinnhold">Hopp til innhold</a><div className="site-shell"><Header/>{children}<Footer/></div></body></html>;
 }
