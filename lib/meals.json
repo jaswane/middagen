@@ -1,0 +1,3606 @@
+[
+  {
+    "id": "kyllingwok",
+    "slug": "kyllingwok",
+    "title": "Kyllingwok med ris",
+    "shortDescription": "Kylling og sprø grønnsaker i mild soyasaus.",
+    "timeMinutes": 30,
+    "costTier": "vanlig",
+    "difficulty": "enkel",
+    "familyFriendly": true,
+    "category": "kjott",
+    "mealTags": [
+      "hverdag",
+      "rask"
+    ],
+    "mainIngredients": [
+      "kylling",
+      "ris"
+    ],
+    "secondaryIngredients": [
+      "brokkoli",
+      "gulrot",
+      "paprika"
+    ],
+    "pantryIngredients": [
+      "olje",
+      "soyasaus",
+      "pepper"
+    ],
+    "equipmentTags": [
+      "stekepanne",
+      "kasserolle"
+    ],
+    "baseServings": 4,
+    "ingredients": [
+      {
+        "name": "kyllingfilet",
+        "quantity": 600,
+        "unit": "g"
+      },
+      {
+        "name": "ris",
+        "quantity": 300,
+        "unit": "g"
+      },
+      {
+        "name": "brokkoli",
+        "quantity": 1,
+        "unit": "stk"
+      },
+      {
+        "name": "gulrot",
+        "quantity": 2,
+        "unit": "stk"
+      },
+      {
+        "name": "paprika",
+        "quantity": 1,
+        "unit": "stk"
+      },
+      {
+        "name": "soyasaus",
+        "quantity": 4,
+        "unit": "ss"
+      },
+      {
+        "name": "vann",
+        "quantity": 1,
+        "unit": "dl"
+      },
+      {
+        "name": "olje",
+        "quantity": 2,
+        "unit": "ss"
+      },
+      {
+        "name": "pepper",
+        "quantity": 0.25,
+        "unit": "ts"
+      }
+    ],
+    "instructions": [
+      "Kok risen etter anvisningen på pakken, vanligvis 12–20 minutter.",
+      "Skjær kyllingen i tynne strimler. Del brokkoli i små buketter, gulrøttene i tynne skiver og paprikaen i strimler. Vask hender og redskap etter rå kylling.",
+      "Varm halvparten av oljen i en stor panne. Stek kyllingen i to omganger i 5–7 minutter per omgang, til den er gjennomstekt. Legg til side.",
+      "Ha resten av oljen i pannen. Stek grønnsakene i 4–5 minutter. Tilsett soyasaus og vann og la småkoke i 2 minutter.",
+      "Vend inn kyllingen, varm alt godt gjennom og smak til med pepper. Server med ris."
+    ],
+    "tip": "Frosne wokgrønnsaker kan erstatte de friske; la overskuddsvannet koke bort."
+  },
+  {
+    "id": "kyllingfajitas",
+    "slug": "kyllingfajitas",
+    "title": "Kyllingfajitas",
+    "shortDescription": "Varme lefser med kylling, paprika og rømme.",
+    "timeMinutes": 30,
+    "costTier": "vanlig",
+    "difficulty": "enkel",
+    "familyFriendly": true,
+    "category": "kjott",
+    "mealTags": [
+      "hverdag",
+      "rask"
+    ],
+    "mainIngredients": [
+      "kylling"
+    ],
+    "secondaryIngredients": [
+      "paprika",
+      "løk",
+      "tortillalefser",
+      "rømme"
+    ],
+    "pantryIngredients": [
+      "olje",
+      "paprikapulver",
+      "spisskummen",
+      "salt"
+    ],
+    "equipmentTags": [
+      "stekepanne"
+    ],
+    "baseServings": 4,
+    "ingredients": [
+      {
+        "name": "kyllingfilet",
+        "quantity": 600,
+        "unit": "g"
+      },
+      {
+        "name": "paprika",
+        "quantity": 2,
+        "unit": "stk"
+      },
+      {
+        "name": "løk",
+        "quantity": 1,
+        "unit": "stk"
+      },
+      {
+        "name": "tortillalefser",
+        "quantity": 8,
+        "unit": "stk"
+      },
+      {
+        "name": "rømme",
+        "quantity": 2,
+        "unit": "dl"
+      },
+      {
+        "name": "olje",
+        "quantity": 2,
+        "unit": "ss"
+      },
+      {
+        "name": "paprikapulver",
+        "quantity": 2,
+        "unit": "ts"
+      },
+      {
+        "name": "spisskummen",
+        "quantity": 1,
+        "unit": "ts"
+      },
+      {
+        "name": "salt",
+        "quantity": 0.5,
+        "unit": "ts"
+      }
+    ],
+    "instructions": [
+      "Skjær paprika og løk i strimler. Skjær kyllingen i smale strimler på et eget brett, og vask hender og redskap.",
+      "Stek løk og paprika i halvparten av oljen i 6–8 minutter. Legg grønnsakene til side.",
+      "Stek kyllingen i resten av oljen, gjerne i to omganger, i 5–7 minutter per omgang. Tilsett krydder det siste minuttet, og stek til kyllingen er helt gjennomstekt.",
+      "Vend grønnsakene tilbake i pannen og varm i 2 minutter. Varm lefsene etter pakkens anvisning og fyll med kyllingblandingen og rømme."
+    ],
+    "tip": "Sett rømme og eventuelt sterk saus på bordet, så kan alle velge selv."
+  },
+  {
+    "id": "ovnskylling-med-rotgronnsaker",
+    "slug": "ovnskylling-med-rotgronnsaker",
+    "title": "Ovnskylling med rotgrønnsaker",
+    "shortDescription": "Kyllinglår og poteter stekes sammen i langpannen.",
+    "timeMinutes": 55,
+    "costTier": "vanlig",
+    "difficulty": "enkel",
+    "familyFriendly": true,
+    "category": "kjott",
+    "mealTags": [
+      "hverdag",
+      "comfort"
+    ],
+    "mainIngredients": [
+      "kylling",
+      "poteter"
+    ],
+    "secondaryIngredients": [
+      "gulrot",
+      "løk"
+    ],
+    "pantryIngredients": [
+      "olje",
+      "timian",
+      "salt",
+      "pepper"
+    ],
+    "equipmentTags": [
+      "stekeovn",
+      "langpanne"
+    ],
+    "baseServings": 4,
+    "ingredients": [
+      {
+        "name": "kyllinglår med bein",
+        "quantity": 4,
+        "unit": "stk"
+      },
+      {
+        "name": "poteter",
+        "quantity": 800,
+        "unit": "g"
+      },
+      {
+        "name": "gulrot",
+        "quantity": 4,
+        "unit": "stk"
+      },
+      {
+        "name": "løk",
+        "quantity": 2,
+        "unit": "stk"
+      },
+      {
+        "name": "olje",
+        "quantity": 3,
+        "unit": "ss"
+      },
+      {
+        "name": "tørket timian",
+        "quantity": 2,
+        "unit": "ts"
+      },
+      {
+        "name": "salt",
+        "quantity": 1,
+        "unit": "ts"
+      },
+      {
+        "name": "pepper",
+        "quantity": 0.5,
+        "unit": "ts"
+      }
+    ],
+    "instructions": [
+      "Sett ovnen på 220 °C over- og undervarme. Skrubb potetene og skjær dem i båter. Del gulrøtter i staver og løk i båter.",
+      "Vend grønnsakene med to tredeler av oljen og halvparten av krydderet i en romslig langpanne.",
+      "Gni kyllinglårene med resten av oljen og krydderet. Legg dem med skinnsiden opp mellom grønnsakene. Vask hender og utstyr etterpå.",
+      "Stek midt i ovnen i 35–45 minutter. Vend grønnsakene etter omtrent 25 minutter.",
+      "Kontroller at kyllingen er gjennomstekt; et steketermometer skal vise minst 75 °C i den tykkeste delen uten å treffe beinet. La den hvile i 5 minutter før servering."
+    ],
+    "tip": "Store kyllinglår kan trenge mer tid; la kjernetemperaturen avgjøre."
+  },
+  {
+    "id": "pasta-med-kjottsaus",
+    "slug": "pasta-med-kjottsaus",
+    "title": "Pasta med kjøttsaus",
+    "shortDescription": "Hverdagsklassikeren med tomat, gulrot og kjøttdeig.",
+    "timeMinutes": 30,
+    "costTier": "vanlig",
+    "difficulty": "enkel",
+    "familyFriendly": true,
+    "category": "kjott",
+    "mealTags": [
+      "hverdag",
+      "rask",
+      "comfort"
+    ],
+    "mainIngredients": [
+      "kjøttdeig",
+      "pasta"
+    ],
+    "secondaryIngredients": [
+      "gulrot",
+      "løk",
+      "hakkede tomater"
+    ],
+    "pantryIngredients": [
+      "olje",
+      "oregano",
+      "salt",
+      "pepper"
+    ],
+    "equipmentTags": [
+      "stekepanne",
+      "kasserolle"
+    ],
+    "baseServings": 4,
+    "ingredients": [
+      {
+        "name": "kjøttdeig",
+        "quantity": 400,
+        "unit": "g"
+      },
+      {
+        "name": "pasta",
+        "quantity": 400,
+        "unit": "g"
+      },
+      {
+        "name": "løk",
+        "quantity": 1,
+        "unit": "stk"
+      },
+      {
+        "name": "gulrot",
+        "quantity": 2,
+        "unit": "stk"
+      },
+      {
+        "name": "hakkede tomater",
+        "quantity": 800,
+        "unit": "g"
+      },
+      {
+        "name": "olje",
+        "quantity": 1,
+        "unit": "ss"
+      },
+      {
+        "name": "tørket oregano",
+        "quantity": 2,
+        "unit": "ts"
+      },
+      {
+        "name": "salt",
+        "quantity": 0.5,
+        "unit": "ts"
+      },
+      {
+        "name": "pepper",
+        "quantity": 0.25,
+        "unit": "ts"
+      }
+    ],
+    "instructions": [
+      "Sett over en stor kjele med vann til pasta. Finhakk løken og riv gulrøttene grovt.",
+      "Varm oljen i en romslig panne. Stek kjøttdeigen i 5–7 minutter mens du deler den opp, til den er gjennomstekt.",
+      "Tilsett løk og gulrot og stek videre i 3 minutter. Rør inn tomater og oregano, og la sausen småkoke i 10 minutter.",
+      "Kok pastaen etter pakkens anvisning. Ta vare på litt kokevann før du heller av resten.",
+      "Smak sausen til med salt og pepper. Vend inn pastaen og litt kokevann dersom sausen er for tykk."
+    ],
+    "tip": "Revne gulrøtter gir fylde uten at sausen trenger lang koketid."
+  },
+  {
+    "id": "tacopanne-med-ris",
+    "slug": "tacopanne-med-ris",
+    "title": "Tacopanne med ris",
+    "shortDescription": "Kjøttdeig, bønner og mais i én mild tacopanne.",
+    "timeMinutes": 30,
+    "costTier": "vanlig",
+    "difficulty": "enkel",
+    "familyFriendly": true,
+    "category": "kjott",
+    "mealTags": [
+      "hverdag",
+      "rask"
+    ],
+    "mainIngredients": [
+      "kjøttdeig",
+      "ris"
+    ],
+    "secondaryIngredients": [
+      "kidneybønner",
+      "mais",
+      "hakkede tomater",
+      "løk"
+    ],
+    "pantryIngredients": [
+      "olje",
+      "spisskummen",
+      "paprikapulver",
+      "salt"
+    ],
+    "equipmentTags": [
+      "stekepanne",
+      "kasserolle"
+    ],
+    "baseServings": 4,
+    "ingredients": [
+      {
+        "name": "kjøttdeig",
+        "quantity": 400,
+        "unit": "g"
+      },
+      {
+        "name": "ris",
+        "quantity": 300,
+        "unit": "g"
+      },
+      {
+        "name": "kidneybønner, avrent",
+        "quantity": 230,
+        "unit": "g"
+      },
+      {
+        "name": "mais, avrent",
+        "quantity": 150,
+        "unit": "g"
+      },
+      {
+        "name": "hakkede tomater",
+        "quantity": 400,
+        "unit": "g"
+      },
+      {
+        "name": "løk",
+        "quantity": 1,
+        "unit": "stk"
+      },
+      {
+        "name": "olje",
+        "quantity": 1,
+        "unit": "ss"
+      },
+      {
+        "name": "spisskummen",
+        "quantity": 2,
+        "unit": "ts"
+      },
+      {
+        "name": "paprikapulver",
+        "quantity": 2,
+        "unit": "ts"
+      },
+      {
+        "name": "salt",
+        "quantity": 0.5,
+        "unit": "ts"
+      }
+    ],
+    "instructions": [
+      "Kok risen etter pakkens anvisning. Finhakk løken og skyll bønnene i kaldt vann.",
+      "Varm oljen i en stor panne. Stek kjøttdeig og løk i 7–8 minutter mens du smuldrer kjøttet, til kjøttet er gjennomstekt.",
+      "Rør inn spisskummen og paprikapulver. Ha i tomater, bønner og mais, og la småkoke i 8–10 minutter.",
+      "Smak til med salt og server tacopannen over risen."
+    ],
+    "tip": "En skål revet ost eller yoghurt passer godt ved siden av."
+  },
+  {
+    "id": "hjemmelagde-burgere",
+    "slug": "hjemmelagde-burgere",
+    "title": "Hjemmelagde burgere med enkel salat",
+    "shortDescription": "Saftige burgere med sprø salat og yoghurtdressing.",
+    "timeMinutes": 30,
+    "costTier": "vanlig",
+    "difficulty": "middels",
+    "familyFriendly": true,
+    "category": "kjott",
+    "mealTags": [
+      "helg",
+      "rask"
+    ],
+    "mainIngredients": [
+      "kjøttdeig"
+    ],
+    "secondaryIngredients": [
+      "burgerbrød",
+      "salat",
+      "tomat",
+      "yoghurt"
+    ],
+    "pantryIngredients": [
+      "olje",
+      "sennep",
+      "salt",
+      "pepper"
+    ],
+    "equipmentTags": [
+      "stekepanne"
+    ],
+    "baseServings": 4,
+    "ingredients": [
+      {
+        "name": "kjøttdeig",
+        "quantity": 600,
+        "unit": "g"
+      },
+      {
+        "name": "burgerbrød",
+        "quantity": 4,
+        "unit": "stk"
+      },
+      {
+        "name": "salat",
+        "quantity": 1,
+        "unit": "stk"
+      },
+      {
+        "name": "tomat",
+        "quantity": 2,
+        "unit": "stk"
+      },
+      {
+        "name": "yoghurt naturell",
+        "quantity": 1.5,
+        "unit": "dl"
+      },
+      {
+        "name": "sennep",
+        "quantity": 1,
+        "unit": "ss"
+      },
+      {
+        "name": "olje",
+        "quantity": 1,
+        "unit": "ss"
+      },
+      {
+        "name": "salt",
+        "quantity": 0.75,
+        "unit": "ts"
+      },
+      {
+        "name": "pepper",
+        "quantity": 0.5,
+        "unit": "ts"
+      }
+    ],
+    "instructions": [
+      "Skyll og tørk salaten, og skjær tomatene i skiver. Rør sammen yoghurt og sennep.",
+      "Del kjøttdeigen i én like stor del per person og form flate burgere, omtrent 1,5 cm tykke. Krydre begge sider med salt og pepper.",
+      "Varm oljen i en panne på middels høy varme. Stek burgerne i omtrent 5–6 minutter på hver side, til de er gjennomstekte.",
+      "Varm burgerbrødene kort i en tørr panne. Bygg burgere med dressing, salat, tomat og kjøtt, og server resten av salaten ved siden av."
+    ],
+    "tip": "Lag en liten fordypning i midten av burgerne før steking, så holder de formen bedre."
+  },
+  {
+    "id": "polsepanne-med-poteter",
+    "slug": "polsepanne-med-poteter",
+    "title": "Pølsepanne med poteter",
+    "shortDescription": "En mettende panne med pølser, poteter og purre.",
+    "timeMinutes": 30,
+    "costTier": "billig",
+    "difficulty": "enkel",
+    "familyFriendly": true,
+    "category": "kjott",
+    "mealTags": [
+      "hverdag",
+      "rask",
+      "comfort"
+    ],
+    "mainIngredients": [
+      "pølser",
+      "poteter"
+    ],
+    "secondaryIngredients": [
+      "purre",
+      "paprika"
+    ],
+    "pantryIngredients": [
+      "olje",
+      "salt",
+      "pepper"
+    ],
+    "equipmentTags": [
+      "stekepanne",
+      "kasserolle"
+    ],
+    "baseServings": 4,
+    "ingredients": [
+      {
+        "name": "middagspølser",
+        "quantity": 500,
+        "unit": "g"
+      },
+      {
+        "name": "poteter",
+        "quantity": 800,
+        "unit": "g"
+      },
+      {
+        "name": "purre",
+        "quantity": 1,
+        "unit": "stk"
+      },
+      {
+        "name": "paprika",
+        "quantity": 1,
+        "unit": "stk"
+      },
+      {
+        "name": "olje",
+        "quantity": 2,
+        "unit": "ss"
+      },
+      {
+        "name": "salt",
+        "quantity": 0.25,
+        "unit": "ts"
+      },
+      {
+        "name": "pepper",
+        "quantity": 0.25,
+        "unit": "ts"
+      }
+    ],
+    "instructions": [
+      "Skjær potetene i terninger på omtrent 1,5 cm. Kok dem i vann i 8–10 minutter, til nesten møre, og hell av vannet.",
+      "Skjær pølser i skiver, paprika i biter og godt skylt purre i ringer.",
+      "Varm oljen i en stor panne. Stek potetene i 6–8 minutter, og vend dem underveis.",
+      "Tilsett pølser og paprika og stek i 5 minutter. Ha i purre og stek i ytterligere 2–3 minutter, til alt er gjennomvarmt.",
+      "Smak til med salt og pepper og server fra pannen."
+    ],
+    "tip": "Har du kokte poteter fra før, kutter du koketrinnet og får middagen raskere klar."
+  },
+  {
+    "id": "polsestroganoff",
+    "slug": "polsestroganoff",
+    "title": "Pølsestroganoff med ris",
+    "shortDescription": "Pølser i mild tomat- og fløtesaus.",
+    "timeMinutes": 25,
+    "costTier": "billig",
+    "difficulty": "enkel",
+    "familyFriendly": true,
+    "category": "kjott",
+    "mealTags": [
+      "hverdag",
+      "rask",
+      "comfort"
+    ],
+    "mainIngredients": [
+      "pølser",
+      "ris"
+    ],
+    "secondaryIngredients": [
+      "løk",
+      "tomatpuré",
+      "matfløte"
+    ],
+    "pantryIngredients": [
+      "olje",
+      "paprikapulver",
+      "pepper"
+    ],
+    "equipmentTags": [
+      "stekepanne",
+      "kasserolle"
+    ],
+    "baseServings": 4,
+    "ingredients": [
+      {
+        "name": "middagspølser",
+        "quantity": 500,
+        "unit": "g"
+      },
+      {
+        "name": "ris",
+        "quantity": 300,
+        "unit": "g"
+      },
+      {
+        "name": "løk",
+        "quantity": 1,
+        "unit": "stk"
+      },
+      {
+        "name": "tomatpuré",
+        "quantity": 3,
+        "unit": "ss"
+      },
+      {
+        "name": "matfløte",
+        "quantity": 3,
+        "unit": "dl"
+      },
+      {
+        "name": "vann",
+        "quantity": 1,
+        "unit": "dl"
+      },
+      {
+        "name": "olje",
+        "quantity": 1,
+        "unit": "ss"
+      },
+      {
+        "name": "paprikapulver",
+        "quantity": 1,
+        "unit": "ts"
+      },
+      {
+        "name": "pepper",
+        "quantity": 0.25,
+        "unit": "ts"
+      }
+    ],
+    "instructions": [
+      "Kok risen etter pakkens anvisning. Skjær løken i tynne båter og pølsene i strimler.",
+      "Stek løken i olje på middels varme i 4 minutter. Tilsett pølsene og stek i 4 minutter til.",
+      "Rør inn tomatpuré og paprikapulver og la frese i 1 minutt.",
+      "Hell i matfløte og vann. La sausen småkoke i 5–7 minutter, smak til med pepper og server med ris."
+    ],
+    "tip": "Litt sennep rørt inn til slutt gir sausen mer syrlighet."
+  },
+  {
+    "id": "polsegrateng",
+    "slug": "polsegrateng",
+    "title": "Pølsegrateng med makaroni",
+    "shortDescription": "Ovnsgrateng med pølser, erter og gyllen ost.",
+    "timeMinutes": 45,
+    "costTier": "billig",
+    "difficulty": "enkel",
+    "familyFriendly": true,
+    "category": "kjott",
+    "mealTags": [
+      "hverdag",
+      "comfort"
+    ],
+    "mainIngredients": [
+      "pølser",
+      "pasta"
+    ],
+    "secondaryIngredients": [
+      "erter",
+      "ost",
+      "melk"
+    ],
+    "pantryIngredients": [
+      "smør",
+      "hvetemel",
+      "salt",
+      "pepper"
+    ],
+    "equipmentTags": [
+      "stekeovn",
+      "ildfast form",
+      "kasserolle"
+    ],
+    "baseServings": 4,
+    "ingredients": [
+      {
+        "name": "middagspølser",
+        "quantity": 400,
+        "unit": "g"
+      },
+      {
+        "name": "makaroni",
+        "quantity": 300,
+        "unit": "g"
+      },
+      {
+        "name": "frosne erter",
+        "quantity": 250,
+        "unit": "g"
+      },
+      {
+        "name": "melk",
+        "quantity": 5,
+        "unit": "dl"
+      },
+      {
+        "name": "smør",
+        "quantity": 30,
+        "unit": "g"
+      },
+      {
+        "name": "hvetemel",
+        "quantity": 3,
+        "unit": "ss"
+      },
+      {
+        "name": "revet ost",
+        "quantity": 150,
+        "unit": "g"
+      },
+      {
+        "name": "salt",
+        "quantity": 0.25,
+        "unit": "ts"
+      },
+      {
+        "name": "pepper",
+        "quantity": 0.25,
+        "unit": "ts"
+      }
+    ],
+    "instructions": [
+      "Sett ovnen på 220 °C over- og undervarme. Kok makaronien 2 minutter kortere enn pakkens koketid, og hell av vannet.",
+      "Smelt smøret i en kjele, rør inn melet og spe gradvis med melken mens du visper.",
+      "La sausen småkoke i 4–5 minutter under omrøring. Rør inn halvparten av osten og smak til med salt og pepper.",
+      "Skjær pølsene i biter. Bland pølser, makaroni, frosne erter og saus i en ildfast form, og dryss resten av osten over.",
+      "Stek midt i ovnen i 18–20 minutter, til gratengen bobler og osten er gyllen."
+    ],
+    "tip": "En bred form gir mer gyllen overflate og kortere vei for varmen."
+  },
+  {
+    "id": "svinekoteletter-med-eple",
+    "slug": "svinekoteletter-med-eple",
+    "title": "Svinekoteletter med eple og potetmos",
+    "shortDescription": "Stekte koteletter med eplebåter og enkel potetmos.",
+    "timeMinutes": 35,
+    "costTier": "vanlig",
+    "difficulty": "middels",
+    "familyFriendly": true,
+    "category": "kjott",
+    "mealTags": [
+      "hverdag",
+      "comfort"
+    ],
+    "mainIngredients": [
+      "svinekoteletter",
+      "poteter"
+    ],
+    "secondaryIngredients": [
+      "eple",
+      "melk"
+    ],
+    "pantryIngredients": [
+      "smør",
+      "salt",
+      "pepper"
+    ],
+    "equipmentTags": [
+      "stekepanne",
+      "kasserolle"
+    ],
+    "baseServings": 4,
+    "ingredients": [
+      {
+        "name": "svinekoteletter",
+        "quantity": 4,
+        "unit": "stk"
+      },
+      {
+        "name": "poteter",
+        "quantity": 900,
+        "unit": "g"
+      },
+      {
+        "name": "eple",
+        "quantity": 2,
+        "unit": "stk"
+      },
+      {
+        "name": "melk",
+        "quantity": 1.5,
+        "unit": "dl"
+      },
+      {
+        "name": "smør",
+        "quantity": 40,
+        "unit": "g"
+      },
+      {
+        "name": "salt",
+        "quantity": 0.75,
+        "unit": "ts"
+      },
+      {
+        "name": "pepper",
+        "quantity": 0.5,
+        "unit": "ts"
+      }
+    ],
+    "instructions": [
+      "Skrell potetene, del i jevne biter og kok i 15–20 minutter, til møre.",
+      "Krydre kotelettene med halvparten av saltet og pepperen. Brun dem i halvparten av smøret i 2 minutter på hver side.",
+      "Senk varmen og stek kotelettene videre i omtrent 4–6 minutter på hver side, avhengig av tykkelse, til gjennomstekte. Legg på en tallerken og la hvile.",
+      "Fjern kjernehusene og skjær eplene i båter. Stek dem i samme panne i 4–5 minutter.",
+      "Hell av potetvannet og mos potetene med varm melk og resten av smøret. Smak til med resten av saltet, og server med koteletter og epler."
+    ],
+    "tip": "Hell stekesjyen fra kotelettene over potetmosen ved servering."
+  },
+  {
+    "id": "kjottboller-i-tomatsaus",
+    "slug": "kjottboller-i-tomatsaus",
+    "title": "Kjøttboller i tomatsaus",
+    "shortDescription": "Små kjøttboller med pasta og mild tomatsaus.",
+    "timeMinutes": 35,
+    "costTier": "vanlig",
+    "difficulty": "middels",
+    "familyFriendly": true,
+    "category": "kjott",
+    "mealTags": [
+      "hverdag",
+      "comfort"
+    ],
+    "mainIngredients": [
+      "kjøttdeig",
+      "pasta"
+    ],
+    "secondaryIngredients": [
+      "egg",
+      "hakkede tomater",
+      "løk"
+    ],
+    "pantryIngredients": [
+      "olje",
+      "oregano",
+      "salt",
+      "pepper"
+    ],
+    "equipmentTags": [
+      "stekepanne",
+      "kasserolle"
+    ],
+    "baseServings": 4,
+    "ingredients": [
+      {
+        "name": "kjøttdeig",
+        "quantity": 500,
+        "unit": "g"
+      },
+      {
+        "name": "pasta",
+        "quantity": 350,
+        "unit": "g"
+      },
+      {
+        "name": "egg",
+        "quantity": 1,
+        "unit": "stk"
+      },
+      {
+        "name": "løk",
+        "quantity": 1,
+        "unit": "stk"
+      },
+      {
+        "name": "hakkede tomater",
+        "quantity": 800,
+        "unit": "g"
+      },
+      {
+        "name": "olje",
+        "quantity": 1,
+        "unit": "ss"
+      },
+      {
+        "name": "tørket oregano",
+        "quantity": 2,
+        "unit": "ts"
+      },
+      {
+        "name": "salt",
+        "quantity": 0.75,
+        "unit": "ts"
+      },
+      {
+        "name": "pepper",
+        "quantity": 0.25,
+        "unit": "ts"
+      }
+    ],
+    "instructions": [
+      "Finhakk løken. Bland kjøttdeig med egg, halvparten av løken, salt og pepper. Form små kjøttboller, omtrent 3 cm i diameter.",
+      "Brun kjøttbollene i olje i en stor panne i 6–8 minutter. Snu dem forsiktig underveis.",
+      "Tilsett resten av løken, tomatene og oregano. La småkoke under lokk i 12–15 minutter, til kjøttbollene er gjennomstekte.",
+      "Kok pastaen etter pakkens anvisning mens sausen putrer. Hell av vannet og server pastaen med kjøttboller og saus."
+    ],
+    "tip": "Fukt hendene med kaldt vann når du former kjøttbollene."
+  },
+  {
+    "id": "skinkeomelett",
+    "slug": "skinkeomelett",
+    "title": "Skinkeomelett med brød",
+    "shortDescription": "En stor omelett med skinke, ost og tomat.",
+    "timeMinutes": 20,
+    "costTier": "billig",
+    "difficulty": "enkel",
+    "familyFriendly": true,
+    "category": "kjott",
+    "mealTags": [
+      "hverdag",
+      "rask"
+    ],
+    "mainIngredients": [
+      "egg"
+    ],
+    "secondaryIngredients": [
+      "skinke",
+      "ost",
+      "tomat",
+      "brød"
+    ],
+    "pantryIngredients": [
+      "olje",
+      "pepper"
+    ],
+    "equipmentTags": [
+      "stekepanne med lokk"
+    ],
+    "baseServings": 4,
+    "ingredients": [
+      {
+        "name": "egg",
+        "quantity": 8,
+        "unit": "stk"
+      },
+      {
+        "name": "kokt skinke",
+        "quantity": 200,
+        "unit": "g"
+      },
+      {
+        "name": "revet ost",
+        "quantity": 100,
+        "unit": "g"
+      },
+      {
+        "name": "tomat",
+        "quantity": 3,
+        "unit": "stk"
+      },
+      {
+        "name": "brød",
+        "quantity": 8,
+        "unit": "skiver"
+      },
+      {
+        "name": "vann",
+        "quantity": 4,
+        "unit": "ss"
+      },
+      {
+        "name": "olje",
+        "quantity": 1,
+        "unit": "ss"
+      },
+      {
+        "name": "pepper",
+        "quantity": 0.25,
+        "unit": "ts"
+      }
+    ],
+    "instructions": [
+      "Skjær skinken i strimler og tomatene i båter. Visp sammen egg, vann og pepper.",
+      "Varm oljen i en stor stekepanne og fres skinken i 2 minutter.",
+      "Hell over eggene og fordel osten på toppen. Senk til lav varme, legg på lokk og stek i 10–12 minutter, til eggeblandingen har stivnet.",
+      "Del omeletten i porsjoner og server med tomatbåter og brød."
+    ],
+    "tip": "Bruk to mindre panner hvis du ikke har en stor panne med lokk."
+  },
+  {
+    "id": "laks-med-poteter",
+    "slug": "laks-med-poteter",
+    "title": "Laks med poteter og brokkoli",
+    "shortDescription": "Ovnsbakt laks med kokte poteter, brokkoli og sitron.",
+    "timeMinutes": 35,
+    "costTier": "litt-ekstra",
+    "difficulty": "enkel",
+    "familyFriendly": true,
+    "category": "fisk",
+    "mealTags": [
+      "hverdag"
+    ],
+    "mainIngredients": [
+      "laks",
+      "poteter"
+    ],
+    "secondaryIngredients": [
+      "brokkoli",
+      "rømme",
+      "sitron"
+    ],
+    "pantryIngredients": [
+      "olje",
+      "salt",
+      "pepper"
+    ],
+    "equipmentTags": [
+      "stekeovn",
+      "ildfast form",
+      "kasserolle"
+    ],
+    "baseServings": 4,
+    "ingredients": [
+      {
+        "name": "laksefilet",
+        "quantity": 600,
+        "unit": "g"
+      },
+      {
+        "name": "små poteter",
+        "quantity": 800,
+        "unit": "g"
+      },
+      {
+        "name": "brokkoli",
+        "quantity": 1,
+        "unit": "stk"
+      },
+      {
+        "name": "rømme",
+        "quantity": 2,
+        "unit": "dl"
+      },
+      {
+        "name": "sitron",
+        "quantity": 0.5,
+        "unit": "stk"
+      },
+      {
+        "name": "olje",
+        "quantity": 1,
+        "unit": "ss"
+      },
+      {
+        "name": "salt",
+        "quantity": 0.5,
+        "unit": "ts"
+      },
+      {
+        "name": "pepper",
+        "quantity": 0.25,
+        "unit": "ts"
+      }
+    ],
+    "instructions": [
+      "Sett ovnen på 200 °C over- og undervarme. Kok potetene i 20–25 minutter, til møre; del store poteter i to.",
+      "Del brokkolien i små buketter. Skrell stilken og skjær den i skiver. Kok brokkolien sammen med potetene de siste 3–4 minuttene.",
+      "Legg laksen i en smurt ildfast form. Krydre med salt og pepper, og press over sitronsaften.",
+      "Bak laksen i 12–18 minutter, avhengig av tykkelse, til den er gjennomvarm og flaker seg lett.",
+      "Hell vannet av potetene og brokkolien. Server med laks og rømme."
+    ],
+    "tip": "Tiden gjelder tint fisk; tin frossen laks i kjøleskap på forhånd."
+  },
+  {
+    "id": "kremet-laksepasta",
+    "slug": "kremet-laksepasta",
+    "title": "Kremet laksepasta med spinat",
+    "shortDescription": "Pasta med laks og spinat i en enkel fløtesaus.",
+    "timeMinutes": 25,
+    "costTier": "litt-ekstra",
+    "difficulty": "enkel",
+    "familyFriendly": true,
+    "category": "fisk",
+    "mealTags": [
+      "hverdag",
+      "rask"
+    ],
+    "mainIngredients": [
+      "laks",
+      "pasta"
+    ],
+    "secondaryIngredients": [
+      "spinat",
+      "matfløte",
+      "sitron"
+    ],
+    "pantryIngredients": [
+      "olje",
+      "salt",
+      "pepper"
+    ],
+    "equipmentTags": [
+      "stekepanne",
+      "kasserolle"
+    ],
+    "baseServings": 4,
+    "ingredients": [
+      {
+        "name": "laksefilet uten skinn",
+        "quantity": 500,
+        "unit": "g"
+      },
+      {
+        "name": "pasta",
+        "quantity": 350,
+        "unit": "g"
+      },
+      {
+        "name": "fersk spinat",
+        "quantity": 150,
+        "unit": "g"
+      },
+      {
+        "name": "matfløte",
+        "quantity": 3,
+        "unit": "dl"
+      },
+      {
+        "name": "sitron",
+        "quantity": 0.5,
+        "unit": "stk"
+      },
+      {
+        "name": "olje",
+        "quantity": 1,
+        "unit": "ss"
+      },
+      {
+        "name": "salt",
+        "quantity": 0.5,
+        "unit": "ts"
+      },
+      {
+        "name": "pepper",
+        "quantity": 0.25,
+        "unit": "ts"
+      }
+    ],
+    "instructions": [
+      "Sett over pastavann og kok pastaen etter pakkens anvisning. Ta vare på litt kokevann til å spe sausen.",
+      "Skjær laksen i terninger på omtrent 3 cm. Varm oljen i en panne og stek fisken forsiktig i 3 minutter.",
+      "Hell i matfløten og la laksen trekke på lav varme i 5–6 minutter, til bitene flaker seg lett.",
+      "Vend inn spinaten og la den falle sammen i 1–2 minutter. Ha i pastaen og litt kokevann om sausen er tykk.",
+      "Smak til med sitronsaft, salt og pepper og server straks."
+    ],
+    "tip": "Vend forsiktig etter at fisken er tilsatt, så holder laksebitene seg hele."
+  },
+  {
+    "id": "laks-med-couscous",
+    "slug": "laks-med-couscous",
+    "title": "Laks med sitroncouscous",
+    "shortDescription": "Stekt laks over luftig couscous med erter.",
+    "timeMinutes": 20,
+    "costTier": "litt-ekstra",
+    "difficulty": "enkel",
+    "familyFriendly": true,
+    "category": "fisk",
+    "mealTags": [
+      "hverdag",
+      "rask",
+      "lett"
+    ],
+    "mainIngredients": [
+      "laks"
+    ],
+    "secondaryIngredients": [
+      "couscous",
+      "erter",
+      "sitron"
+    ],
+    "pantryIngredients": [
+      "olje",
+      "salt",
+      "pepper"
+    ],
+    "equipmentTags": [
+      "stekepanne",
+      "kasserolle"
+    ],
+    "baseServings": 4,
+    "ingredients": [
+      {
+        "name": "laksefilet",
+        "quantity": 600,
+        "unit": "g"
+      },
+      {
+        "name": "couscous",
+        "quantity": 300,
+        "unit": "g"
+      },
+      {
+        "name": "frosne erter",
+        "quantity": 200,
+        "unit": "g"
+      },
+      {
+        "name": "vann",
+        "quantity": 4,
+        "unit": "dl"
+      },
+      {
+        "name": "sitron",
+        "quantity": 1,
+        "unit": "stk"
+      },
+      {
+        "name": "olje",
+        "quantity": 2,
+        "unit": "ss"
+      },
+      {
+        "name": "salt",
+        "quantity": 0.5,
+        "unit": "ts"
+      },
+      {
+        "name": "pepper",
+        "quantity": 0.25,
+        "unit": "ts"
+      }
+    ],
+    "instructions": [
+      "Kok opp vann med ertene og halvparten av saltet. La koke i 2 minutter.",
+      "Rør inn couscous, ta kjelen av varmen og legg på lokk i 5 minutter. Juster vannmengden etter couscouspakken ved behov.",
+      "Krydre lakseporsjonene med resten av saltet og pepper. Stek i halvparten av oljen på middels varme i 4–6 minutter på hver side, til fisken flaker seg lett.",
+      "Løsne couscousen med en gaffel og bland inn resten av oljen og saften av halvparten av sitronmengden. Server med laks og resten av sitronen i båter."
+    ],
+    "tip": "Finrevet sitronskall i couscousen gir mer sitronsmak."
+  },
+  {
+    "id": "torsk-i-tomatsaus",
+    "slug": "torsk-i-tomatsaus",
+    "title": "Torsk i tomatsaus med ris",
+    "shortDescription": "Torsk trekkes skånsomt i tomatsaus med paprika.",
+    "timeMinutes": 30,
+    "costTier": "vanlig",
+    "difficulty": "enkel",
+    "familyFriendly": true,
+    "category": "fisk",
+    "mealTags": [
+      "hverdag",
+      "rask"
+    ],
+    "mainIngredients": [
+      "torsk",
+      "ris"
+    ],
+    "secondaryIngredients": [
+      "hakkede tomater",
+      "paprika",
+      "løk"
+    ],
+    "pantryIngredients": [
+      "olje",
+      "oregano",
+      "salt",
+      "pepper"
+    ],
+    "equipmentTags": [
+      "stekepanne med lokk",
+      "kasserolle"
+    ],
+    "baseServings": 4,
+    "ingredients": [
+      {
+        "name": "torskefilet, tint",
+        "quantity": 600,
+        "unit": "g"
+      },
+      {
+        "name": "ris",
+        "quantity": 300,
+        "unit": "g"
+      },
+      {
+        "name": "hakkede tomater",
+        "quantity": 800,
+        "unit": "g"
+      },
+      {
+        "name": "paprika",
+        "quantity": 1,
+        "unit": "stk"
+      },
+      {
+        "name": "løk",
+        "quantity": 1,
+        "unit": "stk"
+      },
+      {
+        "name": "olje",
+        "quantity": 1,
+        "unit": "ss"
+      },
+      {
+        "name": "tørket oregano",
+        "quantity": 1,
+        "unit": "ts"
+      },
+      {
+        "name": "salt",
+        "quantity": 0.5,
+        "unit": "ts"
+      },
+      {
+        "name": "pepper",
+        "quantity": 0.25,
+        "unit": "ts"
+      }
+    ],
+    "instructions": [
+      "Kok risen etter pakkens anvisning. Finhakk løken og skjær paprikaen i små biter.",
+      "Stek løk og paprika i olje i en dyp panne i 5 minutter.",
+      "Tilsett tomater, oregano, salt og pepper. La sausen småkoke i 5 minutter.",
+      "Del torsken i porsjonsstykker og legg den ned i sausen. Sett på lokk og la trekke rett under kokepunktet i 8–12 minutter, til fisken flaker seg lett.",
+      "Server torsken med saus og ris."
+    ],
+    "tip": "Unngå kraftig koking etter at torsken er lagt i; da holder fiskestykkene formen."
+  },
+  {
+    "id": "ovnstorsk-med-gulrot",
+    "slug": "ovnstorsk-med-gulrot",
+    "title": "Ovnstorsk med gulrot og poteter",
+    "shortDescription": "Mild torsk i ovnen med klassisk tilbehør.",
+    "timeMinutes": 35,
+    "costTier": "vanlig",
+    "difficulty": "enkel",
+    "familyFriendly": true,
+    "category": "fisk",
+    "mealTags": [
+      "hverdag",
+      "lett"
+    ],
+    "mainIngredients": [
+      "torsk",
+      "poteter"
+    ],
+    "secondaryIngredients": [
+      "gulrot",
+      "sitron"
+    ],
+    "pantryIngredients": [
+      "smør",
+      "salt",
+      "pepper"
+    ],
+    "equipmentTags": [
+      "stekeovn",
+      "ildfast form",
+      "kasserolle"
+    ],
+    "baseServings": 4,
+    "ingredients": [
+      {
+        "name": "torskefilet, tint",
+        "quantity": 600,
+        "unit": "g"
+      },
+      {
+        "name": "poteter",
+        "quantity": 800,
+        "unit": "g"
+      },
+      {
+        "name": "gulrot",
+        "quantity": 4,
+        "unit": "stk"
+      },
+      {
+        "name": "sitron",
+        "quantity": 0.5,
+        "unit": "stk"
+      },
+      {
+        "name": "smør",
+        "quantity": 50,
+        "unit": "g"
+      },
+      {
+        "name": "salt",
+        "quantity": 0.5,
+        "unit": "ts"
+      },
+      {
+        "name": "pepper",
+        "quantity": 0.25,
+        "unit": "ts"
+      }
+    ],
+    "instructions": [
+      "Sett ovnen på 200 °C over- og undervarme. Del potetene i jevne biter og kok dem i omtrent 20 minutter.",
+      "Skrell og skjær gulrøttene i skiver. Legg dem i potetkjelen når det gjenstår 8 minutter av koketiden.",
+      "Legg torsken i en ildfast form og dryss over salt og pepper. Fordel smøret i små biter på fisken og press over sitron.",
+      "Bak i 12–18 minutter, til fisken flaker seg lett og er gjennomvarm.",
+      "Hell av kokevannet og server fisken med grønnsakene og smøret fra formen."
+    ],
+    "tip": "Skjær tykke fiskestykker i jevne porsjoner for jevn steking."
+  },
+  {
+    "id": "pannestekt-torsk-med-erter",
+    "slug": "pannestekt-torsk-med-erter",
+    "title": "Pannestekt torsk med ertepuré",
+    "shortDescription": "Gylden torsk med ertepuré og kokte poteter.",
+    "timeMinutes": 30,
+    "costTier": "vanlig",
+    "difficulty": "middels",
+    "familyFriendly": true,
+    "category": "fisk",
+    "mealTags": [
+      "hverdag",
+      "rask"
+    ],
+    "mainIngredients": [
+      "torsk",
+      "poteter"
+    ],
+    "secondaryIngredients": [
+      "erter",
+      "sitron"
+    ],
+    "pantryIngredients": [
+      "smør",
+      "hvetemel",
+      "salt",
+      "pepper"
+    ],
+    "equipmentTags": [
+      "stekepanne",
+      "kasserolle",
+      "stavmikser"
+    ],
+    "baseServings": 4,
+    "ingredients": [
+      {
+        "name": "torskefilet, tint",
+        "quantity": 600,
+        "unit": "g"
+      },
+      {
+        "name": "poteter",
+        "quantity": 700,
+        "unit": "g"
+      },
+      {
+        "name": "frosne erter",
+        "quantity": 400,
+        "unit": "g"
+      },
+      {
+        "name": "smør",
+        "quantity": 40,
+        "unit": "g"
+      },
+      {
+        "name": "hvetemel",
+        "quantity": 3,
+        "unit": "ss"
+      },
+      {
+        "name": "sitron",
+        "quantity": 0.5,
+        "unit": "stk"
+      },
+      {
+        "name": "salt",
+        "quantity": 0.75,
+        "unit": "ts"
+      },
+      {
+        "name": "pepper",
+        "quantity": 0.25,
+        "unit": "ts"
+      },
+      {
+        "name": "vann til puré",
+        "quantity": 0.5,
+        "unit": "dl"
+      }
+    ],
+    "instructions": [
+      "Del potetene i mindre biter og kok dem møre i 15–20 minutter.",
+      "Tørk torsken med kjøkkenpapir og del i porsjonsstykker. Vend dem i mel blandet med halvparten av saltet og pepperen.",
+      "Smelt halvparten av smøret i en panne. Stek torsken på middels varme i 4–6 minutter på hver side, avhengig av tykkelse, til den flaker seg lett.",
+      "Kok ertene i en egen kjele i 3 minutter. Hell av vannet og kjør ertene med resten av smøret, vannet til puréen fra ingredienslisten og resten av saltet til en grov puré.",
+      "Server torsken med poteter, ertepuré og sitronbåter."
+    ],
+    "tip": "La fisken få stekeskorpe før du snur den, og bruk en bred stekespade."
+  },
+  {
+    "id": "fiskekaker",
+    "slug": "fiskekaker",
+    "title": "Fiskekaker med råkost og poteter",
+    "shortDescription": "Ferdige fiskekaker med sprø råkost og kokte poteter.",
+    "timeMinutes": 30,
+    "costTier": "vanlig",
+    "difficulty": "enkel",
+    "familyFriendly": true,
+    "category": "fisk",
+    "mealTags": [
+      "hverdag",
+      "rask"
+    ],
+    "mainIngredients": [
+      "fiskekaker",
+      "poteter"
+    ],
+    "secondaryIngredients": [
+      "gulrot",
+      "eple",
+      "yoghurt",
+      "sitron"
+    ],
+    "pantryIngredients": [
+      "smør",
+      "pepper"
+    ],
+    "equipmentTags": [
+      "stekepanne",
+      "kasserolle",
+      "rivjern"
+    ],
+    "baseServings": 4,
+    "ingredients": [
+      {
+        "name": "fiskekaker",
+        "quantity": 600,
+        "unit": "g"
+      },
+      {
+        "name": "poteter",
+        "quantity": 800,
+        "unit": "g"
+      },
+      {
+        "name": "gulrot",
+        "quantity": 3,
+        "unit": "stk"
+      },
+      {
+        "name": "eple",
+        "quantity": 1,
+        "unit": "stk"
+      },
+      {
+        "name": "yoghurt naturell",
+        "quantity": 2,
+        "unit": "dl"
+      },
+      {
+        "name": "sitron",
+        "quantity": 0.5,
+        "unit": "stk"
+      },
+      {
+        "name": "smør",
+        "quantity": 20,
+        "unit": "g"
+      },
+      {
+        "name": "pepper",
+        "quantity": 0.25,
+        "unit": "ts"
+      }
+    ],
+    "instructions": [
+      "Del potetene i jevne biter og kok dem i 15–20 minutter, til møre.",
+      "Riv gulrøtter og eple grovt. Press over halvparten av sitronsaften og vend sammen.",
+      "Smelt smøret i en panne og varm fiskekakene på middels lav varme i 4–5 minutter på hver side, eller etter pakkens anvisning, til gjennomvarme.",
+      "Bland yoghurten med resten av sitronsaften og pepper. Server fiskekakene med poteter, råkost og yoghurtdressing."
+    ],
+    "tip": "Velg fiskekaker med smak og konsistens familien liker; oppskriften bruker ferdige fiskekaker."
+  },
+  {
+    "id": "tunfiskpasta",
+    "slug": "tunfiskpasta",
+    "title": "Tunfiskpasta med tomat",
+    "shortDescription": "Rask pasta med tunfisk, tomater og mais.",
+    "timeMinutes": 15,
+    "costTier": "billig",
+    "difficulty": "enkel",
+    "familyFriendly": true,
+    "category": "fisk",
+    "mealTags": [
+      "hverdag",
+      "rask"
+    ],
+    "mainIngredients": [
+      "pasta",
+      "tunfisk"
+    ],
+    "secondaryIngredients": [
+      "cherrytomater",
+      "mais",
+      "sitron"
+    ],
+    "pantryIngredients": [
+      "olje",
+      "salt",
+      "pepper"
+    ],
+    "equipmentTags": [
+      "kasserolle",
+      "stekepanne"
+    ],
+    "baseServings": 4,
+    "ingredients": [
+      {
+        "name": "hurtigkokt pasta med 8 minutters koketid",
+        "quantity": 350,
+        "unit": "g"
+      },
+      {
+        "name": "tunfisk i vann, avrent",
+        "quantity": 280,
+        "unit": "g"
+      },
+      {
+        "name": "cherrytomater",
+        "quantity": 300,
+        "unit": "g"
+      },
+      {
+        "name": "mais, avrent",
+        "quantity": 150,
+        "unit": "g"
+      },
+      {
+        "name": "sitron",
+        "quantity": 0.5,
+        "unit": "stk"
+      },
+      {
+        "name": "olje",
+        "quantity": 2,
+        "unit": "ss"
+      },
+      {
+        "name": "salt",
+        "quantity": 0.25,
+        "unit": "ts"
+      },
+      {
+        "name": "pepper",
+        "quantity": 0.25,
+        "unit": "ts"
+      }
+    ],
+    "instructions": [
+      "Kok opp pastavann under lokk, gjerne med vannkoker, og kok pastaen etter pakkens anvisning.",
+      "Del tomatene i to mens pastaen koker. Stek dem i olje i en stor panne i 4 minutter.",
+      "Tilsett avrent tunfisk og mais og varm i 2–3 minutter. Del tunfisken forsiktig med en stekespade.",
+      "Ta vare på litt pastavann til å spe retten, og hell av resten. Vend pastaen inn i pannen med litt kokevann, sitronsaft, salt og pepper."
+    ],
+    "tip": "15 minutter forutsetter pasta med kort koketid og rask oppkoking."
+  },
+  {
+    "id": "tunfiskwraps",
+    "slug": "tunfiskwraps",
+    "title": "Tunfiskwraps med bønner",
+    "shortDescription": "Fylte lefser med tunfisk, bønner og frisk salat.",
+    "timeMinutes": 15,
+    "costTier": "billig",
+    "difficulty": "enkel",
+    "familyFriendly": true,
+    "category": "fisk",
+    "mealTags": [
+      "hverdag",
+      "rask",
+      "lett"
+    ],
+    "mainIngredients": [
+      "tunfisk"
+    ],
+    "secondaryIngredients": [
+      "tortillalefser",
+      "hvite bønner",
+      "agurk",
+      "salat",
+      "yoghurt"
+    ],
+    "pantryIngredients": [
+      "sennep",
+      "pepper"
+    ],
+    "equipmentTags": [
+      "bolle"
+    ],
+    "baseServings": 4,
+    "ingredients": [
+      {
+        "name": "tunfisk i vann, avrent",
+        "quantity": 280,
+        "unit": "g"
+      },
+      {
+        "name": "hvite bønner, avrent",
+        "quantity": 230,
+        "unit": "g"
+      },
+      {
+        "name": "tortillalefser",
+        "quantity": 8,
+        "unit": "stk"
+      },
+      {
+        "name": "agurk",
+        "quantity": 0.5,
+        "unit": "stk"
+      },
+      {
+        "name": "salat",
+        "quantity": 1,
+        "unit": "stk"
+      },
+      {
+        "name": "yoghurt naturell",
+        "quantity": 2,
+        "unit": "dl"
+      },
+      {
+        "name": "sennep",
+        "quantity": 1,
+        "unit": "ts"
+      },
+      {
+        "name": "pepper",
+        "quantity": 0.25,
+        "unit": "ts"
+      }
+    ],
+    "instructions": [
+      "Hell av tunfisken. Skyll bønnene og la dem renne godt av.",
+      "Skyll salaten og skjær agurken i små terninger.",
+      "Rør sammen yoghurt, sennep og pepper. Vend inn tunfisk, bønner og agurk.",
+      "Legg salat og tunfiskblanding på lefsene. Brett inn sidene og rull sammen. Del eventuelt hver wrap i to."
+    ],
+    "tip": "La fyllet renne godt av før du ruller, så blir lefsene mindre våte."
+  },
+  {
+    "id": "rekenudler",
+    "slug": "rekenudler",
+    "title": "Nudler med reker og grønnsaker",
+    "shortDescription": "Raske eggnudler med reker, sukkererter og gulrot.",
+    "timeMinutes": 15,
+    "costTier": "litt-ekstra",
+    "difficulty": "enkel",
+    "familyFriendly": true,
+    "category": "fisk",
+    "mealTags": [
+      "hverdag",
+      "rask",
+      "lett"
+    ],
+    "mainIngredients": [
+      "reker"
+    ],
+    "secondaryIngredients": [
+      "eggnudler",
+      "sukkererter",
+      "gulrot"
+    ],
+    "pantryIngredients": [
+      "olje",
+      "soyasaus",
+      "pepper"
+    ],
+    "equipmentTags": [
+      "kasserolle",
+      "stekepanne"
+    ],
+    "baseServings": 4,
+    "ingredients": [
+      {
+        "name": "kokte, pillede reker, tint",
+        "quantity": 400,
+        "unit": "g"
+      },
+      {
+        "name": "eggnudler",
+        "quantity": 300,
+        "unit": "g"
+      },
+      {
+        "name": "sukkererter",
+        "quantity": 200,
+        "unit": "g"
+      },
+      {
+        "name": "gulrot",
+        "quantity": 2,
+        "unit": "stk"
+      },
+      {
+        "name": "soyasaus",
+        "quantity": 3,
+        "unit": "ss"
+      },
+      {
+        "name": "olje",
+        "quantity": 1,
+        "unit": "ss"
+      },
+      {
+        "name": "vann",
+        "quantity": 0.5,
+        "unit": "dl"
+      },
+      {
+        "name": "pepper",
+        "quantity": 0.25,
+        "unit": "ts"
+      }
+    ],
+    "instructions": [
+      "Kok opp vann under lokk og tilbered nudlene etter pakkens anvisning, vanligvis 3–4 minutter.",
+      "Skjær gulrøttene i tynne strimler med skreller og del sukkerertene på langs.",
+      "Varm oljen i en stor panne. Stek gulrot og sukkererter i 3 minutter. Tilsett soyasaus og vann.",
+      "Hell av nudlene og vend dem i pannen sammen med godt avrente reker. Varm i 1–2 minutter, til rekene er varme, og smak til med pepper."
+    ],
+    "tip": "Bruk ferdig pillede, kokte og tinte reker for at retten skal være klar på 15 minutter."
+  },
+  {
+    "id": "egg-og-potetpanne",
+    "slug": "egg-og-potetpanne",
+    "title": "Egg- og potetpanne",
+    "shortDescription": "Potetterninger, løk og egg samles i én panne.",
+    "timeMinutes": 30,
+    "costTier": "billig",
+    "difficulty": "enkel",
+    "familyFriendly": true,
+    "category": "vegetar",
+    "mealTags": [
+      "hverdag",
+      "rask",
+      "comfort"
+    ],
+    "mainIngredients": [
+      "egg",
+      "poteter"
+    ],
+    "secondaryIngredients": [
+      "løk",
+      "paprika"
+    ],
+    "pantryIngredients": [
+      "olje",
+      "salt",
+      "pepper"
+    ],
+    "equipmentTags": [
+      "stekepanne med lokk",
+      "kasserolle"
+    ],
+    "baseServings": 4,
+    "ingredients": [
+      {
+        "name": "egg",
+        "quantity": 8,
+        "unit": "stk"
+      },
+      {
+        "name": "poteter",
+        "quantity": 800,
+        "unit": "g"
+      },
+      {
+        "name": "løk",
+        "quantity": 1,
+        "unit": "stk"
+      },
+      {
+        "name": "paprika",
+        "quantity": 1,
+        "unit": "stk"
+      },
+      {
+        "name": "olje",
+        "quantity": 2,
+        "unit": "ss"
+      },
+      {
+        "name": "salt",
+        "quantity": 0.5,
+        "unit": "ts"
+      },
+      {
+        "name": "pepper",
+        "quantity": 0.25,
+        "unit": "ts"
+      }
+    ],
+    "instructions": [
+      "Skjær potetene i terninger på 1–1,5 cm og kok dem i 7–8 minutter. Hell av vannet.",
+      "Finhakk løken og skjær paprikaen i biter. Stek dem i olje i en stor panne i 3 minutter.",
+      "Tilsett potetene, salt og pepper, og stek videre i 6–8 minutter. Vend jevnlig.",
+      "Lag én liten grop per egg i blandingen og knekk ett egg i hver. Legg på lokk og stek på lav varme i 6–8 minutter, til eggehvitene er stivnet.",
+      "Del potetpannen i porsjoner og server med en gang."
+    ],
+    "tip": "Kokte restepoteter passer godt og gjør retten raskere å lage."
+  },
+  {
+    "id": "kikertgryte",
+    "slug": "kikertgryte",
+    "title": "Kikertgryte med kokosmelk",
+    "shortDescription": "Mild gryte med kikerter, spinat og ris.",
+    "timeMinutes": 25,
+    "costTier": "billig",
+    "difficulty": "enkel",
+    "familyFriendly": true,
+    "category": "vegetar",
+    "mealTags": [
+      "hverdag",
+      "rask",
+      "comfort"
+    ],
+    "mainIngredients": [
+      "kikerter",
+      "ris"
+    ],
+    "secondaryIngredients": [
+      "kokosmelk",
+      "spinat",
+      "hakkede tomater",
+      "løk"
+    ],
+    "pantryIngredients": [
+      "olje",
+      "karri",
+      "salt"
+    ],
+    "equipmentTags": [
+      "kasserolle"
+    ],
+    "baseServings": 4,
+    "ingredients": [
+      {
+        "name": "kikerter, avrent",
+        "quantity": 460,
+        "unit": "g"
+      },
+      {
+        "name": "ris",
+        "quantity": 300,
+        "unit": "g"
+      },
+      {
+        "name": "kokosmelk",
+        "quantity": 400,
+        "unit": "ml"
+      },
+      {
+        "name": "hakkede tomater",
+        "quantity": 400,
+        "unit": "g"
+      },
+      {
+        "name": "fersk spinat",
+        "quantity": 150,
+        "unit": "g"
+      },
+      {
+        "name": "løk",
+        "quantity": 1,
+        "unit": "stk"
+      },
+      {
+        "name": "olje",
+        "quantity": 1,
+        "unit": "ss"
+      },
+      {
+        "name": "mild karri",
+        "quantity": 2,
+        "unit": "ts"
+      },
+      {
+        "name": "salt",
+        "quantity": 0.5,
+        "unit": "ts"
+      }
+    ],
+    "instructions": [
+      "Kok risen etter pakkens anvisning. Finhakk løken og skyll kikertene.",
+      "Stek løken i olje i en gryte i 4 minutter. Rør inn karri og fres i 30 sekunder.",
+      "Tilsett tomater, kokosmelk og kikerter. La gryten småkoke uten lokk i 12 minutter, og rør underveis.",
+      "Vend inn spinaten og la den falle sammen i 2 minutter. Smak til med salt og server med ris."
+    ],
+    "tip": "Ønsker du en tykkere gryte, mos noen av kikertene mot kanten med en sleiv."
+  },
+  {
+    "id": "tomatsuppe",
+    "slug": "tomatsuppe",
+    "title": "Tomatsuppe med egg og makaroni",
+    "shortDescription": "Fyldig tomatsuppe med klassisk tilbehør.",
+    "timeMinutes": 25,
+    "costTier": "billig",
+    "difficulty": "enkel",
+    "familyFriendly": true,
+    "category": "vegetar",
+    "mealTags": [
+      "hverdag",
+      "rask",
+      "comfort"
+    ],
+    "mainIngredients": [
+      "hakkede tomater",
+      "egg",
+      "pasta"
+    ],
+    "secondaryIngredients": [
+      "løk",
+      "tomatpuré",
+      "grønnsaksbuljong"
+    ],
+    "pantryIngredients": [
+      "olje",
+      "sukker",
+      "pepper"
+    ],
+    "equipmentTags": [
+      "kasserolle",
+      "stavmikser"
+    ],
+    "baseServings": 4,
+    "ingredients": [
+      {
+        "name": "hakkede tomater",
+        "quantity": 800,
+        "unit": "g"
+      },
+      {
+        "name": "egg",
+        "quantity": 4,
+        "unit": "stk"
+      },
+      {
+        "name": "makaroni",
+        "quantity": 150,
+        "unit": "g"
+      },
+      {
+        "name": "løk",
+        "quantity": 1,
+        "unit": "stk"
+      },
+      {
+        "name": "tomatpuré",
+        "quantity": 2,
+        "unit": "ss"
+      },
+      {
+        "name": "grønnsaksbuljong",
+        "quantity": 6,
+        "unit": "dl"
+      },
+      {
+        "name": "olje",
+        "quantity": 1,
+        "unit": "ss"
+      },
+      {
+        "name": "sukker",
+        "quantity": 1,
+        "unit": "ts"
+      },
+      {
+        "name": "pepper",
+        "quantity": 0.25,
+        "unit": "ts"
+      }
+    ],
+    "instructions": [
+      "Finhakk løken og stek den i olje i en gryte i 4 minutter. Tilsett tomatpuré og stek i 1 minutt til.",
+      "Ha i tomater, buljong og sukker. Kok opp og la småkoke i 12 minutter.",
+      "Kok eggene i en egen kjele i 9–10 minutter, og avkjøl dem i kaldt vann. Kok makaronien etter pakken i en annen kjele.",
+      "Kjør suppen glatt med stavmikser, og smak til med pepper. Spe med litt vann hvis den er for tykk.",
+      "Skrell og del eggene. Fordel avrent makaroni i skåler, hell over suppen og legg egg på toppen."
+    ],
+    "tip": "Hold makaronien separat hvis du planlegger å spare suppe til en annen dag."
+  },
+  {
+    "id": "pestopasta-med-erter",
+    "slug": "pestopasta-med-erter",
+    "title": "Pestopasta med erter",
+    "shortDescription": "Grønn pasta med erter og små tomater.",
+    "timeMinutes": 15,
+    "costTier": "billig",
+    "difficulty": "enkel",
+    "familyFriendly": true,
+    "category": "vegetar",
+    "mealTags": [
+      "hverdag",
+      "rask"
+    ],
+    "mainIngredients": [
+      "pasta"
+    ],
+    "secondaryIngredients": [
+      "erter",
+      "cherrytomater",
+      "vegetarisk pesto"
+    ],
+    "pantryIngredients": [
+      "salt",
+      "pepper"
+    ],
+    "equipmentTags": [
+      "kasserolle"
+    ],
+    "baseServings": 4,
+    "ingredients": [
+      {
+        "name": "pasta med 8 minutters koketid",
+        "quantity": 400,
+        "unit": "g"
+      },
+      {
+        "name": "frosne erter",
+        "quantity": 250,
+        "unit": "g"
+      },
+      {
+        "name": "cherrytomater",
+        "quantity": 250,
+        "unit": "g"
+      },
+      {
+        "name": "pesto merket vegetarisk",
+        "quantity": 120,
+        "unit": "g"
+      },
+      {
+        "name": "salt",
+        "quantity": 0.25,
+        "unit": "ts"
+      },
+      {
+        "name": "pepper",
+        "quantity": 0.25,
+        "unit": "ts"
+      }
+    ],
+    "instructions": [
+      "Kok opp pastavann under lokk, gjerne med vannkoker. Ha i pastaen og kok etter pakkens anvisning.",
+      "Del tomatene i to mens pastaen koker. Ha ertene i pastavannet de siste 2 minuttene.",
+      "Ta vare på litt kokevann til å spe pestoen og hell av resten.",
+      "Rør pestoen ut med litt av kokevannet. Vend inn pasta, erter og tomater, og smak til med salt og pepper."
+    ],
+    "tip": "Velg pesto merket vegetarisk; noen varianter inneholder ost laget med animalsk løpe."
+  },
+  {
+    "id": "soppomelett",
+    "slug": "soppomelett",
+    "title": "Soppomelett med brød",
+    "shortDescription": "En enkel omelett med sopp, spinat og brød.",
+    "timeMinutes": 15,
+    "costTier": "billig",
+    "difficulty": "enkel",
+    "familyFriendly": true,
+    "category": "vegetar",
+    "mealTags": [
+      "hverdag",
+      "rask"
+    ],
+    "mainIngredients": [
+      "egg"
+    ],
+    "secondaryIngredients": [
+      "sjampinjong",
+      "spinat",
+      "brød"
+    ],
+    "pantryIngredients": [
+      "olje",
+      "salt",
+      "pepper"
+    ],
+    "equipmentTags": [
+      "stor stekepanne med lokk"
+    ],
+    "baseServings": 4,
+    "ingredients": [
+      {
+        "name": "egg",
+        "quantity": 8,
+        "unit": "stk"
+      },
+      {
+        "name": "sjampinjong",
+        "quantity": 250,
+        "unit": "g"
+      },
+      {
+        "name": "fersk spinat",
+        "quantity": 100,
+        "unit": "g"
+      },
+      {
+        "name": "brød",
+        "quantity": 8,
+        "unit": "skiver"
+      },
+      {
+        "name": "vann",
+        "quantity": 4,
+        "unit": "ss"
+      },
+      {
+        "name": "olje",
+        "quantity": 1,
+        "unit": "ss"
+      },
+      {
+        "name": "salt",
+        "quantity": 0.5,
+        "unit": "ts"
+      },
+      {
+        "name": "pepper",
+        "quantity": 0.25,
+        "unit": "ts"
+      }
+    ],
+    "instructions": [
+      "Skjær soppen i tynne skiver. Visp sammen egg, vann, salt og pepper.",
+      "Varm oljen i en stor panne. Stek soppen på middels høy varme i 4 minutter.",
+      "Tilsett spinaten og vend til den faller sammen. Hell over eggene og senk varmen.",
+      "Legg på lokk og stek på lav varme i 6–8 minutter, til eggene har stivnet. Server med brød."
+    ],
+    "tip": "En bred panne gir en tynn omelett som stivner raskt."
+  },
+  {
+    "id": "stekt-ris-med-egg",
+    "slug": "stekt-ris-med-egg",
+    "title": "Stekt ris med egg",
+    "shortDescription": "Ferdigkokt ris blir middag med egg og grønnsaker.",
+    "timeMinutes": 15,
+    "costTier": "billig",
+    "difficulty": "enkel",
+    "familyFriendly": true,
+    "category": "vegetar",
+    "mealTags": [
+      "hverdag",
+      "rask"
+    ],
+    "mainIngredients": [
+      "ris",
+      "egg"
+    ],
+    "secondaryIngredients": [
+      "erter",
+      "gulrot",
+      "vårløk"
+    ],
+    "pantryIngredients": [
+      "olje",
+      "soyasaus"
+    ],
+    "equipmentTags": [
+      "stor stekepanne"
+    ],
+    "baseServings": 4,
+    "ingredients": [
+      {
+        "name": "ferdigkokt ris i uåpnede porsjonsposer",
+        "quantity": 750,
+        "unit": "g"
+      },
+      {
+        "name": "egg",
+        "quantity": 4,
+        "unit": "stk"
+      },
+      {
+        "name": "frosne erter",
+        "quantity": 200,
+        "unit": "g"
+      },
+      {
+        "name": "gulrot",
+        "quantity": 2,
+        "unit": "stk"
+      },
+      {
+        "name": "vårløk",
+        "quantity": 3,
+        "unit": "stk"
+      },
+      {
+        "name": "olje",
+        "quantity": 2,
+        "unit": "ss"
+      },
+      {
+        "name": "soyasaus",
+        "quantity": 3,
+        "unit": "ss"
+      }
+    ],
+    "instructions": [
+      "Riv gulrøttene grovt og skjær vårløken i tynne ringer. Visp eggene lett sammen.",
+      "Varm halvparten av oljen i en stor panne. Ha i eggene og rør i 1–2 minutter til eggerøre. Legg på en tallerken.",
+      "Ha resten av oljen i pannen og stek gulrot og erter i 3 minutter.",
+      "Tilsett risen og soyasausen, og stek under omrøring i 4–5 minutter til risen er rykende varm. Følg også oppvarmingsanvisningen på rispakken.",
+      "Vend inn egg og vårløk, varm i 1 minutt og server straks."
+    ],
+    "tip": "15 minutter gjelder ferdigkokt ris; koketid for rå ris kommer i tillegg."
+  },
+  {
+    "id": "bonnewraps",
+    "slug": "bonnewraps",
+    "title": "Bønnewraps med avokado",
+    "shortDescription": "Lefser med varme svarte bønner og frisk avokado.",
+    "timeMinutes": 15,
+    "costTier": "vanlig",
+    "difficulty": "enkel",
+    "familyFriendly": true,
+    "category": "vegetar",
+    "mealTags": [
+      "hverdag",
+      "rask"
+    ],
+    "mainIngredients": [
+      "svarte bønner"
+    ],
+    "secondaryIngredients": [
+      "tortillalefser",
+      "avokado",
+      "tomat",
+      "yoghurt",
+      "lime"
+    ],
+    "pantryIngredients": [
+      "olje",
+      "spisskummen",
+      "salt"
+    ],
+    "equipmentTags": [
+      "stekepanne"
+    ],
+    "baseServings": 4,
+    "ingredients": [
+      {
+        "name": "svarte bønner, avrent",
+        "quantity": 460,
+        "unit": "g"
+      },
+      {
+        "name": "tortillalefser",
+        "quantity": 8,
+        "unit": "stk"
+      },
+      {
+        "name": "avokado",
+        "quantity": 2,
+        "unit": "stk"
+      },
+      {
+        "name": "tomat",
+        "quantity": 2,
+        "unit": "stk"
+      },
+      {
+        "name": "yoghurt naturell",
+        "quantity": 2,
+        "unit": "dl"
+      },
+      {
+        "name": "lime",
+        "quantity": 1,
+        "unit": "stk"
+      },
+      {
+        "name": "olje",
+        "quantity": 1,
+        "unit": "ss"
+      },
+      {
+        "name": "spisskummen",
+        "quantity": 1,
+        "unit": "ts"
+      },
+      {
+        "name": "salt",
+        "quantity": 0.25,
+        "unit": "ts"
+      },
+      {
+        "name": "vann",
+        "quantity": 0.5,
+        "unit": "dl"
+      }
+    ],
+    "instructions": [
+      "Skyll bønnene og la dem renne av. Skjær tomatene i små biter og avokadoene i skiver.",
+      "Varm oljen i en panne. Ha i bønner, spisskummen og vann og varm i 4–5 minutter. Mos noen av bønnene lett og smak til med salt.",
+      "Varm lefsene etter pakkens anvisning, og press halvparten av limesaften over avokadoen.",
+      "Fyll lefsene med bønner, avokado, tomat og yoghurt. Server med resten av limen i båter."
+    ],
+    "tip": "Bønnene blir lettere å fordele i lefsene når en liten del moses."
+  },
+  {
+    "id": "couscous-med-kikerter",
+    "slug": "couscous-med-kikerter",
+    "title": "Couscous med kikerter og feta",
+    "shortDescription": "Lun couscousbolle med kikerter og sprø grønnsaker.",
+    "timeMinutes": 15,
+    "costTier": "vanlig",
+    "difficulty": "enkel",
+    "familyFriendly": true,
+    "category": "vegetar",
+    "mealTags": [
+      "hverdag",
+      "rask",
+      "lett"
+    ],
+    "mainIngredients": [
+      "kikerter"
+    ],
+    "secondaryIngredients": [
+      "couscous",
+      "agurk",
+      "paprika",
+      "vegetarisk feta",
+      "sitron"
+    ],
+    "pantryIngredients": [
+      "olje",
+      "salt",
+      "pepper"
+    ],
+    "equipmentTags": [
+      "kasserolle"
+    ],
+    "baseServings": 4,
+    "ingredients": [
+      {
+        "name": "couscous",
+        "quantity": 300,
+        "unit": "g"
+      },
+      {
+        "name": "kikerter, avrent",
+        "quantity": 460,
+        "unit": "g"
+      },
+      {
+        "name": "vann",
+        "quantity": 4,
+        "unit": "dl"
+      },
+      {
+        "name": "agurk",
+        "quantity": 0.5,
+        "unit": "stk"
+      },
+      {
+        "name": "paprika",
+        "quantity": 1,
+        "unit": "stk"
+      },
+      {
+        "name": "feta merket vegetarisk",
+        "quantity": 150,
+        "unit": "g"
+      },
+      {
+        "name": "sitron",
+        "quantity": 1,
+        "unit": "stk"
+      },
+      {
+        "name": "olje",
+        "quantity": 2,
+        "unit": "ss"
+      },
+      {
+        "name": "salt",
+        "quantity": 0.25,
+        "unit": "ts"
+      },
+      {
+        "name": "pepper",
+        "quantity": 0.25,
+        "unit": "ts"
+      }
+    ],
+    "instructions": [
+      "Skyll kikertene. Kok opp vann og salt i en kjele, og tilpass vannmengden til couscouspakken ved behov.",
+      "Tilsett kikerter og kok opp igjen. Rør inn couscous, ta kjelen av platen og la stå under lokk i 5 minutter.",
+      "Skjær agurk og paprika i små terninger og smuldre fetaen.",
+      "Løsne couscousen med en gaffel. Vend inn olje, sitronsaft, grønnsaker og feta, og smak til med pepper."
+    ],
+    "tip": "Bruk en feta med vegetarisk løpe for at hele retten skal være vegetarisk."
+  },
+  {
+    "id": "rod-linsesuppe",
+    "slug": "rod-linsesuppe",
+    "title": "Rød linsesuppe med gulrot",
+    "shortDescription": "Varmende suppe med røde linser og grovt brød.",
+    "timeMinutes": 30,
+    "costTier": "billig",
+    "difficulty": "enkel",
+    "familyFriendly": true,
+    "category": "vegetar",
+    "mealTags": [
+      "hverdag",
+      "rask",
+      "comfort"
+    ],
+    "mainIngredients": [
+      "røde linser"
+    ],
+    "secondaryIngredients": [
+      "gulrot",
+      "løk",
+      "hakkede tomater",
+      "grønnsaksbuljong",
+      "brød"
+    ],
+    "pantryIngredients": [
+      "olje",
+      "spisskummen",
+      "pepper"
+    ],
+    "equipmentTags": [
+      "kasserolle"
+    ],
+    "baseServings": 4,
+    "ingredients": [
+      {
+        "name": "tørre røde splittlinser",
+        "quantity": 250,
+        "unit": "g"
+      },
+      {
+        "name": "gulrot",
+        "quantity": 3,
+        "unit": "stk"
+      },
+      {
+        "name": "løk",
+        "quantity": 1,
+        "unit": "stk"
+      },
+      {
+        "name": "hakkede tomater",
+        "quantity": 400,
+        "unit": "g"
+      },
+      {
+        "name": "grønnsaksbuljong",
+        "quantity": 10,
+        "unit": "dl"
+      },
+      {
+        "name": "brød",
+        "quantity": 8,
+        "unit": "skiver"
+      },
+      {
+        "name": "olje",
+        "quantity": 1,
+        "unit": "ss"
+      },
+      {
+        "name": "spisskummen",
+        "quantity": 2,
+        "unit": "ts"
+      },
+      {
+        "name": "pepper",
+        "quantity": 0.25,
+        "unit": "ts"
+      }
+    ],
+    "instructions": [
+      "Skyll linsene i en sil. Finhakk løken og riv gulrøttene grovt.",
+      "Stek løken i olje i en gryte i 3–4 minutter. Tilsett gulrot og spisskummen og stek i 1 minutt.",
+      "Ha i linser, tomater og buljong. Kok opp og la småkoke i 15–20 minutter, til linsene er myke. Rør av og til.",
+      "Spe med litt vann dersom suppen blir tykk, smak til med pepper og server med brød."
+    ],
+    "tip": "Røde splittlinser koker raskere enn hele linser; sjekk koketiden på posen."
+  },
+  {
+    "id": "chili-sin-carne",
+    "slug": "chili-sin-carne",
+    "title": "Chili sin carne",
+    "shortDescription": "Fyldig bønnegryte med mais, paprika og ris.",
+    "timeMinutes": 30,
+    "costTier": "billig",
+    "difficulty": "enkel",
+    "familyFriendly": true,
+    "category": "vegetar",
+    "mealTags": [
+      "hverdag",
+      "rask",
+      "comfort"
+    ],
+    "mainIngredients": [
+      "kidneybønner",
+      "ris"
+    ],
+    "secondaryIngredients": [
+      "svarte bønner",
+      "mais",
+      "paprika",
+      "løk",
+      "hakkede tomater"
+    ],
+    "pantryIngredients": [
+      "olje",
+      "spisskummen",
+      "paprikapulver",
+      "salt"
+    ],
+    "equipmentTags": [
+      "kasserolle"
+    ],
+    "baseServings": 4,
+    "ingredients": [
+      {
+        "name": "kidneybønner, avrent",
+        "quantity": 230,
+        "unit": "g"
+      },
+      {
+        "name": "svarte bønner, avrent",
+        "quantity": 230,
+        "unit": "g"
+      },
+      {
+        "name": "ris",
+        "quantity": 300,
+        "unit": "g"
+      },
+      {
+        "name": "hakkede tomater",
+        "quantity": 800,
+        "unit": "g"
+      },
+      {
+        "name": "mais, avrent",
+        "quantity": 150,
+        "unit": "g"
+      },
+      {
+        "name": "paprika",
+        "quantity": 1,
+        "unit": "stk"
+      },
+      {
+        "name": "løk",
+        "quantity": 1,
+        "unit": "stk"
+      },
+      {
+        "name": "olje",
+        "quantity": 1,
+        "unit": "ss"
+      },
+      {
+        "name": "spisskummen",
+        "quantity": 2,
+        "unit": "ts"
+      },
+      {
+        "name": "paprikapulver",
+        "quantity": 2,
+        "unit": "ts"
+      },
+      {
+        "name": "salt",
+        "quantity": 0.5,
+        "unit": "ts"
+      }
+    ],
+    "instructions": [
+      "Kok risen etter pakkens anvisning. Finhakk løken, skjær paprikaen i terninger og skyll bønnene.",
+      "Stek løk og paprika i olje i en gryte i 5 minutter.",
+      "Rør inn spisskummen og paprikapulver. Tilsett tomater, bønner og mais.",
+      "La gryten småkoke i 15 minutter, og rør av og til. Smak til med salt og server med ris."
+    ],
+    "tip": "Server chiliflak ved siden av for dem som vil ha sterkere smak."
+  },
+  {
+    "id": "spinatlasagne",
+    "slug": "spinatlasagne",
+    "title": "Spinatlasagne med cottage cheese",
+    "shortDescription": "Grønn lasagne med tomatsaus og gyllen ost.",
+    "timeMinutes": 55,
+    "costTier": "vanlig",
+    "difficulty": "enkel",
+    "familyFriendly": true,
+    "category": "vegetar",
+    "mealTags": [
+      "helg",
+      "comfort"
+    ],
+    "mainIngredients": [
+      "spinat",
+      "pasta"
+    ],
+    "secondaryIngredients": [
+      "cottage cheese",
+      "hakkede tomater",
+      "løk",
+      "ost"
+    ],
+    "pantryIngredients": [
+      "olje",
+      "oregano",
+      "salt",
+      "pepper"
+    ],
+    "equipmentTags": [
+      "stekeovn",
+      "ildfast form",
+      "kasserolle"
+    ],
+    "baseServings": 4,
+    "ingredients": [
+      {
+        "name": "lasagneplater",
+        "quantity": 200,
+        "unit": "g"
+      },
+      {
+        "name": "frossen hakket spinat",
+        "quantity": 400,
+        "unit": "g"
+      },
+      {
+        "name": "cottage cheese med vegetarisk løpe",
+        "quantity": 400,
+        "unit": "g"
+      },
+      {
+        "name": "hakkede tomater",
+        "quantity": 800,
+        "unit": "g"
+      },
+      {
+        "name": "løk",
+        "quantity": 1,
+        "unit": "stk"
+      },
+      {
+        "name": "revet ost med vegetarisk løpe",
+        "quantity": 150,
+        "unit": "g"
+      },
+      {
+        "name": "vann",
+        "quantity": 1,
+        "unit": "dl"
+      },
+      {
+        "name": "olje",
+        "quantity": 1,
+        "unit": "ss"
+      },
+      {
+        "name": "tørket oregano",
+        "quantity": 2,
+        "unit": "ts"
+      },
+      {
+        "name": "salt",
+        "quantity": 0.5,
+        "unit": "ts"
+      },
+      {
+        "name": "pepper",
+        "quantity": 0.25,
+        "unit": "ts"
+      }
+    ],
+    "instructions": [
+      "Sett ovnen på 200 °C over- og undervarme. Finhakk løken og stek den i olje i en kjele i 4 minutter.",
+      "Tilsett tomater, vann, oregano, salt og pepper. La småkoke i 5 minutter.",
+      "Tin spinaten i en annen kjele på lav varme etter pakkens anvisning. Klem av overflødig væske og bland med cottage cheese.",
+      "Legg tomatsaus, lasagneplater og spinatblanding lagvis i en ildfast form tilpasset mengden, slik at lasagnen får omtrent samme høyde uansett porsjonsantall. Avslutt med tomatsaus og revet ost; alle platene skal være dekket.",
+      "Stek midt i ovnen i 30–35 minutter, eller til platene er møre. La lasagnen hvile i 5 minutter før servering."
+    ],
+    "tip": "Velg lasagneplater beregnet på rundt 30 minutters steking."
+  },
+  {
+    "id": "blomkalkarri",
+    "slug": "blomkalkarri",
+    "title": "Blomkålkarri med ris",
+    "shortDescription": "Blomkål og kikerter i en mild kokossaus.",
+    "timeMinutes": 30,
+    "costTier": "billig",
+    "difficulty": "enkel",
+    "familyFriendly": true,
+    "category": "vegetar",
+    "mealTags": [
+      "hverdag",
+      "rask"
+    ],
+    "mainIngredients": [
+      "blomkål",
+      "ris"
+    ],
+    "secondaryIngredients": [
+      "kikerter",
+      "kokosmelk",
+      "løk",
+      "ingefær"
+    ],
+    "pantryIngredients": [
+      "olje",
+      "karri",
+      "salt"
+    ],
+    "equipmentTags": [
+      "kasserolle"
+    ],
+    "baseServings": 4,
+    "ingredients": [
+      {
+        "name": "blomkål",
+        "quantity": 1,
+        "unit": "stk"
+      },
+      {
+        "name": "ris",
+        "quantity": 300,
+        "unit": "g"
+      },
+      {
+        "name": "kikerter, avrent",
+        "quantity": 230,
+        "unit": "g"
+      },
+      {
+        "name": "kokosmelk",
+        "quantity": 400,
+        "unit": "ml"
+      },
+      {
+        "name": "løk",
+        "quantity": 1,
+        "unit": "stk"
+      },
+      {
+        "name": "fersk ingefær",
+        "quantity": 15,
+        "unit": "g"
+      },
+      {
+        "name": "vann",
+        "quantity": 1.5,
+        "unit": "dl"
+      },
+      {
+        "name": "olje",
+        "quantity": 1,
+        "unit": "ss"
+      },
+      {
+        "name": "mild karri",
+        "quantity": 2,
+        "unit": "ts"
+      },
+      {
+        "name": "salt",
+        "quantity": 0.5,
+        "unit": "ts"
+      }
+    ],
+    "instructions": [
+      "Kok risen etter pakkens anvisning. Del blomkålen i små buketter, hakk løken og riv ingefæren.",
+      "Stek løk i olje i en gryte i 4 minutter. Tilsett ingefær og karri og fres i 30 sekunder.",
+      "Ha i kokosmelk, vann, blomkål og skylte kikerter. Kok opp og la småkoke under lokk i 12–15 minutter, til blomkålen er mør.",
+      "Smak til med salt. Kok uten lokk i et par minutter hvis sausen er tynn, og server med ris."
+    ],
+    "tip": "Skjær den møre delen av blomkålstilken i små biter og bruk den i gryten."
+  },
+  {
+    "id": "potet-og-purresuppe",
+    "slug": "potet-og-purresuppe",
+    "title": "Potet- og purresuppe",
+    "shortDescription": "En mild, kremet suppe med brød til.",
+    "timeMinutes": 35,
+    "costTier": "billig",
+    "difficulty": "enkel",
+    "familyFriendly": true,
+    "category": "vegetar",
+    "mealTags": [
+      "hverdag",
+      "comfort"
+    ],
+    "mainIngredients": [
+      "poteter"
+    ],
+    "secondaryIngredients": [
+      "purre",
+      "grønnsaksbuljong",
+      "matfløte",
+      "brød"
+    ],
+    "pantryIngredients": [
+      "smør",
+      "pepper"
+    ],
+    "equipmentTags": [
+      "kasserolle",
+      "stavmikser"
+    ],
+    "baseServings": 4,
+    "ingredients": [
+      {
+        "name": "poteter",
+        "quantity": 800,
+        "unit": "g"
+      },
+      {
+        "name": "purre",
+        "quantity": 2,
+        "unit": "stk"
+      },
+      {
+        "name": "grønnsaksbuljong",
+        "quantity": 10,
+        "unit": "dl"
+      },
+      {
+        "name": "matfløte",
+        "quantity": 2,
+        "unit": "dl"
+      },
+      {
+        "name": "smør",
+        "quantity": 20,
+        "unit": "g"
+      },
+      {
+        "name": "brød",
+        "quantity": 8,
+        "unit": "skiver"
+      },
+      {
+        "name": "pepper",
+        "quantity": 0.25,
+        "unit": "ts"
+      }
+    ],
+    "instructions": [
+      "Skrell potetene og skjær dem i små terninger. Snitt purren på langs, skyll mellom lagene og skjær den i ringer.",
+      "Smelt smøret i en gryte. La purren surre på middels lav varme i 5 minutter uten å bli brun.",
+      "Tilsett poteter og buljong. Kok opp og la småkoke under lokk i 15–20 minutter, til potetene er helt møre.",
+      "Kjør suppen kort med stavmikser til den er jevn. Rør inn matfløte og varm forsiktig opp igjen.",
+      "Smak til med pepper, spe med vann ved behov og server med brød."
+    ],
+    "tip": "Ikke kjør potetene lenger enn nødvendig; lang miksing kan gjøre suppen seig."
+  },
+  {
+    "id": "gronnsakspizza",
+    "slug": "gronnsakspizza",
+    "title": "Grønnsakspizza med ferdig bunn",
+    "shortDescription": "Hverdagspizza med paprika, sopp og ost.",
+    "timeMinutes": 30,
+    "costTier": "vanlig",
+    "difficulty": "enkel",
+    "familyFriendly": true,
+    "category": "vegetar",
+    "mealTags": [
+      "hverdag",
+      "rask",
+      "helg"
+    ],
+    "mainIngredients": [
+      "pizzabunn"
+    ],
+    "secondaryIngredients": [
+      "paprika",
+      "sjampinjong",
+      "ost",
+      "pizzasaus"
+    ],
+    "pantryIngredients": [
+      "oregano"
+    ],
+    "equipmentTags": [
+      "stekeovn",
+      "stekebrett"
+    ],
+    "baseServings": 4,
+    "ingredients": [
+      {
+        "name": "fersk pizzadeig til langpanne",
+        "quantity": 600,
+        "unit": "g"
+      },
+      {
+        "name": "pizzasaus",
+        "quantity": 200,
+        "unit": "g"
+      },
+      {
+        "name": "revet ost med vegetarisk løpe",
+        "quantity": 250,
+        "unit": "g"
+      },
+      {
+        "name": "paprika",
+        "quantity": 1,
+        "unit": "stk"
+      },
+      {
+        "name": "sjampinjong",
+        "quantity": 150,
+        "unit": "g"
+      },
+      {
+        "name": "tørket oregano",
+        "quantity": 1,
+        "unit": "ts"
+      }
+    ],
+    "instructions": [
+      "Varm ovnen til 225 °C over- og undervarme, eller temperaturen på deigpakken.",
+      "Skjær paprikaen i tynne strimler og soppen i tynne skiver.",
+      "Rull deigen ut på et stekebrett med bakepapir. Smør på pizzasaus, og fordel ost, paprika og sopp over. Dryss på oregano.",
+      "Stek på nederste rille i 15–20 minutter, til bunnen er gjennomstekt og osten gyllen. Følg deigpakkens anvisning dersom den avviker.",
+      "La pizzaen stå i 2 minutter før du deler den i stykker."
+    ],
+    "tip": "Et tynt lag grønnsaker gjør det enklere å få en sprø bunn."
+  },
+  {
+    "id": "ost-og-bonnequesadillas",
+    "slug": "ost-og-bonnequesadillas",
+    "title": "Ost- og bønnequesadillas",
+    "shortDescription": "Sprø lefser med smeltet ost, bønner og mais.",
+    "timeMinutes": 15,
+    "costTier": "billig",
+    "difficulty": "enkel",
+    "familyFriendly": true,
+    "category": "vegetar",
+    "mealTags": [
+      "hverdag",
+      "rask"
+    ],
+    "mainIngredients": [
+      "kidneybønner"
+    ],
+    "secondaryIngredients": [
+      "tortillalefser",
+      "ost",
+      "mais",
+      "salsa"
+    ],
+    "pantryIngredients": [
+      "spisskummen"
+    ],
+    "equipmentTags": [
+      "to stekepanner",
+      "bolle"
+    ],
+    "baseServings": 4,
+    "ingredients": [
+      {
+        "name": "store tortillalefser",
+        "quantity": 4,
+        "unit": "stk"
+      },
+      {
+        "name": "kidneybønner, avrent",
+        "quantity": 460,
+        "unit": "g"
+      },
+      {
+        "name": "revet ost med vegetarisk løpe",
+        "quantity": 200,
+        "unit": "g"
+      },
+      {
+        "name": "mais, avrent",
+        "quantity": 150,
+        "unit": "g"
+      },
+      {
+        "name": "mild salsa",
+        "quantity": 150,
+        "unit": "g"
+      },
+      {
+        "name": "spisskummen",
+        "quantity": 1,
+        "unit": "ts"
+      }
+    ],
+    "instructions": [
+      "Skyll bønnene og la dem renne godt av. Mos dem grovt med en gaffel og bland med mais og spisskummen.",
+      "Fordel bønneblandingen og osten over den ene halvdelen av hver lefse. Brett den andre halvdelen over og trykk lett sammen.",
+      "Varm tørre stekepanner på middels varme. Fordel lefsene i ett lag med god plass; stek i flere omganger ved behov. Stek i 3–4 minutter på hver side, til lefsene er gylne og fyllet gjennomvarmt.",
+      "Del quesadillaene i trekanter og server med salsa."
+    ],
+    "tip": "15 minutter forutsetter to romslige panner; med én panne tar stekingen omtrent dobbelt så lang tid."
+  },
+  {
+    "id": "kremet-sopppasta",
+    "slug": "kremet-sopppasta",
+    "title": "Kremet sopppasta",
+    "shortDescription": "Gylden sopp og pasta i en fyldig fløtesaus.",
+    "timeMinutes": 25,
+    "costTier": "vanlig",
+    "difficulty": "enkel",
+    "familyFriendly": true,
+    "category": "vegetar",
+    "mealTags": [
+      "hverdag",
+      "rask",
+      "comfort"
+    ],
+    "mainIngredients": [
+      "pasta",
+      "sjampinjong"
+    ],
+    "secondaryIngredients": [
+      "løk",
+      "matfløte"
+    ],
+    "pantryIngredients": [
+      "olje",
+      "timian",
+      "salt",
+      "pepper"
+    ],
+    "equipmentTags": [
+      "stekepanne",
+      "kasserolle"
+    ],
+    "baseServings": 4,
+    "ingredients": [
+      {
+        "name": "pasta",
+        "quantity": 400,
+        "unit": "g"
+      },
+      {
+        "name": "sjampinjong",
+        "quantity": 500,
+        "unit": "g"
+      },
+      {
+        "name": "løk",
+        "quantity": 1,
+        "unit": "stk"
+      },
+      {
+        "name": "matfløte",
+        "quantity": 3,
+        "unit": "dl"
+      },
+      {
+        "name": "olje",
+        "quantity": 2,
+        "unit": "ss"
+      },
+      {
+        "name": "tørket timian",
+        "quantity": 1,
+        "unit": "ts"
+      },
+      {
+        "name": "salt",
+        "quantity": 0.5,
+        "unit": "ts"
+      },
+      {
+        "name": "pepper",
+        "quantity": 0.5,
+        "unit": "ts"
+      }
+    ],
+    "instructions": [
+      "Kok opp pastavann og kok pastaen etter pakkens anvisning. Ta vare på litt kokevann til å spe sausen.",
+      "Skjær soppen i skiver og finhakk løken.",
+      "Varm oljen i en stor panne. Stek soppen på middels høy varme i 7–8 minutter, til væsken har fordampet og soppen får farge.",
+      "Tilsett løken og stek i 3 minutter. Ha i timian og fløte og la småkoke i 3 minutter.",
+      "Vend inn pastaen, spe med litt kokevann og smak til med salt og pepper."
+    ],
+    "tip": "En stor panne og god varme gjør at soppen steker fremfor å koke i egen væske."
+  },
+  {
+    "id": "egg-i-tomatsaus",
+    "slug": "egg-i-tomatsaus",
+    "title": "Egg i tomatsaus med brød",
+    "shortDescription": "Egg trekkes i krydret tomatsaus med paprika.",
+    "timeMinutes": 30,
+    "costTier": "billig",
+    "difficulty": "enkel",
+    "familyFriendly": true,
+    "category": "vegetar",
+    "mealTags": [
+      "hverdag",
+      "rask",
+      "comfort"
+    ],
+    "mainIngredients": [
+      "egg",
+      "hakkede tomater"
+    ],
+    "secondaryIngredients": [
+      "paprika",
+      "løk",
+      "brød"
+    ],
+    "pantryIngredients": [
+      "olje",
+      "spisskummen",
+      "paprikapulver",
+      "salt"
+    ],
+    "equipmentTags": [
+      "stekepanne med lokk"
+    ],
+    "baseServings": 4,
+    "ingredients": [
+      {
+        "name": "egg",
+        "quantity": 8,
+        "unit": "stk"
+      },
+      {
+        "name": "hakkede tomater",
+        "quantity": 800,
+        "unit": "g"
+      },
+      {
+        "name": "paprika",
+        "quantity": 1,
+        "unit": "stk"
+      },
+      {
+        "name": "løk",
+        "quantity": 1,
+        "unit": "stk"
+      },
+      {
+        "name": "brød",
+        "quantity": 8,
+        "unit": "skiver"
+      },
+      {
+        "name": "olje",
+        "quantity": 1,
+        "unit": "ss"
+      },
+      {
+        "name": "spisskummen",
+        "quantity": 1,
+        "unit": "ts"
+      },
+      {
+        "name": "paprikapulver",
+        "quantity": 1,
+        "unit": "ts"
+      },
+      {
+        "name": "salt",
+        "quantity": 0.5,
+        "unit": "ts"
+      }
+    ],
+    "instructions": [
+      "Finhakk løken og skjær paprikaen i små terninger.",
+      "Varm oljen i en stor, dyp panne. Stek løk og paprika i 5 minutter, og rør inn krydderet.",
+      "Tilsett tomatene og la sausen småkoke uten lokk i 8–10 minutter. Smak til med salt.",
+      "Lag én grop per egg i sausen og knekk ett egg i hver. Legg på lokk og la trekke på lav varme i 7–9 minutter, til eggehvitene er faste.",
+      "Server med brød som kan dyppes i sausen."
+    ],
+    "tip": "La eggene trekke noen minutter ekstra hvis du ønsker faste eggeplommer."
+  },
+  {
+    "id": "bakt-sotpotet-med-bonner",
+    "slug": "bakt-sotpotet-med-bonner",
+    "title": "Bakt søtpotet med bønner",
+    "shortDescription": "Myke søtpoteter fylt med bønner, mais og yoghurt.",
+    "timeMinutes": 55,
+    "costTier": "vanlig",
+    "difficulty": "enkel",
+    "familyFriendly": true,
+    "category": "vegetar",
+    "mealTags": [
+      "hverdag",
+      "comfort"
+    ],
+    "mainIngredients": [
+      "søtpotet",
+      "svarte bønner"
+    ],
+    "secondaryIngredients": [
+      "mais",
+      "yoghurt",
+      "lime"
+    ],
+    "pantryIngredients": [
+      "olje",
+      "spisskummen",
+      "salt"
+    ],
+    "equipmentTags": [
+      "stekeovn",
+      "stekebrett",
+      "kasserolle"
+    ],
+    "baseServings": 4,
+    "ingredients": [
+      {
+        "name": "søtpoteter, omtrent 250 g hver",
+        "quantity": 4,
+        "unit": "stk"
+      },
+      {
+        "name": "svarte bønner, avrent",
+        "quantity": 460,
+        "unit": "g"
+      },
+      {
+        "name": "mais, avrent",
+        "quantity": 150,
+        "unit": "g"
+      },
+      {
+        "name": "yoghurt naturell",
+        "quantity": 2,
+        "unit": "dl"
+      },
+      {
+        "name": "lime",
+        "quantity": 1,
+        "unit": "stk"
+      },
+      {
+        "name": "olje",
+        "quantity": 1,
+        "unit": "ss"
+      },
+      {
+        "name": "spisskummen",
+        "quantity": 1,
+        "unit": "ts"
+      },
+      {
+        "name": "salt",
+        "quantity": 0.5,
+        "unit": "ts"
+      },
+      {
+        "name": "vann",
+        "quantity": 0.5,
+        "unit": "dl"
+      }
+    ],
+    "instructions": [
+      "Sett ovnen på 220 °C over- og undervarme. Vask søtpotetene og del dem i to på langs.",
+      "Pensle snittflatene med olje og legg dem ned på et stekebrett med bakepapir. Bak i 35–45 minutter, til de er myke helt inn.",
+      "Skyll bønnene. Varm dem i en kjele med mais, vann, spisskummen og salt i 5 minutter.",
+      "Rør limesaften inn i yoghurten. Snu søtpotetene og løsne litt av innmaten med en gaffel.",
+      "Fordel bønneblandingen over søtpotetene og topp med limedressing."
+    ],
+    "tip": "Store søtpoteter trenger lengre tid; velg fire som er omtrent like store."
+  },
+  {
+    "id": "halloumipanne",
+    "slug": "halloumipanne",
+    "title": "Halloumipanne med couscous",
+    "shortDescription": "Stekt halloumi med squash, paprika og couscous.",
+    "timeMinutes": 25,
+    "costTier": "litt-ekstra",
+    "difficulty": "enkel",
+    "familyFriendly": true,
+    "category": "vegetar",
+    "mealTags": [
+      "hverdag",
+      "rask"
+    ],
+    "mainIngredients": [
+      "vegetarisk halloumi"
+    ],
+    "secondaryIngredients": [
+      "couscous",
+      "squash",
+      "paprika",
+      "sitron"
+    ],
+    "pantryIngredients": [
+      "olje",
+      "oregano",
+      "pepper"
+    ],
+    "equipmentTags": [
+      "stekepanne",
+      "kasserolle"
+    ],
+    "baseServings": 4,
+    "ingredients": [
+      {
+        "name": "halloumi merket vegetarisk",
+        "quantity": 400,
+        "unit": "g"
+      },
+      {
+        "name": "couscous",
+        "quantity": 300,
+        "unit": "g"
+      },
+      {
+        "name": "vann",
+        "quantity": 4,
+        "unit": "dl"
+      },
+      {
+        "name": "squash",
+        "quantity": 1,
+        "unit": "stk"
+      },
+      {
+        "name": "paprika",
+        "quantity": 1,
+        "unit": "stk"
+      },
+      {
+        "name": "sitron",
+        "quantity": 0.5,
+        "unit": "stk"
+      },
+      {
+        "name": "olje",
+        "quantity": 2,
+        "unit": "ss"
+      },
+      {
+        "name": "tørket oregano",
+        "quantity": 1,
+        "unit": "ts"
+      },
+      {
+        "name": "pepper",
+        "quantity": 0.25,
+        "unit": "ts"
+      }
+    ],
+    "instructions": [
+      "Kok opp vann, rør inn couscous og ta kjelen av varmen. La stå under lokk i 5 minutter; tilpass vannmengden til pakkens anvisning.",
+      "Skjær squash og paprika i terninger, og halloumien i skiver.",
+      "Stek grønnsakene i halvparten av oljen i en stor panne i 7–8 minutter. Tilsett oregano og legg grønnsakene til side.",
+      "Ha resten av oljen i pannen. Stek halloumien i 2–3 minutter på hver side til gyllen.",
+      "Løsne couscousen med en gaffel og vend inn sitronsaft og pepper. Server med grønnsaker og halloumi."
+    ],
+    "tip": "Velg halloumi med vegetarisk løpe, og smak før du eventuelt tilsetter salt."
+  },
+  {
+    "id": "brokkolipasta-med-ost",
+    "slug": "brokkolipasta-med-ost",
+    "title": "Brokkolipasta med ostesaus",
+    "shortDescription": "Pasta og brokkoli i en enkel, mild ostesaus.",
+    "timeMinutes": 25,
+    "costTier": "billig",
+    "difficulty": "enkel",
+    "familyFriendly": true,
+    "category": "vegetar",
+    "mealTags": [
+      "hverdag",
+      "rask",
+      "comfort"
+    ],
+    "mainIngredients": [
+      "pasta",
+      "brokkoli"
+    ],
+    "secondaryIngredients": [
+      "melk",
+      "ost"
+    ],
+    "pantryIngredients": [
+      "smør",
+      "hvetemel",
+      "salt",
+      "pepper"
+    ],
+    "equipmentTags": [
+      "kasserolle"
+    ],
+    "baseServings": 4,
+    "ingredients": [
+      {
+        "name": "pasta",
+        "quantity": 400,
+        "unit": "g"
+      },
+      {
+        "name": "brokkoli",
+        "quantity": 1,
+        "unit": "stk"
+      },
+      {
+        "name": "melk",
+        "quantity": 5,
+        "unit": "dl"
+      },
+      {
+        "name": "revet ost med vegetarisk løpe",
+        "quantity": 150,
+        "unit": "g"
+      },
+      {
+        "name": "smør",
+        "quantity": 25,
+        "unit": "g"
+      },
+      {
+        "name": "hvetemel",
+        "quantity": 2,
+        "unit": "ss"
+      },
+      {
+        "name": "salt",
+        "quantity": 0.25,
+        "unit": "ts"
+      },
+      {
+        "name": "pepper",
+        "quantity": 0.25,
+        "unit": "ts"
+      }
+    ],
+    "instructions": [
+      "Kok opp pastavann. Del brokkolien i små buketter og den skrelte stilken i tynne biter.",
+      "Kok pastaen etter pakkens anvisning og legg brokkolien i samme kjele de siste 3 minuttene.",
+      "Smelt smøret i en annen kjele. Rør inn melet og spe gradvis med melken mens du visper.",
+      "La sausen småkoke i 4–5 minutter. Ta kjelen av platen og rør inn osten til den smelter. Smak til med salt og pepper.",
+      "Hell vannet av pasta og brokkoli, og vend begge deler inn i ostesausen."
+    ],
+    "tip": "Tilsett en skvett pastavann hvis sausen blir tykk når pastaen blandes inn."
+  }
+]

@@ -1,0 +1,3 @@
+import type { Metadata } from 'next';
+export const metadata:Metadata={title:'Kontakt',description:'Har du et spørsmål eller fant du noe som ikke stemmer? Kontakt Middagen.no.',alternates:{canonical:'/kontakt/'}};
+export default function Page(){return <main id="hovedinnhold" className="content-page"><p className="eyebrow">VI HØRER GJERNE FRA DEG</p><h1>Noe på hjertet?</h1><p>Fant du en feil i en oppskrift, en ingrediens vi mangler eller noe som gjorde det vanskelig å velge?</p><p>Skriv til Andreas Swane / Swane Creative:</p><p><a href="mailto:kontakt@swanecreative.no">kontakt@swanecreative.no</a></p><p>Ta gjerne med navnet på retten eller hva du prøvde å gjøre. Da blir det lettere å finne ut av det.</p></main>}

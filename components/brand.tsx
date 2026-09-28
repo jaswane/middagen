@@ -1,0 +1,4 @@
+import Link from 'next/link';
+export function Brand() { return <Link href="/" className="brand" aria-label="Middagen.no – forsiden">middagen<span className="brand-dot">.</span><span className="brand-no">no</span></Link>; }
+export function Header() { return <header className="site-header"><Brand/><nav aria-label="Hovedmeny"><Link href="/slik-velger-vi">Slik velger vi</Link><span className="header-note">Litt mindre middagsstress.</span></nav></header>; }
+export function Footer() { return <footer className="site-footer"><div><Brand/><p>Middagstips på sekundet.</p></div><nav aria-label="Bunnmeny"><Link href="/om">Om Middagen</Link><Link href="/slik-velger-vi">Slik velger vi</Link><Link href="/personvern">Personvern</Link><Link href="/kontakt">Kontakt</Link></nav><p className="footer-small">En liten hjelp i hverdagen.</p></footer>; }
