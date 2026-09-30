@@ -13,7 +13,10 @@ function page({hostname='middagen.no',protocol='https:',stored=null,storageBlock
   const jar=new Map(cookies.map(name=>[name,'1']));
   const scripts=[];
   const guard=()=>{if(storageBlocked)throw new Error('storage blocked');};
+  const observers=[],timers=[];
   const window={
+    MutationObserver:class{constructor(cb){this.cb=cb;observers.push(this);}observe(){this.active=true;}disconnect(){this.active=false;}},
+    setTimeout:fn=>timers.push(fn),clearTimeout:()=>{},
     location:{hostname,protocol,pathname:'/',href:`${protocol}//${hostname}/`},
     localStorage:{getItem:k=>{guard();return storage.get(k)??null;},setItem:(k,v)=>{guard();storage.set(k,String(v));}},
     document:{
@@ -29,7 +32,10 @@ function page({hostname='middagen.no',protocol='https:',stored=null,storageBlock
   const commands=()=>Array.from(window.dataLayer??[],args=>JSON.parse(JSON.stringify(Array.from(args))));
   // A client-side App Router navigation: same page load, new path and title.
   const navigate=(pathname,title)=>{window.location.pathname=pathname;window.location.href=`${protocol}//${hostname}${pathname}`;window.document.title=title;};
-  return {window,analytics,storage,scripts,jar,commands,navigate,events:()=>commands().filter(c=>c[0]==='event')};
+  // Next.js inserts the new <title> after the route effect: observers fire, or the 1 s timer.
+  const titleArrives=title=>{window.document.title=title;for(const o of observers)if(o.active)o.cb();};
+  const timeout=()=>timers.splice(0).forEach(fn=>fn());
+  return {window,analytics,storage,scripts,jar,commands,navigate,titleArrives,timeout,events:()=>commands().filter(c=>c[0]==='event')};
 }
 const browse=p=>{p.analytics.trackEvent('instant_suggestions_click');p.analytics.trackEvent('suggestions_shown',{source:'instant',result_count:3});p.analytics.trackMealSelected('tomatsuppe','instant');p.analytics.trackRecipeOpen('tomatsuppe');p.analytics.trackEvent('portion_change',{meal_slug:'tomatsuppe',portions:5});};
 
@@ -149,12 +155,29 @@ test('13. page_view is not duplicated: config counts the load, one page_view per
   p.navigate('/om/','Om');p.analytics.trackPageView();
   const views=p.events().filter(e=>e[1]==='page_view').map(e=>e[2]);
   assert.deepEqual(views,[
-    {page_location:'https://middagen.no/middag/tomatsuppe/'},
-    {page_location:'https://middagen.no/'},
-    {page_location:'https://middagen.no/om/'},
+    {page_location:'https://middagen.no/middag/tomatsuppe/',page_title:'Tomatsuppe'},
+    {page_location:'https://middagen.no/',page_title:'Forside'},
+    {page_location:'https://middagen.no/om/',page_title:'Om'},
   ]);
   const names=p.events().map(e=>e[1]);
   assert.ok(names.indexOf('page_view')<names.lastIndexOf('recipe_open'),'the new page is counted before its first event');
+});
+test('   a page_view waits for the new title and holds that page\'s events, in order',()=>{
+  const p=page({stored:'accepted'});p.analytics.initAnalytics();
+  p.analytics.trackMealSelected('tunfiskwraps','instant');
+  p.navigate('/middag/tunfiskwraps/','');p.analytics.trackRecipeOpen('tunfiskwraps');p.analytics.trackPageView();
+  assert.deepEqual(p.events().map(e=>e[1]),['meal_selected'],'nothing sent while the title is missing');
+  p.titleArrives('Tunfiskwraps');
+  assert.deepEqual(p.events().slice(1),[
+    ['event','page_view',{page_location:'https://middagen.no/middag/tunfiskwraps/',page_title:'Tunfiskwraps'}],
+    ['event','recipe_open',{meal_slug:'tunfiskwraps',source:'instant'}],
+  ]);
+  p.timeout();assert.equal(p.events().length,3,'the fallback timer does not send twice');
+  // Fallback: no title within 1 s still counts the page. Withdrawal while waiting sends nothing.
+  p.navigate('/om/','');p.analytics.trackPageView();p.timeout();
+  assert.deepEqual(p.events().at(-1),['event','page_view',{page_location:'https://middagen.no/om/',page_title:''}]);
+  p.navigate('/kontakt/','');p.analytics.trackPageView();p.analytics.trackEvent('decide_for_me');p.analytics.setAnalyticsConsent('rejected');p.titleArrives('Kontakt');
+  assert.equal(p.events().length,4);
 });
 test('   page_view is a no-op without consent and outside production',()=>{
   for(const p of [page(),page({stored:'rejected'}),page({hostname:'middagen-gamma.vercel.app',stored:'accepted'})]){

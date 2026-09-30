@@ -33,13 +33,15 @@ export type AnalyticsEventName = keyof AnalyticsEvents;
 type EventArgs<K extends AnalyticsEventName> = AnalyticsEvents[K] extends NoParams ? [] : [AnalyticsEvents[K]];
 
 type Gtag = (...args: unknown[]) => void;
-type AnalyticsWindow = Window & { dataLayer?: unknown[]; gtag?: Gtag } & Record<string, unknown>;
+type AnalyticsWindow = Window & typeof globalThis & { dataLayer?: unknown[]; gtag?: Gtag } & Record<string, unknown>;
 
 let status: 'idle' | 'off' | 'on' = 'idle';
 let tagRequested = false;
 let memoryChoice: ConsentChoice | null = null;
 let pendingRecipe: { slug: string; source: PickerMode } | null = null;
 let lastPageView: string | null = null;
+// Events that arrive while a page_view waits for its title; sent right after it, in order.
+let heldEvents: (() => void)[] | null = null;
 
 const browser = () => typeof window === 'undefined' ? null : window as unknown as AnalyticsWindow;
 const disableFlag = `ga-disable-${GA_MEASUREMENT_ID}`;
@@ -143,10 +145,28 @@ function activeGtag() {
 export function trackPageView() {
   const active = activeGtag();
   if (!active || active.w.location.pathname === lastPageView) return;
-  lastPageView = active.w.location.pathname;
-  // No page_title: during navigation the new <title> may not be in the document yet. gtag.js
-  // reads the title itself when it builds the hit, which gave the correct title in live checks.
-  active.gtag('event', 'page_view', { page_location: active.w.location.href });
+  const { w, gtag } = active, pageLocation = w.location.href;
+  lastPageView = w.location.pathname;
+  // Re-checked on send: consent may be withdrawn while the page_view waits for its title.
+  const send = () => { if (status === 'on') gtag('event', 'page_view', { page_location: pageLocation, page_title: w.document.title }); };
+  if (w.document.title) { send(); return; }
+  // On App Router navigation the old <title> is removed before the new one arrives, and gtag.js
+  // takes the title when page_view is pushed. Wait for the title (at most 1 s), holding events.
+  const held: (() => void)[] = [];
+  heldEvents = held;
+  let finished = false;
+  const finish = () => {
+    if (finished) return;
+    finished = true;
+    observer.disconnect();
+    w.clearTimeout(timer);
+    if (heldEvents === held) heldEvents = null;
+    send();
+    held.forEach(release => release());
+  };
+  const observer = new w.MutationObserver(() => { if (w.document.title) finish(); });
+  observer.observe(w.document.head, { childList: true, subtree: true, characterData: true });
+  const timer = w.setTimeout(finish, 1000);
 }
 
 /** Sends a typed product event. A no-op without consent or outside the production host. */
@@ -155,7 +175,8 @@ export function trackEvent<K extends AnalyticsEventName>(name: K, ...params: Eve
   if (!active) return;
   // An event can run before the route effect (e.g. recipe_open); count the new page first.
   trackPageView();
-  active.gtag('event', name, params[0] ?? {});
+  const send = () => { if (status === 'on') active.gtag('event', name, params[0] ?? {}); };
+  if (heldEvents) heldEvents.push(send); else send();
 }
 
 export function trackMealSelected(slug: string, source: PickerMode) {
