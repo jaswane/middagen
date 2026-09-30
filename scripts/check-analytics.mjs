@@ -14,9 +14,10 @@ function page({hostname='middagen.no',protocol='https:',stored=null,storageBlock
   const scripts=[];
   const guard=()=>{if(storageBlocked)throw new Error('storage blocked');};
   const window={
-    location:{hostname,protocol},
+    location:{hostname,protocol,pathname:'/',href:`${protocol}//${hostname}/`},
     localStorage:{getItem:k=>{guard();return storage.get(k)??null;},setItem:(k,v)=>{guard();storage.set(k,String(v));}},
     document:{
+      title:'Forside',
       head:{appendChild:el=>scripts.push(el)},
       createElement:tag=>({tag}),
       get cookie(){return [...jar].map(([k,v])=>`${k}=${v}`).join('; ');},
@@ -26,7 +27,9 @@ function page({hostname='middagen.no',protocol='https:',stored=null,storageBlock
   const analytics=loadIsolated('lib/analytics.ts',{window});
   // JSON round-trip: values come from another realm, and gtag receives plain data only.
   const commands=()=>Array.from(window.dataLayer??[],args=>JSON.parse(JSON.stringify(Array.from(args))));
-  return {window,analytics,storage,scripts,jar,commands,events:()=>commands().filter(c=>c[0]==='event')};
+  // A client-side App Router navigation: same page load, new path and title.
+  const navigate=(pathname,title)=>{window.location.pathname=pathname;window.location.href=`${protocol}//${hostname}${pathname}`;window.document.title=title;};
+  return {window,analytics,storage,scripts,jar,commands,navigate,events:()=>commands().filter(c=>c[0]==='event')};
 }
 const browse=p=>{p.analytics.trackEvent('instant_suggestions_click');p.analytics.trackEvent('suggestions_shown',{source:'instant',result_count:3});p.analytics.trackMealSelected('tomatsuppe','instant');p.analytics.trackRecipeOpen('tomatsuppe');p.analytics.trackEvent('portion_change',{meal_slug:'tomatsuppe',portions:5});};
 
@@ -132,14 +135,30 @@ test('12. https://middagen.no can send analytics; plain http cannot',()=>{
   assert.equal(page().analytics.isAnalyticsHost('middagen.no','http:'),false);
   const p=page({stored:'accepted'});browse(p);assert.equal(p.events().length,5);
 });
-test('13. page_view is left to gtag.js: one config per page load, never a manual page_view',()=>{
+test('13. page_view is not duplicated: config counts the load, one page_view per navigation',()=>{
   const p=page({stored:'accepted'});
-  for(let i=0;i<3;i++)p.analytics.initAnalytics();
+  for(let i=0;i<3;i++){p.analytics.initAnalytics();p.analytics.trackPageView();}
   p.analytics.setAnalyticsConsent('accepted');p.analytics.setAnalyticsConsent('rejected');p.analytics.setAnalyticsConsent('accepted');browse(p);
   const c=p.commands();
   assert.equal(c.filter(x=>x[0]==='config').length,1);assert.equal(c.filter(x=>x[0]==='js').length,1);assert.equal(p.scripts.length,1);
   assert.equal(c.filter(x=>x[0]==='consent'&&x[1]==='default').length,1);
-  assert.ok(!c.some(x=>x[1]==='page_view'));
-  assert.ok(!c.some(x=>x[2]&&x[2].send_page_view===false),'automatic page views stay on');
+  assert.ok(!c.some(x=>x[1]==='page_view'),'the first page is counted by config only');
+  // / -> recipe (event runs before the route effect) -> back to / -> /om/
+  p.navigate('/middag/tomatsuppe/','Tomatsuppe');p.analytics.trackRecipeOpen('tomatsuppe');p.analytics.trackPageView();p.analytics.trackPageView();
+  p.navigate('/','Forside');p.analytics.trackPageView();p.analytics.trackPageView();
+  p.navigate('/om/','Om');p.analytics.trackPageView();
+  const views=p.events().filter(e=>e[1]==='page_view').map(e=>e[2]);
+  assert.deepEqual(views,[
+    {page_location:'https://middagen.no/middag/tomatsuppe/',page_title:'Tomatsuppe'},
+    {page_location:'https://middagen.no/',page_title:'Forside'},
+    {page_location:'https://middagen.no/om/',page_title:'Om'},
+  ]);
+  const names=p.events().map(e=>e[1]);
+  assert.ok(names.indexOf('page_view')<names.lastIndexOf('recipe_open'),'the new page is counted before its first event');
+});
+test('   page_view is a no-op without consent and outside production',()=>{
+  for(const p of [page(),page({stored:'rejected'}),page({hostname:'middagen-gamma.vercel.app',stored:'accepted'})]){
+    p.navigate('/om/','Om');p.analytics.trackPageView();assert.equal(p.window.dataLayer,undefined);
+  }
 });
 console.log(JSON.stringify({checks}));

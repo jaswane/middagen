@@ -1,7 +1,15 @@
 'use client';
 import { useEffect, useLayoutEffect, useRef, useState } from 'react';
 import Link from 'next/link';
-import { type ConsentChoice, consentOpenEvent, initAnalytics, openConsentSettings, readConsent, setAnalyticsConsent } from '@/lib/analytics';
+import { usePathname } from 'next/navigation';
+import { type ConsentChoice, consentOpenEvent, initAnalytics, openConsentSettings, readConsent, setAnalyticsConsent, trackPageView } from '@/lib/analytics';
+
+/** Counts App Router navigations. A no-op until analytics is allowed on the production host. */
+export function AnalyticsPageViews() {
+  const pathname = usePathname();
+  useEffect(() => { trackPageView(); }, [pathname]);
+  return null;
+}
 
 export function AnalyticsConsent() {
   const [open, setOpen] = useState(false);

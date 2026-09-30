@@ -39,6 +39,7 @@ let status: 'idle' | 'off' | 'on' = 'idle';
 let tagRequested = false;
 let memoryChoice: ConsentChoice | null = null;
 let pendingRecipe: { slug: string; source: PickerMode } | null = null;
+let lastPageView: string | null = null;
 
 const browser = () => typeof window === 'undefined' ? null : window as unknown as AnalyticsWindow;
 const disableFlag = `ga-disable-${GA_MEASUREMENT_ID}`;
@@ -79,9 +80,9 @@ function enable(w: AnalyticsWindow) {
   if (!tagRequested) {
     tagRequested = true;
     gtag('js', new Date());
-    // gtag.js sends the page_view for this page. Later App Router navigations are counted by
-    // GA4's history-based page views, so the app never sends page_view itself (no duplicates).
+    // config sends the page_view for this page load; trackPageView covers App Router navigations.
     gtag('config', GA_MEASUREMENT_ID, { allow_google_signals: false, allow_ad_personalization_signals: false });
+    lastPageView = w.location.pathname;
     const script = w.document.createElement('script');
     script.async = true;
     script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`;
@@ -128,12 +129,31 @@ export function setAnalyticsConsent(choice: ConsentChoice) {
   else disable(w);
 }
 
-/** Sends a typed product event. A no-op without consent or outside the production host. */
-export function trackEvent<K extends AnalyticsEventName>(name: K, ...params: EventArgs<K>) {
+function activeGtag() {
   if (status === 'idle') initAnalytics();
   const w = browser();
-  if (status !== 'on' || !w?.gtag) return;
-  w.gtag('event', name, params[0] ?? {});
+  return status === 'on' && w?.gtag ? { w, gtag: w.gtag } : null;
+}
+
+/**
+ * One page_view per client-side navigation. GA4's history-based page views did not fire for
+ * App Router navigations on middagen.no (checked 30 Sep 2026), so the app sends them itself.
+ * Deduplicated by path, so repeated effects or events on the same page never add a second one.
+ */
+export function trackPageView() {
+  const active = activeGtag();
+  if (!active || active.w.location.pathname === lastPageView) return;
+  lastPageView = active.w.location.pathname;
+  active.gtag('event', 'page_view', { page_location: active.w.location.href, page_title: active.w.document.title });
+}
+
+/** Sends a typed product event. A no-op without consent or outside the production host. */
+export function trackEvent<K extends AnalyticsEventName>(name: K, ...params: EventArgs<K>) {
+  const active = activeGtag();
+  if (!active) return;
+  // An event can run before the route effect (e.g. recipe_open); count the new page first.
+  trackPageView();
+  active.gtag('event', name, params[0] ?? {});
 }
 
 export function trackMealSelected(slug: string, source: PickerMode) {
