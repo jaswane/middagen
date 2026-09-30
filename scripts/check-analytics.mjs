@@ -149,9 +149,9 @@ test('13. page_view is not duplicated: config counts the load, one page_view per
   p.navigate('/om/','Om');p.analytics.trackPageView();
   const views=p.events().filter(e=>e[1]==='page_view').map(e=>e[2]);
   assert.deepEqual(views,[
-    {page_location:'https://middagen.no/middag/tomatsuppe/',page_title:'Tomatsuppe'},
-    {page_location:'https://middagen.no/',page_title:'Forside'},
-    {page_location:'https://middagen.no/om/',page_title:'Om'},
+    {page_location:'https://middagen.no/middag/tomatsuppe/'},
+    {page_location:'https://middagen.no/'},
+    {page_location:'https://middagen.no/om/'},
   ]);
   const names=p.events().map(e=>e[1]);
   assert.ok(names.indexOf('page_view')<names.lastIndexOf('recipe_open'),'the new page is counted before its first event');

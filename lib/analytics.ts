@@ -144,7 +144,9 @@ export function trackPageView() {
   const active = activeGtag();
   if (!active || active.w.location.pathname === lastPageView) return;
   lastPageView = active.w.location.pathname;
-  active.gtag('event', 'page_view', { page_location: active.w.location.href, page_title: active.w.document.title });
+  // No page_title: during navigation the new <title> may not be in the document yet. gtag.js
+  // reads the title itself when it builds the hit, which gave the correct title in live checks.
+  active.gtag('event', 'page_view', { page_location: active.w.location.href });
 }
 
 /** Sends a typed product event. A no-op without consent or outside the production host. */
