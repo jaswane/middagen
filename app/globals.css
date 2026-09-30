@@ -67,3 +67,4 @@ body{padding-bottom:var(--consent-space,0)}
 .footer-link-button{background:none;border:0;padding:12px 0;color:inherit;text-align:left}.footer-link-button:hover{text-decoration:underline}
 @media(max-width:760px){.consent-banner{left:12px;right:12px;bottom:12px;width:auto;gap:14px;padding:16px}.consent-copy h2{font-size:21px}.consent-copy p{font-size:13px;margin-top:6px}}
 @media(max-width:365px){.consent-banner{padding:14px}.consent-button{padding:10px 8px;font-size:13px}}
+.site-footer .footer-credit{margin-top:0}.site-footer .footer-credit a{text-decoration:underline;text-underline-offset:3px}
