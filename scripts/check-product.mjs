@@ -3,7 +3,6 @@ import assert from 'node:assert/strict';
 import { load } from './test-support.mjs';
 const meals=JSON.parse(fs.readFileSync('lib/meals.json','utf8'));
 const {filterMeals,matchIngredient,suggest}=load('lib/engine.ts');
-const {configureAnalytics,track}=load('lib/analytics.ts');
 const all={time:'all',type:'all',price:'all'};
 let checks=0;
 function test(name,fn){fn();checks++;console.log(`PASS ${name}`);}
@@ -15,5 +14,4 @@ test('63 filter combinations keep time, type and cost constraints',()=>{for(cons
 test('same seed produces same output, no duplicate cards, unseen meals preferred',()=>{for(let seed=1;seed<=40;seed++){const a=suggest(meals,seed);const b=suggest(meals,seed);assert.equal(JSON.stringify(a),JSON.stringify(b));assert.equal(new Set(a.map(m=>m.id)).size,3);const c=suggest(meals,seed+1,a.map(m=>m.id));assert.ok(c.every(m=>!a.some(x=>x.id===m.id)));assert.equal(new Set(a.map(m=>m.category)).size,3);}});
 test('zero/one/two matches remain honest',()=>{for(let n=0;n<=2;n++){const result=suggest(meals.slice(0,n),4);assert.equal(result.length,n);}});
 test('vegetarian tags do not include meat or fish',()=>{const animal=['kylling','kjøttdeig','laks','torsk','tunfisk','reker','pølser','skinke','svinekoteletter','fiskekaker'];for(const m of filterMeals(meals,{...all,type:'vegetar'}))assert.ok(![...m.mainIngredients,...m.secondaryIngredients].some(i=>animal.includes(i)));});
-test('analytics is silent by default and after withdrawal',()=>{let count=0;track('ingredient_search');configureAnalytics(false,()=>count++);track('meal_selected');assert.equal(count,0);configureAnalytics(true,()=>count++);track('meal_selected');assert.equal(count,1);configureAnalytics(false);track('recipe_open');assert.equal(count,1);});
 console.log(JSON.stringify({checks,recipes:meals.length,quick15:meals.filter(m=>m.timeMinutes<=15).length,quick30:meals.filter(m=>m.timeMinutes<=30).length,categories:Object.fromEntries(['kjott','fisk','vegetar'].map(c=>[c,meals.filter(m=>m.category===c).length]))},null,2));

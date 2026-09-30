@@ -6,14 +6,23 @@ const cache = new Map();
 export function load(file) {
   const absolute = path.resolve(file);
   if (cache.has(absolute)) return cache.get(absolute);
+  const exports = {};
+  cache.set(absolute, exports);
+  run(absolute, exports, {}, name => load(name));
+  return exports;
+}
+// Fresh module state per call, with fake browser globals such as window.
+export function loadIsolated(file, globals = {}) {
+  const exports = {};
+  run(path.resolve(file), exports, globals, name => loadIsolated(name, globals));
+  return exports;
+}
+function run(absolute, exports, globals, loadDependency) {
   const source = ts.transpileModule(fs.readFileSync(absolute, 'utf8'), {
     compilerOptions: { module: ts.ModuleKind.CommonJS, target: ts.ScriptTarget.ES2022 },
   }).outputText;
-  const exports = {};
-  cache.set(absolute, exports);
-  vm.runInNewContext(source, { exports, Intl, console, require: name => {
+  vm.runInNewContext(source, { ...globals, exports, Intl, console, require: name => {
     if (!name.startsWith('.')) throw new Error(`Unexpected test dependency: ${name}`);
-    return load(path.resolve(path.dirname(absolute), name + '.ts'));
+    return loadDependency(path.resolve(path.dirname(absolute), name + '.ts'));
   } }, { filename: absolute });
-  return exports;
 }

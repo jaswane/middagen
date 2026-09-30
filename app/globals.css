@@ -54,3 +54,16 @@
 }
 @media(max-width:365px){.card-preview{grid-template-columns:minmax(0,1fr) 96px;gap:10px}.card-preview>.meal-photo{width:96px}.card-heading h3{font-size:24px}.recipe-with-photo{grid-template-columns:minmax(0,1fr) 124px;column-gap:12px}.recipe-with-photo h1{font-size:34px}}
 
+/* Analytics consent: a small paper note, not a modal. Both choices carry equal weight. */
+body{padding-bottom:var(--consent-space,0)}
+.consent-banner{position:fixed;left:24px;bottom:24px;z-index:50;width:min(520px,calc(100vw - 48px));display:grid;gap:16px;padding:20px 22px;background:var(--paper);color:var(--ink);border:1px solid var(--line);border-top:4px solid var(--yellow);border-radius:var(--radius);box-shadow:0 10px 30px rgba(56,38,61,.14)}
+.consent-copy h2{font-size:24px;line-height:1.2;letter-spacing:-.03em}
+.consent-copy p{font-size:14px;line-height:1.55;color:var(--muted);margin-top:8px}
+.consent-copy a{color:var(--ink);text-decoration:underline;text-underline-offset:3px}
+.consent-copy .consent-current{font-size:13px;color:var(--ink)}
+.consent-actions{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.consent-button{min-height:48px;padding:11px 14px;gap:8px;border-color:var(--ink);background:transparent;font-size:14px}
+.consent-button:hover{background:var(--soft-yellow)}
+.footer-link-button{background:none;border:0;padding:12px 0;color:inherit;text-align:left}.footer-link-button:hover{text-decoration:underline}
+@media(max-width:760px){.consent-banner{left:12px;right:12px;bottom:12px;width:auto;gap:14px;padding:16px}.consent-copy h2{font-size:21px}.consent-copy p{font-size:13px;margin-top:6px}}
+@media(max-width:365px){.consent-banner{padding:14px}.consent-button{padding:10px 8px;font-size:13px}}

@@ -8,7 +8,7 @@ import { type MealSummary, defaultFilters, costLabels, displayTagLabels } from '
 import { filterMeals, matchIngredient } from '@/lib/engine';
 import { MealImage } from '@/components/meal-image';
 import { type Mode, initialDecision, showDecision, refreshDecision, decideDinner, undoDinner, serializeDecision, restoreDecision, decisionStorageKey } from '@/lib/decision';
-import { track } from '@/lib/analytics';
+import { type SuggestionSource, trackEvent, trackMealSelected, trackIngredientSearch, guidedPickerParams } from '@/lib/analytics';
 
 // In-memory fallback keeps client navigation working when browser storage is blocked.
 let memoryDecision: string | null = null;
@@ -52,27 +52,29 @@ export function DinnerPicker({ meals }: { meals: MealSummary[] }) {
     heading?.focus({ preventScroll: true });
     heading?.scrollIntoView({ block: 'start', behavior: 'instant' });
   }); }
+  // Only a real set of suggestions counts as shown; empty states have their own events.
+  function shown(source: SuggestionSource, count: number) { if (count > 0) trackEvent('suggestions_shown', { source, result_count:count }); }
   function rememberSelection(meal: MealSummary) {
     // This handler runs on link activation, never during render.
     // eslint-disable-next-line react-hooks/globals
     memoryDecision = serializeDecision(state, meals, window.scrollY);
     try { sessionStorage.setItem(decisionStorageKey, memoryDecision); } catch { /* See memory fallback. */ }
-    track('meal_selected', { meal_id: meal.id, mode: mode ?? 'instant' });
+    trackMealSelected(meal.slug, mode ?? 'instant');
   }
   function instant() {
-    track('instant_suggestions_click');
+    trackEvent('instant_suggestions_click');
     const next = showDecision({ ...state, corrected: false }, filterMeals(meals, { time:'45', type:'all', price:'all' }), 'instant');
-    setState(next); track('suggestions_shown', { mode:'instant', count:next.results!.length }); focusResults();
+    setState(next); shown('instant', next.results!.length); focusResults();
   }
   function open(next: Mode) {
     setState({ ...state, mode:next, results:null, single:false, alternatives:[], error:'', notice:'' });
-    if (next === 'guided') track('guided_picker_start');
+    if (next === 'guided' && !(mode === 'guided' && results === null)) trackEvent('guided_picker_start');
     requestAnimationFrame(() => next === 'ingredient' ? searchInput.current?.focus() : formHeading.current?.focus());
   }
   function guided(e: FormEvent) {
-    e.preventDefault(); track('guided_picker_complete', { ...filters });
+    e.preventDefault();
     const next = showDecision({ ...state, corrected:false }, filterMeals(meals, filters), 'guided', filters);
-    setState(next); track('suggestions_shown', { mode:'guided', count:next.results!.length }); focusResults();
+    setState(next); trackEvent('guided_picker_complete', guidedPickerParams(filters, next.results!.length)); shown('guided', next.results!.length); focusResults();
   }
   function search(e?: FormEvent, value = query) {
     e?.preventDefault();
@@ -81,12 +83,14 @@ export function DinnerPicker({ meals }: { meals: MealSummary[] }) {
     const searchFilters = match.intent === 'vegetar' ? { ...defaultFilters, type:'vegetar' } : defaultFilters;
     const found = match.intent || match.ingredient ? filterMeals(meals, searchFilters, match.ingredient) : [];
     const next = showDecision({ ...state, query:value, searched:value.trim(), corrected:match.corrected }, found, 'ingredient', searchFilters, match.ingredient);
-    setState(next); track('ingredient_search');
-    track(found.length ? 'ingredient_search_result' : 'ingredient_search_no_result', { ingredient:match.intent ?? match.ingredient ?? 'unknown', count:found.length });
+    setState(next); trackIngredientSearch(match, found.length); shown('ingredient', next.results!.length);
     focusResults();
   }
-  function refresh() { setState(refreshDecision(state)); track('suggestions_refresh', { mode:mode ?? 'instant' }); focusResults(); }
-  function decide() { setState(decideDinner(state)); focusResults(); }
+  function refresh() {
+    const next = refreshDecision(state);
+    setState(next); trackEvent('suggestions_refresh', { visible_count:next.results!.length }); shown('refresh', next.results!.length); focusResults();
+  }
+  function decide() { setState(decideDinner(state)); trackEvent('decide_for_me'); focusResults(); }
   function undo() { setState(undoDinner(state)); focusResults(); }
   const resultTitle = !results?.length ? 'Vi fant ikke en middag som passer.' : single ? 'Da blir det denne.' : mode === 'ingredient' ? applied.type === 'vegetar' ? 'Vegetarmiddager' : `Middag med ${ingredient}` : 'Noe av dette i dag?';
   return <div className={results !== null ? 'dinner-picker has-results' : 'dinner-picker'}>
