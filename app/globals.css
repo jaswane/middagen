@@ -68,3 +68,8 @@ body{padding-bottom:var(--consent-space,0)}
 @media(max-width:760px){.consent-banner{left:12px;right:12px;bottom:12px;width:auto;gap:14px;padding:16px}.consent-copy h2{font-size:21px}.consent-copy p{font-size:13px;margin-top:6px}}
 @media(max-width:365px){.consent-banner{padding:14px}.consent-button{padding:10px 8px;font-size:13px}}
 .site-footer .footer-credit{margin-top:0}.site-footer .footer-credit a{text-decoration:underline;text-underline-offset:3px}
+
+/* Card numbers: a quiet visual aid in the image corner, not a ranking. Shares the image's grid cell. */
+@media(min-width:761px){.card-preview{display:grid;grid-template-columns:minmax(0,1fr)}.card-preview>.meal-photo{grid-area:1/1}}
+.card-index{grid-column:1;grid-row:1;align-self:start;justify-self:start;z-index:1;margin:12px 0 0 12px;min-width:28px;height:28px;padding:0 7px;display:grid;place-items:center;border-radius:var(--radius);background:rgba(56,38,61,.58);color:#fff;font-family:var(--font-display);font-size:16px;line-height:1;font-variant-numeric:lining-nums tabular-nums;text-shadow:0 1px 2px rgba(0,0,0,.25);pointer-events:none}
+@media(max-width:760px){.card-index{grid-column:2;margin:6px 0 0 6px;min-width:22px;height:22px;padding:0 5px;font-size:13px}}
