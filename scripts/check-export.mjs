@@ -10,9 +10,9 @@ for (const meal of meals) {
   assert.ok(images[0].includes(`${meal.image.src.replace('.webp', '-480.webp')}?w=480`), `${meal.id}: 480 variant`);
   assert.ok(images[0].includes('width="960"') && images[0].includes('height="640"'), `${meal.id}: reserved space`);
   const schema = JSON.parse(html.match(/<script type="application\/ld\+json">(.*?)<\/script>/s)?.[1] ?? 'null');
-  assert.equal(schema?.image, `https://middagen-hverdag.andreas-swane.chatgpt.site${meal.image.src}`);
+  assert.equal(schema?.image, `https://middagen.no${meal.image.src}`);
   assert.equal(schema.recipeInstructions.length, meal.instructions.length);
-  assert.ok(html.includes('noindex'), `${meal.id}: private prototype indexing`);
+  assert.ok(!html.includes('noindex'), `${meal.id}: indexable`);
   for (const suffix of ['.webp', '-480.webp']) assert.ok(fs.existsSync(`out/images/meals/${meal.slug}${suffix}`));
 }
-console.log('PASS export: 42 recipe pages, both image variants, dimensions, Recipe schema, instructions and noindex');
+console.log('PASS export: 42 recipe pages, both image variants, dimensions, apex Recipe schema, instructions, indexable');

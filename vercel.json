@@ -1,0 +1,10 @@
+{
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "middagen-gamma.vercel.app" }],
+      "destination": "https://middagen.no/:path*",
+      "permanent": true
+    }
+  ]
+}

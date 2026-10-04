@@ -37,13 +37,13 @@ node scripts/check-export.mjs
 
 Bygget ligger i `out/`. Server hele denne mappen med en statisk webserver; ikke åpne HTML som `file://`. Ingen Node-server trengs i drift.
 
-Prototypen bruker `noindex` og en tom sitemap. Før offentlig lansering: gjennomgå oppskrifter og personvern, sett faktisk produksjonsdomene i metadata og schema, slå på ønsket indeksering, og aktiver produksjonssitemap. `scripts/production-sitemap.mjs` lager et forslag med de 47 planlagte offentlige rutene; dette er ikke aktivert automatisk.
+Produksjonsdomenet er https://middagen.no (`lib/site.ts`). Sidene er indekserbare, `robots.txt` peker til sitemapen, og `app/sitemap.ts` lister forsiden, /om/, /slik-velger-vi/ og alle middagssidene fra `lib/meals.json`. www og `middagen-gamma.vercel.app` redirecter til apex; vercel.app-redirecten ligger i `vercel.json`. `npm run build` etterfulgt av `node scripts/check-launch.mjs` kontrollerer bygget; `node scripts/check-live.mjs` kontrollerer produksjon etter deploy.
 
 ## Arkitektur og avgrensninger
 
 Serverkomponenter lager sidene. Forsideklienten mottar bare kortdata; oppskriftsinstruksjonene sendes ikke som del av velgerens datasett. Filtrering skjer før variasjon. Samme kandidater og frø gir samme forslag. Beslutningen og visningshistorikken bevares midlertidig i sessionStorage for samme nettleserfane, med minne som reserve når lagring er blokkert.
 
-`analytics.ts` er en avslått adapter. Den gjør ingen nettverkskall. Eventuell GA4 krever faktisk samtykkeflyt og handler før aktivering. Rå søketekst sendes aldri gjennom hendelseskallene.
+`analytics.ts` laster GA4 (G-RB2YJ9DF6M) bare etter samtykke og bare på https://middagen.no. Rå søketekst sendes aldri gjennom hendelseskallene. Se `scripts/check-analytics.mjs`.
 
 42 originale KI-lagde matillustrasjoner er komprimert til 84 WebP-filer i 960×640 og 480×320. Next/Image velger lokale varianter uten bildeserver. `npm run build` kontrollerer data, filer og kontrollsummer før bygging. Ingen eksterne fontkall. Ingen partneravtaler eller annonser er implementert.
 
