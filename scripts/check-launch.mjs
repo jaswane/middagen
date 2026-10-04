@@ -76,12 +76,7 @@ test('10. /prototype/ is gone from the build and is never linked', () => {
   assert.ok(!fs.existsSync('app/prototype'));
   for (const file of files('out').filter(f => f.endsWith('.html'))) assert.ok(!fs.readFileSync(file, 'utf8').includes('/prototype'), file);
 });
-test('11. vercel.json redirects only the public vercel.app alias to the apex, keeping the path', () => {
-  const { redirects } = JSON.parse(fs.readFileSync('vercel.json', 'utf8'));
-  assert.deepEqual(redirects, [{ source: '/:path*', has: [{ type: 'host', value: 'middagen-gamma.vercel.app' }], destination: 'https://middagen.no/:path*', permanent: true }]);
-  // A host-only match can never fire on middagen.no itself, so there is no redirect loop.
-  assert.ok(redirects.every(r => r.has?.some(h => h.type === 'host' && h.value !== 'middagen.no')));
-});
+// 11-12. www and the vercel.app alias are Vercel domain redirects (project settings), verified by check-live.mjs.
 test('14. footer credit on every page; the contact address only on /kontakt', () => {
   for (const page of [...publicPages, '404']) {
     const html = page === '404' ? fs.readFileSync('out/404.html', 'utf8') : read(page);

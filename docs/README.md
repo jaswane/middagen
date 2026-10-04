@@ -37,7 +37,7 @@ node scripts/check-export.mjs
 
 Bygget ligger i `out/`. Server hele denne mappen med en statisk webserver; ikke åpne HTML som `file://`. Ingen Node-server trengs i drift.
 
-Produksjonsdomenet er https://middagen.no (`lib/site.ts`). Sidene er indekserbare, `robots.txt` peker til sitemapen, og `app/sitemap.ts` lister forsiden, /om/, /slik-velger-vi/ og alle middagssidene fra `lib/meals.json`. www og `middagen-gamma.vercel.app` redirecter til apex; vercel.app-redirecten ligger i `vercel.json`. `npm run build` etterfulgt av `node scripts/check-launch.mjs` kontrollerer bygget; `node scripts/check-live.mjs` kontrollerer produksjon etter deploy.
+Produksjonsdomenet er https://middagen.no (`lib/site.ts`). Sidene er indekserbare, `robots.txt` peker til sitemapen, og `app/sitemap.ts` lister forsiden, /om/, /slik-velger-vi/ og alle middagssidene fra `lib/meals.json`. www og `middagen-gamma.vercel.app` redirecter med 308 til apex. Begge er domeneinnstillinger i Vercel-prosjektet; `vercel.json` brukes ikke, fordi Next.js-prosjekter på Vercel ikke leser redirects derfra. `npm run build` etterfulgt av `node scripts/check-launch.mjs` kontrollerer bygget; `node scripts/check-live.mjs` kontrollerer produksjon etter deploy.
 
 ## Arkitektur og avgrensninger
 
