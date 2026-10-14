@@ -15,7 +15,7 @@ function test(name,fn){fn();checks++;console.log(`PASS ${name}`);}
 function search(word){const match=matchIngredient(word,summaries);return match.intent?filterMeals(summaries,{...all,type:match.intent}):match.ingredient?filterMeals(summaries,all,match.ingredient):[];}
 
 test('all 20 requested searches have explicit results; salt stays unmatched',()=>{
- const counts={kylling:3,kyllingfilet:2,'kjøttdeig':4,laks:3,torsk:3,pasta:10,spagetti:7,spaghetti:7,potet:9,poteter:9,egg:7,'pølse':3,'pølser':3,sopp:3,'bønne':6,'bønner':6,vegetar:20,vegetarisk:20,salt:0,salat:2};
+ const counts={kylling:6,kyllingfilet:5,'kjøttdeig':5,laks:3,torsk:3,pasta:12,spagetti:7,spaghetti:7,potet:16,poteter:16,egg:9,'pølse':5,'pølser':5,sopp:5,'bønne':9,'bønner':9,vegetar:26,vegetarisk:26,salt:0,salat:2};
  for(const [word,count] of Object.entries(counts))assert.equal(search(word).length,count,word);
 });
 test('normalisation, safe aliases and explicit typo list',()=>{
@@ -85,7 +85,8 @@ test('within-category sets avoid three chickens or three pasta dishes when alter
  }
 });
 test('unseen relevance outranks variety; repeated refreshes use available unseen meals',()=>{
- const chicken=search('kylling');same(suggest(chicken,12).map(m=>m.id).sort(),chicken.map(m=>m.id).sort());
+ const chicken=search('kylling');const pickedChicken=suggest(chicken,12);
+ assert.equal(pickedChicken.length,3);assert.ok(pickedChicken.every(m=>chicken.some(c=>c.id===m.id)));
  const excluded=summaries.filter(m=>!chicken.some(c=>c.id===m.id)).map(m=>m.id);
  assert.ok(suggest(summaries,3,excluded).every(m=>m.mainIngredients.includes('kylling')));
  let state=showDecision(initialDecision(),summaries,'instant',all,null,4);
@@ -120,6 +121,6 @@ test('kitchen quantities use original values, fractions, explicit bounds and mar
 test('targeted time corrections and prerequisites are visible in summary data',()=>{
  for(const [id,time] of [['soppomelett',20],['kyllingfajitas',35],['ovnskylling-med-rotgronnsaker',60]])assert.equal(meals.find(m=>m.id===id).timeMinutes,time);
  for(const id of ['ost-og-bonnequesadillas','stekt-ris-med-egg','rekenudler','tunfiskpasta','pestopasta-med-erter'])assert.ok(summaries.find(m=>m.id===id).timeNote);
- assert.equal(meals.length,42);
+ assert.equal(meals.length,62);
 });
 console.log(JSON.stringify({checks,recipes:meals.length,quick15:meals.filter(m=>m.timeMinutes<=15).length,quick30:meals.filter(m=>m.timeMinutes<=30).length}));

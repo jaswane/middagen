@@ -1216,5 +1216,585 @@
     ],
     "originalFile": "../review/sprint-02-images/c/brokkolipasta-med-ost-original.png",
     "prompt": "Use case: photorealistic-natural. Asset type: a single original food photograph for a Norwegian weekday dinner recipe. 3:2 landscape composition, 1536x1024 preferred. Natural Norwegian home dinner, soft neutral daylight, warm but not yellow. Simple off-white ceramic serving ware on a quiet light neutral table. Camera angle 45 degrees. Generous realistic home-cooked serving, believable cooked textures, clear focus throughout the food. Full serving centered with safe margins on all sides, plate fully within frame. Minimal props. No people, text, brands, logo, watermark, collage, restaurant styling, fake gloss, extreme bokeh, decorative herbs, invented side dishes, or ingredients not listed. Subject: Brokkolipasta med ostesaus. A generous portion of everyday penne pasta and small tender bright-green broccoli florets with a few thin peeled broccoli stem pieces, mixed together in a smooth mild pale ivory cheese sauce made from milk, butter, flour and melted grated cheese, with a little black pepper. One shallow off-white dinner bowl on the quiet light neutral table. Sauce evenly coats pasta and broccoli, modest creamy sheen and realistic textures, not a baked dish. Entire bowl centered and fully within the image with comfortable safe table margins. No browned cheese crust, no separate grated cheese topping, no bacon, no chicken, no mushrooms, no fresh herbs, no side dishes."
+  },
+  {
+    "mealId": "kjottdeig-med-couscous",
+    "file": "public/images/meals/kjottdeig-med-couscous.webp",
+    "source": "OpenAI image_gen.imagegen, built-in generation",
+    "provenance": "Originalt KI-generert bilde laget for Middagen.no fra ingredienslisten og fremgangsmåten. Ingen eksterne fotografier brukt.",
+    "classification": "generated",
+    "date": "2026-10-15",
+    "dateTimeUtc": "2026-10-14T22:00:53.992Z",
+    "notes": "Visuelt kontrollert: Brunet kjøttdeig, couscous, agurk, tomat og yoghurt er synlige som separate deler. Illustrasjonsbilde, ikke dokumentasjon av en koketest.",
+    "alt": "Brunet kjøttdeig med couscous, agurk, tomat og en skje yoghurtdressing.",
+    "variants": [
+      {
+        "file": "public/images/meals/kjottdeig-med-couscous.webp",
+        "width": 960,
+        "height": 640,
+        "bytes": 82856,
+        "sha256": "078eba20f22382818b70970fa1c2be1c8e62a0fb7d4a2e6c1a19d989e716fcc5"
+      },
+      {
+        "file": "public/images/meals/kjottdeig-med-couscous-480.webp",
+        "width": 480,
+        "height": 320,
+        "bytes": 27474,
+        "sha256": "aa23af39893ef260969c91eafe587ef4ee2f24cf4d5492b66c51ee60548be4de"
+      }
+    ],
+    "originalFile": "work/sprint03a/originals/kjottdeig-med-couscous.png",
+    "prompt": "Use case: photorealistic-natural. Asset type: original recipe illustration for Middagen.no. Generate ONE landscape 3:2 realistic food photograph. Norwegian home weekday dinner, soft neutral daylight, quiet pale table, simple off-white ceramic plate, camera about 45 degrees. Generous realistic single dinner portion, full plate and food inside frame with small safe margins. Natural textures and clear food detail. Dish: Kjøttdeig med couscous og agurk. A generous serving of browned finely crumbled ground beef, seasoned with paprika and cumin, beside fluffy plain couscous, freshly diced cucumber and tomato and a modest dollop of plain yogurt dressing with black pepper. Beef fully cooked, natural brown crumbles; couscous is small pale grains. Food components are distinct on the same plate. Only these visible foods. No onion, herbs, parsley, coriander, lemon, lettuce, garnish, extra sauce, text, logos, people, restaurant styling, fake gloss or extreme bokeh. Match a believable home-cooked dinner."
+  },
+  {
+    "mealId": "polse-og-bonnegryte",
+    "file": "public/images/meals/polse-og-bonnegryte.webp",
+    "source": "OpenAI image_gen.imagegen, built-in generation",
+    "provenance": "Originalt KI-generert bilde laget for Middagen.no fra ingredienslisten og fremgangsmåten. Ingen eksterne fotografier brukt.",
+    "classification": "generated",
+    "date": "2026-10-15",
+    "dateTimeUtc": "2026-10-14T22:03:34.645Z",
+    "notes": "Visuelt kontrollert: Pølsebiter og hvite bønner i tomatsaus; grovt brød ved siden av. Ingen ekstra garnityr. Illustrasjonsbilde, ikke dokumentasjon av en koketest.",
+    "alt": "Pølsebiter og hvite bønner i rød tomatsaus med grovt brød ved siden av.",
+    "variants": [
+      {
+        "file": "public/images/meals/polse-og-bonnegryte.webp",
+        "width": 960,
+        "height": 640,
+        "bytes": 104522,
+        "sha256": "c289e672aeee509875a764af58f2ed583cf0695ff55a26b93ef6019bb64574e2"
+      },
+      {
+        "file": "public/images/meals/polse-og-bonnegryte-480.webp",
+        "width": 480,
+        "height": 320,
+        "bytes": 32416,
+        "sha256": "02e21eed729bbe38038dd2d36e352a8bc8aff0d2ba1846b9dc48498f8c436c87"
+      }
+    ],
+    "originalFile": "work/sprint03a/originals/polse-og-bonnegryte.png",
+    "prompt": "Use case: photorealistic-natural. Asset type: original recipe illustration for Middagen.no. Generate ONE 3:2 landscape realistic food photograph. Natural Norwegian home weekday dinner, soft neutral daylight, simple off-white ceramic plate or bowl on a quiet pale neutral table, camera about 45 degrees. A generous realistic single dinner portion, whole food and vessel inside frame with safe margins, clear focus on food, believable textures. No text, logos, people, restaurant styling, collage, fake gloss or extreme bokeh. Follow exactly the specified ingredients; do not invent garnish. Subject: A deep off-white bowl of thick red chopped-tomato stew with visibly sliced cooked Norwegian dinner sausages and white cannellini beans. Two slices of coarse brown bread next to the bowl, all in frame. Only sausage, white beans, tomato, oil, paprika powder, dried oregano, black pepper and bread are visible. No onion, leafy garnish, rice, cheese or fresh herbs."
+  },
+  {
+    "mealId": "kylling-med-sopp-og-ris",
+    "file": "public/images/meals/kylling-med-sopp-og-ris.webp",
+    "source": "OpenAI image_gen.imagegen, built-in generation",
+    "provenance": "Originalt KI-generert bilde laget for Middagen.no fra ingredienslisten og fremgangsmåten. Ingen eksterne fotografier brukt.",
+    "classification": "generated",
+    "date": "2026-10-15",
+    "dateTimeUtc": "2026-10-14T22:03:51.621Z",
+    "notes": "Visuelt kontrollert: Kyllingstrimler og sopp i lys saus ved siden av ris; synlig løk, ingen urtegarnityr. Illustrasjonsbilde, ikke dokumentasjon av en koketest.",
+    "alt": "Kyllingstrimler og brunet sjampinjong i lys fløtesaus ved siden av hvit ris.",
+    "variants": [
+      {
+        "file": "public/images/meals/kylling-med-sopp-og-ris.webp",
+        "width": 960,
+        "height": 640,
+        "bytes": 70876,
+        "sha256": "ee2323cb7d749ed6955872f32dfdc7d38c3e7f6bd18b62b68066c203c6a4df03"
+      },
+      {
+        "file": "public/images/meals/kylling-med-sopp-og-ris-480.webp",
+        "width": 480,
+        "height": 320,
+        "bytes": 23168,
+        "sha256": "154afb63a83bdf56993b26983105a114e8f3374324374fef0330b7a7f48766d3"
+      }
+    ],
+    "originalFile": "work/sprint03a/originals/kylling-med-sopp-og-ris.png",
+    "prompt": "Use case: photorealistic-natural. Asset type: original recipe illustration for Middagen.no. Generate ONE 3:2 landscape realistic food photograph. Natural Norwegian home weekday dinner, soft neutral daylight, simple off-white ceramic plate or bowl on a quiet pale neutral table, camera about 45 degrees. A generous realistic single dinner portion, whole food and vessel inside frame with safe margins, clear focus on food, believable textures. No text, logos, people, restaurant styling, collage, fake gloss or extreme bokeh. Follow exactly the specified ingredients; do not invent garnish. Subject: A generous plated dinner of cooked chicken breast strips and sliced browned button mushrooms with soft onion in a modest light cream sauce, beside plain white rice. Chicken fully cooked, natural lightly browned edges. Only chicken, button mushroom slices, onion, rice, cream sauce, oil, soy and black pepper. No herbs, greens, peas, parsley, lemon or garnish."
+  },
+  {
+    "mealId": "polser-i-lompe-med-kalsalat",
+    "file": "public/images/meals/polser-i-lompe-med-kalsalat.webp",
+    "source": "OpenAI image_gen.imagegen, built-in generation",
+    "provenance": "Originalt KI-generert bilde laget for Middagen.no fra ingredienslisten og fremgangsmåten. Ingen eksterne fotografier brukt.",
+    "classification": "generated",
+    "date": "2026-10-15",
+    "dateTimeUtc": "2026-10-14T22:04:09.952Z",
+    "notes": "Visuelt kontrollert: To lomper med pølse og kål-/gulrotsalat; samsvarer med hverdagsserveringen. Illustrasjonsbilde, ikke dokumentasjon av en koketest.",
+    "alt": "Pølser i myke lomper med finstrimlet kål og gulrot i yoghurtdressing.",
+    "variants": [
+      {
+        "file": "public/images/meals/polser-i-lompe-med-kalsalat.webp",
+        "width": 960,
+        "height": 640,
+        "bytes": 59420,
+        "sha256": "4acf0d9d129b982192f515e968777e77724d9eb3f2e2b1bbc56ba6eaebdf8189"
+      },
+      {
+        "file": "public/images/meals/polser-i-lompe-med-kalsalat-480.webp",
+        "width": 480,
+        "height": 320,
+        "bytes": 21390,
+        "sha256": "729f3e13b2d6fd8e6db6d302fcbc15d831362437034bdd33ffd840e45c033842"
+      }
+    ],
+    "originalFile": "work/sprint03a/originals/polser-i-lompe-med-kalsalat.png",
+    "prompt": "Use case: photorealistic-natural. Asset type: original recipe illustration for Middagen.no. Generate ONE 3:2 landscape realistic food photograph. Natural Norwegian home weekday dinner, soft neutral daylight, simple off-white ceramic plate or bowl on a quiet pale neutral table, camera about 45 degrees. A generous realistic single dinner portion, whole food and vessel inside frame with safe margins, clear focus on food, believable textures. No text, logos, people, restaurant styling, collage, fake gloss or extreme bokeh. Follow exactly the specified ingredients; do not invent garnish. Subject: Two Norwegian grilled sausages in thin soft potato lomper flatbreads, each loosely rolled around one sausage. Visible fine pale cabbage and grated orange carrot lightly coated in plain yogurt mustard dressing, with more coleslaw on the plate. Lomper are pale thin small round Norwegian potato flatbreads, not hot dog buns, not large tortillas. Only sausages, lomper, cabbage, carrot and yogurt mustard dressing. No ketchup, fried onion, herbs or other toppings."
+  },
+  {
+    "mealId": "karbonader-med-potetmos",
+    "file": "public/images/meals/karbonader-med-potetmos.webp",
+    "source": "OpenAI image_gen.imagegen, built-in generation",
+    "provenance": "Originalt KI-generert bilde laget for Middagen.no fra ingredienslisten og fremgangsmåten. Ingen eksterne fotografier brukt.",
+    "classification": "generated",
+    "date": "2026-10-15",
+    "dateTimeUtc": "2026-10-14T22:03:49.203Z",
+    "notes": "Visuelt kontrollert: Karbonader, stekt løk, potetmos og erter er tydelig skilt. Ingen ekstra brun saus. Illustrasjonsbilde, ikke dokumentasjon av en koketest.",
+    "alt": "Karbonader med stekt løk, hjemmelaget potetmos og grønne erter.",
+    "variants": [
+      {
+        "file": "public/images/meals/karbonader-med-potetmos.webp",
+        "width": 960,
+        "height": 640,
+        "bytes": 66430,
+        "sha256": "149c7256ad1cf4637a6e2866e9dc2fdf112d8e4000731e1d9af5a27e8319b011"
+      },
+      {
+        "file": "public/images/meals/karbonader-med-potetmos-480.webp",
+        "width": 480,
+        "height": 320,
+        "bytes": 20484,
+        "sha256": "c7eeb94816e6912fc3cfdb24d6c06de38782b18f2cbe2283c3b7043055411321"
+      }
+    ],
+    "originalFile": "work/sprint03a/originals/karbonader-med-potetmos.png",
+    "prompt": "Use case: photorealistic-natural. Asset type: original recipe illustration for Middagen.no. Generate ONE 3:2 landscape realistic food photograph. Natural Norwegian home weekday dinner, soft neutral daylight, simple off-white ceramic plate or bowl on a quiet pale neutral table, camera about 45 degrees. A generous realistic single dinner portion, whole food and vessel inside frame with safe margins, clear focus on food, believable textures. No text, logos, people, restaurant styling, collage, fake gloss or extreme bokeh. Follow exactly the specified ingredients; do not invent garnish. Subject: Two oval Norwegian cooked beef karbonader patties with natural browned surfaces, soft golden sliced onion on top, beside homemade mashed potato and green peas. A generous ordinary dinner portion on one plate. Patties are unbreaded beef, not hamburgers in buns. Only beef patties, onion, potato mash, peas, butter, milk, salt and pepper. No brown gravy, parsley, salad or extra garnish."
+  },
+  {
+    "mealId": "pita-med-ferdigstekt-kylling",
+    "file": "public/images/meals/pita-med-ferdigstekt-kylling.webp",
+    "source": "OpenAI image_gen.imagegen, built-in generation",
+    "provenance": "Originalt KI-generert bilde laget for Middagen.no fra ingredienslisten og fremgangsmåten. Ingen eksterne fotografier brukt.",
+    "classification": "generated",
+    "date": "2026-10-15",
+    "dateTimeUtc": "2026-10-14T22:04:03.952Z",
+    "notes": "Visuelt kontrollert: Pita med synlig kylling, kål, agurk og yoghurt; ingen salat eller tomat lagt til. Illustrasjonsbilde, ikke dokumentasjon av en koketest.",
+    "alt": "Åpent pitabrød fylt med kyllingbiter, finstrimlet kål, agurk og yoghurtdressing.",
+    "variants": [
+      {
+        "file": "public/images/meals/pita-med-ferdigstekt-kylling.webp",
+        "width": 960,
+        "height": 640,
+        "bytes": 71322,
+        "sha256": "15a91ef72017afb7efe5f1b8611edfca12f066bd22f6cdba1ee99883b1a15a3b"
+      },
+      {
+        "file": "public/images/meals/pita-med-ferdigstekt-kylling-480.webp",
+        "width": 480,
+        "height": 320,
+        "bytes": 22168,
+        "sha256": "01b437a29558cfeaec64a5d8cfc1a4731dc416a082fd296f0a33bc74859058e1"
+      }
+    ],
+    "originalFile": "work/sprint03a/originals/pita-med-ferdigstekt-kylling.png",
+    "prompt": "Use case: photorealistic-natural. Asset type: original recipe illustration for Middagen.no. Generate ONE 3:2 landscape realistic food photograph. Natural Norwegian home weekday dinner, soft neutral daylight, simple off-white ceramic plate or bowl on a quiet pale neutral table, camera about 45 degrees. A generous realistic single dinner portion, whole food and vessel inside frame with safe margins, clear focus on food, believable textures. No text, logos, people, restaurant styling, collage, fake gloss or extreme bokeh. Follow exactly the specified ingredients; do not invent garnish. Subject: One large warm pita bread opened and generously filled with cooked chicken pieces seasoned lightly with paprika, finely shredded white cabbage, diced cucumber and a modest plain yogurt dressing. Filling visible, contained naturally, no extravagant overflowing. The chicken is cooked breast or roast chicken meat without skin or bones. Only pita, chicken, cabbage, cucumber, plain yogurt dressing and paprika. No tomato, lettuce, herbs, onion or lemon."
+  },
+  {
+    "mealId": "kylling-og-nudelsuppe",
+    "file": "public/images/meals/kylling-og-nudelsuppe.webp",
+    "source": "OpenAI image_gen.imagegen, built-in generation",
+    "provenance": "Originalt KI-generert bilde laget for Middagen.no fra ingredienslisten og fremgangsmåten. Ingen eksterne fotografier brukt.",
+    "classification": "generated",
+    "date": "2026-10-15",
+    "dateTimeUtc": "2026-10-14T22:04:18.523Z",
+    "notes": "Visuelt kontrollert: Klar suppe med nudler, kylling, gulrot og purre; skiller seg fra kremet fiskesuppe. Illustrasjonsbilde, ikke dokumentasjon av en koketest.",
+    "alt": "Klar kyllingsuppe med kyllingstrimler, eggnudler, gulrot og purre.",
+    "variants": [
+      {
+        "file": "public/images/meals/kylling-og-nudelsuppe.webp",
+        "width": 960,
+        "height": 640,
+        "bytes": 54436,
+        "sha256": "ad6f0c9febf077f52d854cb5307c424e7e3095759def553b48c15e4f92c290ba"
+      },
+      {
+        "file": "public/images/meals/kylling-og-nudelsuppe-480.webp",
+        "width": 480,
+        "height": 320,
+        "bytes": 19506,
+        "sha256": "d36913ae7991941eac66719557ff3800204af1766f3fef199760109de09d1312"
+      }
+    ],
+    "originalFile": "work/sprint03a/originals/kylling-og-nudelsuppe.png",
+    "prompt": "Use case: photorealistic-natural. Asset type: original recipe illustration for Middagen.no. Generate ONE 3:2 landscape realistic food photograph. Natural Norwegian home weekday dinner, soft neutral daylight, simple off-white ceramic plate or bowl on a quiet pale neutral table, camera about 45 degrees. A generous realistic single dinner portion, whole food and vessel inside frame with safe margins, clear focus on food, believable textures. No text, logos, people, restaurant styling, collage, fake gloss or extreme bokeh. Follow exactly the specified ingredients; do not invent garnish. Subject: A generous deep off-white soup bowl of clear golden broth containing cooked thin chicken breast strips, thin egg noodles, thin orange carrot half-moons and pale green leek rings. Soup clearly a liquid broth, not a wok or creamy soup. Only chicken, egg noodles, carrot, leek, chicken stock, soy sauce and black pepper. No parsley, coriander, lemon, chili, sesame, mushrooms or garnish."
+  },
+  {
+    "mealId": "kylling-og-ris-i-en-gryte",
+    "file": "public/images/meals/kylling-og-ris-i-en-gryte.webp",
+    "source": "OpenAI image_gen.imagegen, built-in generation",
+    "provenance": "Originalt KI-generert bilde laget for Middagen.no fra ingredienslisten og fremgangsmåten. Ingen eksterne fotografier brukt.",
+    "classification": "generated",
+    "date": "2026-10-15",
+    "dateTimeUtc": "2026-10-14T22:04:36.936Z",
+    "notes": "Visuelt kontrollert: Kokte kyllingbiter, ris, paprika og erter blandet sammen; ingen stekeskorpe på kjøttet. Illustrasjonsbilde, ikke dokumentasjon av en koketest.",
+    "alt": "Kyllingbiter blandet med ris, rød paprika og grønne erter i en samlet gryterett.",
+    "variants": [
+      {
+        "file": "public/images/meals/kylling-og-ris-i-en-gryte.webp",
+        "width": 960,
+        "height": 640,
+        "bytes": 68294,
+        "sha256": "30dbfd6272432f52476c1b273f9ec3fc433ec7c6367a9a726d435a30fdf00c94"
+      },
+      {
+        "file": "public/images/meals/kylling-og-ris-i-en-gryte-480.webp",
+        "width": 480,
+        "height": 320,
+        "bytes": 23176,
+        "sha256": "4c23b2cf7527b2b03b6f70e8f789e11ca28cffd8589324dba4becf5fb6d1b288"
+      }
+    ],
+    "originalFile": "work/sprint03a/originals/kylling-og-ris-i-en-gryte.png",
+    "prompt": "Use case: photorealistic-natural. Asset type: original recipe illustration for Middagen.no. Generate ONE 3:2 landscape realistic food photograph. Natural Norwegian home weekday dinner, soft neutral daylight, simple off-white ceramic plate or bowl on a quiet pale neutral table, camera about 45 degrees. A generous realistic single dinner portion, whole food and vessel inside frame with safe margins, clear focus on food, believable textures. No text, logos, people, restaurant styling, collage, fake gloss or extreme bokeh. Follow exactly the specified ingredients; do not invent garnish. Subject: A generous serving in a shallow off-white bowl of cooked white basmati rice mixed with fully cooked pale chicken breast cubes, diced red bell pepper, green peas and small soft onion pieces. Slight orange tint from paprika powder and stock. This dish simmers together in one pot: chicken is poached, not seared, no char. Rice fluffy and distinct, not soupy or creamy. Only chicken, rice, bell pepper, peas, onion, paprika and stock. No herbs, parsley, carrot, lemon or garnish."
+  },
+  {
+    "mealId": "fiskepinner-med-potetmos",
+    "file": "public/images/meals/fiskepinner-med-potetmos.webp",
+    "source": "OpenAI image_gen.imagegen, built-in generation",
+    "provenance": "Originalt KI-generert bilde laget for Middagen.no fra ingredienslisten og fremgangsmåten. Ingen eksterne fotografier brukt.",
+    "classification": "generated",
+    "date": "2026-10-15",
+    "dateTimeUtc": "2026-10-14T22:04:50.954Z",
+    "notes": "Visuelt kontrollert: Panerte fiskepinner med potetmos og erter; ingen ekstra sitron eller saus. Illustrasjonsbilde, ikke dokumentasjon av en koketest.",
+    "alt": "Sprø, gylne fiskepinner med potetmos og grønne erter på en lys tallerken.",
+    "variants": [
+      {
+        "file": "public/images/meals/fiskepinner-med-potetmos.webp",
+        "width": 960,
+        "height": 640,
+        "bytes": 70978,
+        "sha256": "2afd790928514d67a705673a853310127baadc6758ce0b39b108f683a98b0f46"
+      },
+      {
+        "file": "public/images/meals/fiskepinner-med-potetmos-480.webp",
+        "width": 480,
+        "height": 320,
+        "bytes": 22354,
+        "sha256": "d714ae5bf4712d7a48a6e2f970def9cb1b682e64a1cd0d36319d5ce963855d02"
+      }
+    ],
+    "originalFile": "work/sprint03a/originals/fiskepinner-med-potetmos.png",
+    "prompt": "Use case: photorealistic-natural. Asset type: original recipe illustration for Middagen.no. Generate ONE 3:2 landscape realistic food photograph. Natural Norwegian home weekday dinner, soft neutral daylight, simple off-white ceramic plate or bowl on a quiet pale neutral table, camera about 45 degrees. A generous realistic single dinner portion, whole food and vessel inside frame with safe margins, clear focus on food, believable textures. No text, logos, people, restaurant styling, collage, fake gloss or extreme bokeh. Follow exactly the specified ingredients; do not invent garnish. Subject: Four golden breaded fish fingers next to rustic homemade mashed potato and a generous spoonful of green peas. Fish fingers have a realistic crisp breadcrumb coating, rectangular small shapes, not huge breaded fish fillets. Simple generous home dinner on one off-white plate. Only fish fingers, mashed potato with milk and butter, green peas, salt and pepper. No ketchup, mayonnaise, lemon, herbs or other garnish."
+  },
+  {
+    "mealId": "seibiff-med-lok",
+    "file": "public/images/meals/seibiff-med-lok.webp",
+    "source": "OpenAI image_gen.imagegen, built-in generation",
+    "provenance": "Originalt KI-generert bilde laget for Middagen.no fra ingredienslisten og fremgangsmåten. Ingen eksterne fotografier brukt.",
+    "classification": "generated",
+    "date": "2026-10-15",
+    "dateTimeUtc": "2026-10-14T22:05:10.751Z",
+    "notes": "Visuelt kontrollert: Lett melet seibiff med stekeflate, myk løk og poteter; smør fra pannen. Illustrasjonsbilde, ikke dokumentasjon av en koketest.",
+    "alt": "Gylden seibiff med stekt løk, kokte poteter og litt smeltet smør.",
+    "variants": [
+      {
+        "file": "public/images/meals/seibiff-med-lok.webp",
+        "width": 960,
+        "height": 640,
+        "bytes": 63992,
+        "sha256": "65d7162eebc6f96d8ef87eb4364681520613815d746816f97ce5e6745d42a53d"
+      },
+      {
+        "file": "public/images/meals/seibiff-med-lok-480.webp",
+        "width": 480,
+        "height": 320,
+        "bytes": 21862,
+        "sha256": "5831bec406eb25b122b12c2d68178f5e990879e6606d86a9a5771926ae37014e"
+      }
+    ],
+    "originalFile": "work/sprint03a/originals/seibiff-med-lok.png",
+    "prompt": "Use case: photorealistic-natural. Asset type: original recipe illustration for Middagen.no. Generate ONE 3:2 landscape realistic food photograph. Natural Norwegian home weekday dinner, soft neutral daylight, simple off-white ceramic plate or bowl on a quiet pale neutral table, camera about 45 degrees. A generous realistic single dinner portion, whole food and vessel inside frame with safe margins, clear focus on food, believable textures. No text, logos, people, restaurant styling, collage, fake gloss or extreme bokeh. Follow exactly the specified ingredients; do not invent garnish. Subject: One generous portion of pan-fried saithe fillet, lightly flour-dusted with natural thin golden brown crust, under a mound of soft golden fried sliced onion. Boiled potato chunks alongside, a little melted butter from the pan. White flaky cooked fish visible at an edge. Only saithe, onion, potatoes, butter, flour, oil, salt and black pepper. No lemon, vegetables, parsley, dill, sauce or fresh garnish."
+  },
+  {
+    "mealId": "fiskeburger-med-kalsalat",
+    "file": "public/images/meals/fiskeburger-med-kalsalat.webp",
+    "source": "OpenAI image_gen.imagegen, built-in generation",
+    "provenance": "Originalt KI-generert bilde laget for Middagen.no fra ingredienslisten og fremgangsmåten. Ingen eksterne fotografier brukt.",
+    "classification": "generated",
+    "date": "2026-10-15",
+    "dateTimeUtc": "2026-10-14T22:05:27.185Z",
+    "notes": "Visuelt kontrollert: Upanerte fiskekaker i burgerbrød med kål-/gulrotsalat; ingen ekstra ost eller tomat. Illustrasjonsbilde, ikke dokumentasjon av en koketest.",
+    "alt": "Fiskeburger med brunede fiskekaker og kålsalat i et enkelt burgerbrød.",
+    "variants": [
+      {
+        "file": "public/images/meals/fiskeburger-med-kalsalat.webp",
+        "width": 960,
+        "height": 640,
+        "bytes": 56358,
+        "sha256": "b4bc608590b41e9c152d737300a32a6ddc84fe35572fe3179d5d76657dc280af"
+      },
+      {
+        "file": "public/images/meals/fiskeburger-med-kalsalat-480.webp",
+        "width": 480,
+        "height": 320,
+        "bytes": 19212,
+        "sha256": "8c821f97a6a973c7ad191819aaa34276dc811cab3f5ee1b1eb2f0338428d6ccc"
+      }
+    ],
+    "originalFile": "work/sprint03a/originals/fiskeburger-med-kalsalat.png",
+    "prompt": "Use case: photorealistic-natural. Asset type: original recipe illustration for Middagen.no. Generate ONE 3:2 landscape realistic food photograph. Natural Norwegian home weekday dinner, soft neutral daylight, simple off-white ceramic plate or bowl on a quiet pale neutral table, camera about 45 degrees. A generous realistic single dinner portion, whole food and vessel inside frame with safe margins, clear focus on food, believable textures. No text, logos, people, restaurant styling, collage, fake gloss or extreme bokeh. Follow exactly the specified ingredients; do not invent garnish. Subject: One ordinary plain burger bun filled with two unbreaded Norwegian fish cakes with softly browned surfaces and fine white cabbage-orange carrot coleslaw in light yogurt mustard dressing. Top bun tilted slightly so the filling is clear. A small mound of coleslaw on the same plate. Fish cakes are soft beige patties with pan browning, not breaded fish fingers. Only burger bun, fish cakes, cabbage, carrot and yogurt mustard dressing. No lettuce, tomato, cheese, fries, sesame or herbs."
+  },
+  {
+    "mealId": "fiskegrateng-med-makaroni",
+    "file": "public/images/meals/fiskegrateng-med-makaroni.webp",
+    "source": "OpenAI image_gen.imagegen, built-in generation",
+    "provenance": "Originalt KI-generert bilde laget for Middagen.no fra ingredienslisten og fremgangsmåten. Ingen eksterne fotografier brukt.",
+    "classification": "generated",
+    "date": "2026-10-15",
+    "dateTimeUtc": "2026-10-14T22:05:06.903Z",
+    "notes": "Visuelt kontrollert: Synlig sei og makaroni under brødsmuleskorpe. Ingen ost eller grønnsaker lagt til. Illustrasjonsbilde, ikke dokumentasjon av en koketest.",
+    "alt": "En porsjon fiskegrateng med synlig sei og makaroni under en gyllen brødsmuleskorpe.",
+    "variants": [
+      {
+        "file": "public/images/meals/fiskegrateng-med-makaroni.webp",
+        "width": 960,
+        "height": 640,
+        "bytes": 54784,
+        "sha256": "48a3c4f39c98a039aa4ff8421e09644bb91a15ba05cb7b381393c309992a6970"
+      },
+      {
+        "file": "public/images/meals/fiskegrateng-med-makaroni-480.webp",
+        "width": 480,
+        "height": 320,
+        "bytes": 19692,
+        "sha256": "c8add64fd19bad3d03b60cdc09db120e68523d31f012ca565b40f51176714a42"
+      }
+    ],
+    "originalFile": "work/sprint03a/originals/fiskegrateng-med-makaroni.png",
+    "prompt": "Use case: photorealistic-natural. Asset type: original recipe illustration for Middagen.no. Generate ONE 3:2 landscape realistic food photograph. Natural Norwegian home weekday dinner, soft neutral daylight, simple off-white ceramic plate or bowl on a quiet pale neutral table, camera about 45 degrees. A generous realistic single dinner portion, whole food and vessel inside frame with safe margins, clear focus on food, believable textures. No text, logos, people, restaurant styling, collage, fake gloss or extreme bokeh. Follow exactly the specified ingredients; do not invent garnish. Subject: One generous cut serving of Norwegian homemade fish gratin on an off-white plate, with a thin golden breadcrumb crust. Show recognizable white saithe flakes and elbow macaroni inside the set pale milk-and-egg sauce. The gratin is moist and rustic with visible macaroni tubes, not lasagne. Only saithe, macaroni, white sauce made with milk flour butter and eggs, breadcrumb topping, a little nutmeg and black pepper. No cheese, peas, carrots, parsley, lemon or side dishes."
+  },
+  {
+    "mealId": "fiskesuppe-med-sei",
+    "file": "public/images/meals/fiskesuppe-med-sei.webp",
+    "source": "OpenAI image_gen.imagegen, built-in generation",
+    "provenance": "Originalt KI-generert bilde laget for Middagen.no fra ingredienslisten og fremgangsmåten. Ingen eksterne fotografier brukt.",
+    "classification": "generated",
+    "date": "2026-10-15",
+    "dateTimeUtc": "2026-10-14T22:05:21.034Z",
+    "notes": "Visuelt kontrollert: Lyse seibiter, potet, gulrot og purre i fløtepreget kraft; ingen urter eller brød. Illustrasjonsbilde, ikke dokumentasjon av en koketest.",
+    "alt": "Lys fiskesuppe med seibiter, potetterninger, gulrotskiver og purre.",
+    "variants": [
+      {
+        "file": "public/images/meals/fiskesuppe-med-sei.webp",
+        "width": 960,
+        "height": 640,
+        "bytes": 52034,
+        "sha256": "b2c94e0936404c14a30cd501f59a46a55cbb04769ee25d724b63008332f4f024"
+      },
+      {
+        "file": "public/images/meals/fiskesuppe-med-sei-480.webp",
+        "width": 480,
+        "height": 320,
+        "bytes": 17058,
+        "sha256": "63e9ed48e2ce988de755f32aab771a71fe0257644b4b0fee8e285b992c2e5df4"
+      }
+    ],
+    "originalFile": "work/sprint03a/originals/fiskesuppe-med-sei.png",
+    "prompt": "Use case: photorealistic-natural. Asset type: original recipe illustration for Middagen.no. Generate ONE 3:2 landscape realistic food photograph. Natural Norwegian home weekday dinner, soft neutral daylight, simple off-white ceramic plate or bowl on a quiet pale neutral table, camera about 45 degrees. A generous realistic single dinner portion, whole food and vessel inside frame with safe margins, clear focus on food, believable textures. No text, logos, people, restaurant styling, collage, fake gloss or extreme bokeh. Follow exactly the specified ingredients; do not invent garnish. Subject: A deep off-white bowl of pale lightly creamy fish soup with large cooked white saithe cubes, small potato cubes, thin orange carrot slices and pale green leek rings visibly suspended in the broth. A full hearty dinner portion, clearly soup rather than a plate of fish and potatoes. Only saithe, potato, carrot, leek, fish stock, cream, butter and black pepper. No shrimp, salmon, herbs, lemon, bread or garnish."
+  },
+  {
+    "mealId": "fiskeboller-i-hvit-saus",
+    "file": "public/images/meals/fiskeboller-i-hvit-saus.webp",
+    "source": "OpenAI image_gen.imagegen, built-in generation",
+    "provenance": "Originalt KI-generert bilde laget for Middagen.no fra ingredienslisten og fremgangsmåten. Ingen eksterne fotografier brukt.",
+    "classification": "generated",
+    "date": "2026-10-15",
+    "dateTimeUtc": "2026-10-14T22:05:38.290Z",
+    "notes": "Visuelt kontrollert: Fiskeboller i hvit saus med poteter og gulrot; forskjellig fra stekt fisk. Illustrasjonsbilde, ikke dokumentasjon av en koketest.",
+    "alt": "Hvite fiskeboller i lys saus med kokte poteter og gulrotskiver.",
+    "variants": [
+      {
+        "file": "public/images/meals/fiskeboller-i-hvit-saus.webp",
+        "width": 960,
+        "height": 640,
+        "bytes": 40480,
+        "sha256": "891ad9cb8c0af146d43f9154450baf13281bb9b56e38da98c969c0e74b3ff0b1"
+      },
+      {
+        "file": "public/images/meals/fiskeboller-i-hvit-saus-480.webp",
+        "width": 480,
+        "height": 320,
+        "bytes": 14276,
+        "sha256": "f764f6cd174b96cdd4d111d278faeb07e5013343c700063af710eae57509d465"
+      }
+    ],
+    "originalFile": "work/sprint03a/originals/fiskeboller-i-hvit-saus.png",
+    "prompt": "Use case: photorealistic-natural. Asset type: original recipe illustration for Middagen.no. Generate ONE 3:2 landscape realistic food photograph. Natural Norwegian home weekday dinner, soft neutral daylight, simple off-white ceramic plate or bowl on a quiet pale neutral table, camera about 45 degrees. A generous realistic single dinner portion, whole food and vessel inside frame with safe margins, clear focus on food, believable textures. No text, logos, people, restaurant styling, collage, fake gloss or extreme bokeh. Follow exactly the specified ingredients; do not invent garnish. Subject: A generous dinner plate with several smooth white Norwegian fish balls in a modest white milk sauce. Boiled potato chunks and thick orange carrot slices beside them, visibly separate from the fish balls. Fish balls have pale smooth unbrowned surfaces, gently oval round shapes. Only fish balls, milk sauce, potatoes, carrots, butter, flour, fish stock and black pepper. No curry, peas, bacon, parsley, lemon or other garnish."
+  },
+  {
+    "mealId": "pannekaker-med-spinat",
+    "file": "public/images/meals/pannekaker-med-spinat.webp",
+    "source": "OpenAI image_gen.imagegen, built-in generation",
+    "provenance": "Originalt KI-generert bilde laget for Middagen.no fra ingredienslisten og fremgangsmåten. Ingen eksterne fotografier brukt.",
+    "classification": "generated",
+    "date": "2026-10-15",
+    "dateTimeUtc": "2026-10-14T22:06:01.703Z",
+    "notes": "Visuelt kontrollert: Tynne foldede pannekaker med synlig spinat og cottage cheese; ingen søt topping. Illustrasjonsbilde, ikke dokumentasjon av en koketest.",
+    "alt": "Foldede pannekaker med synlig grønn spinat og hvit cottage cheese i fyllet.",
+    "variants": [
+      {
+        "file": "public/images/meals/pannekaker-med-spinat.webp",
+        "width": 960,
+        "height": 640,
+        "bytes": 86176,
+        "sha256": "dbbab7f573358ccfe3ec5ac2a967a5bdec5066673124694d14a7642e9b44c865"
+      },
+      {
+        "file": "public/images/meals/pannekaker-med-spinat-480.webp",
+        "width": 480,
+        "height": 320,
+        "bytes": 27904,
+        "sha256": "f822a2c33613b016c2b076500382ac72eb575d21498946ad43db6fb0d3625726"
+      }
+    ],
+    "originalFile": "work/sprint03a/originals/pannekaker-med-spinat.png",
+    "prompt": "Use case: photorealistic-natural. Asset type: original recipe illustration for Middagen.no. Generate ONE 3:2 landscape realistic food photograph. Natural Norwegian home weekday dinner, soft neutral daylight, simple off-white ceramic plate or bowl on a quiet pale neutral table, camera about 45 degrees. A generous realistic single dinner portion, whole food and vessel inside frame with safe margins, clear focus on food, believable textures. No text, logos, people, restaurant styling, collage, fake gloss or extreme bokeh. Follow exactly the specified ingredients; do not invent garnish. Subject: Two thin golden Norwegian dinner pancakes folded around a generous filling of cooked green spinach and white cottage cheese. One pancake is partly open to clearly show realistic wilted spinach and small cottage cheese curds. Home-cooked thin pancakes with mottled golden pan browning, not American thick pancakes or omelettes. Only pancakes from eggs flour milk butter and salt, spinach, cottage cheese, nutmeg and pepper. No sugar, syrup, berries, tomato, salad, cream drizzle or garnish."
+  },
+  {
+    "mealId": "linsegryte-med-sopp",
+    "file": "public/images/meals/linsegryte-med-sopp.webp",
+    "source": "OpenAI image_gen.imagegen, built-in generation",
+    "provenance": "Originalt KI-generert bilde laget for Middagen.no fra ingredienslisten og fremgangsmåten. Ingen eksterne fotografier brukt.",
+    "classification": "generated",
+    "date": "2026-10-15",
+    "dateTimeUtc": "2026-10-14T22:05:41.267Z",
+    "notes": "Visuelt kontrollert: Grønne/brune linser, sopp, potet, gulrot og løk i lys gryte; kun tørket timian. Illustrasjonsbilde, ikke dokumentasjon av en koketest.",
+    "alt": "Grønne linser, sjampinjong, potetterninger og gulrot i en lys, rustikk gryte.",
+    "variants": [
+      {
+        "file": "public/images/meals/linsegryte-med-sopp.webp",
+        "width": 960,
+        "height": 640,
+        "bytes": 74492,
+        "sha256": "d340692393e3cd3a4eb2c29193847e0ea4f26a48f00d895bb733535675752c03"
+      },
+      {
+        "file": "public/images/meals/linsegryte-med-sopp-480.webp",
+        "width": 480,
+        "height": 320,
+        "bytes": 24414,
+        "sha256": "b31bf43c4f652f32f930358e2de2a04e4b539564262d5a9f11e0e57eee2da580"
+      }
+    ],
+    "originalFile": "work/sprint03a/originals/linsegryte-med-sopp.png",
+    "prompt": "Use case: photorealistic-natural. Asset type: original recipe illustration for Middagen.no. Generate ONE 3:2 landscape realistic food photograph. Natural Norwegian home weekday dinner, soft neutral daylight, simple off-white ceramic plate or bowl on a quiet pale neutral table, camera about 45 degrees. A generous realistic single dinner portion, whole food and vessel inside frame with safe margins, clear focus on food, believable textures. No text, logos, people, restaurant styling, collage, fake gloss or extreme bokeh. Follow exactly the specified ingredients; do not invent garnish. Subject: A shallow off-white bowl of hearty thick lentil stew: recognizable cooked green-brown lentils, browned sliced button mushrooms, pale potato cubes, thin orange carrot slices and soft onion in a light beige broth with a little cream. Dried thyme flecks only, not fresh herb sprigs. Only green lentils, potato, mushroom, carrot, onion, cream, stock, oil, dried thyme and black pepper. No red tomato sauce, rice, fresh herbs, bread or garnish."
+  },
+  {
+    "mealId": "tomat-og-bonnepasta",
+    "file": "public/images/meals/tomat-og-bonnepasta.webp",
+    "source": "OpenAI image_gen.imagegen, built-in generation",
+    "provenance": "Originalt KI-generert bilde laget for Middagen.no fra ingredienslisten og fremgangsmåten. Ingen eksterne fotografier brukt.",
+    "classification": "generated",
+    "date": "2026-10-15",
+    "dateTimeUtc": "2026-10-14T22:05:59.667Z",
+    "notes": "Visuelt kontrollert: Penne og hvite bønner er synlige i tomatsaus; ingen ost eller frisk basilikum. Illustrasjonsbilde, ikke dokumentasjon av en koketest.",
+    "alt": "Pasta i rød tomatsaus med tydelige hvite bønner og små løkbiter.",
+    "variants": [
+      {
+        "file": "public/images/meals/tomat-og-bonnepasta.webp",
+        "width": 960,
+        "height": 640,
+        "bytes": 87920,
+        "sha256": "99ccffa2b000b76ae53a9038a052922bc3e982b3537d9eed1cfbd19b9d63f5d5"
+      },
+      {
+        "file": "public/images/meals/tomat-og-bonnepasta-480.webp",
+        "width": 480,
+        "height": 320,
+        "bytes": 26966,
+        "sha256": "70417b3dd7273d8e679ab093e55414a8644e59103d31d94e56440820296e7897"
+      }
+    ],
+    "originalFile": "work/sprint03a/originals/tomat-og-bonnepasta.png",
+    "prompt": "Use case: photorealistic-natural. Asset type: original recipe illustration for Middagen.no. Generate ONE 3:2 landscape realistic food photograph. Natural Norwegian home weekday dinner, soft neutral daylight, simple off-white ceramic plate or bowl on a quiet pale neutral table, camera about 45 degrees. A generous realistic single dinner portion, whole food and vessel inside frame with safe margins, clear focus on food, believable textures. No text, logos, people, restaurant styling, collage, fake gloss or extreme bokeh. Follow exactly the specified ingredients; do not invent garnish. Subject: A generous shallow off-white pasta bowl of short penne in a chunky red tomato sauce, with clearly visible white cannellini beans and tiny softened onion pieces, faint dried oregano. Natural home-cooked texture. Only penne, white beans, chopped tomato, onion, oil, dried oregano, salt and black pepper. No cheese, fresh herbs, basil, parsley, bread, cream or other garnish."
+  },
+  {
+    "mealId": "kikertpanne-med-brokkoli-og-egg",
+    "file": "public/images/meals/kikertpanne-med-brokkoli-og-egg.webp",
+    "source": "OpenAI image_gen.imagegen, built-in generation",
+    "provenance": "Originalt KI-generert bilde laget for Middagen.no fra ingredienslisten og fremgangsmåten. Ingen eksterne fotografier brukt.",
+    "classification": "generated",
+    "date": "2026-10-15",
+    "dateTimeUtc": "2026-10-14T22:06:17.396Z",
+    "notes": "Visuelt kontrollert: Kikerter, brokkoli og egg med brød og yoghurt; alle synlige matvarer finnes i oppskriften. Illustrasjonsbilde, ikke dokumentasjon av en koketest.",
+    "alt": "Kikerter og brokkoli med et stekt egg, grovt brød og en skje yoghurt.",
+    "variants": [
+      {
+        "file": "public/images/meals/kikertpanne-med-brokkoli-og-egg.webp",
+        "width": 960,
+        "height": 640,
+        "bytes": 97614,
+        "sha256": "8f2470a09f1a49debb468d170ae8fc07fbf391f0366593827384f19c888d1342"
+      },
+      {
+        "file": "public/images/meals/kikertpanne-med-brokkoli-og-egg-480.webp",
+        "width": 480,
+        "height": 320,
+        "bytes": 32260,
+        "sha256": "2e6ce11f3dd588c76a40cd11b9c925cb7bd44c269a22f7432b60363aacc5ceae"
+      }
+    ],
+    "originalFile": "work/sprint03a/originals/kikertpanne-med-brokkoli-og-egg.png",
+    "prompt": "Use case: photorealistic-natural. Asset type: original recipe illustration for Middagen.no. Generate ONE 3:2 landscape realistic food photograph. Natural Norwegian home weekday dinner, soft neutral daylight, simple off-white ceramic plate or bowl on a quiet pale neutral table, camera about 45 degrees. A generous realistic single dinner portion, whole food and vessel inside frame with safe margins, clear focus on food, believable textures. No text, logos, people, restaurant styling, collage, fake gloss or extreme bokeh. Follow exactly the specified ingredients; do not invent garnish. Subject: A generous plated serving of cooked chickpeas and small green broccoli florets with one cooked egg set on top, opaque set white and yellow yolk visible, lightly sprinkled with paprika and pepper. Two slices of coarse brown bread and one modest dollop of plain yogurt beside the vegetables on the same plate. Only chickpeas, broccoli including small stem pieces, egg, bread, plain yogurt, oil, paprika powder, salt and pepper. No tomato, onion, parsley, herbs or garnish."
+  },
+  {
+    "mealId": "potet-og-blomkalgrateng",
+    "file": "public/images/meals/potet-og-blomkalgrateng.webp",
+    "source": "OpenAI image_gen.imagegen, built-in generation",
+    "provenance": "Originalt KI-generert bilde laget for Middagen.no fra ingredienslisten og fremgangsmåten. Ingen eksterne fotografier brukt.",
+    "classification": "generated",
+    "date": "2026-10-15",
+    "dateTimeUtc": "2026-10-14T22:06:33.254Z",
+    "notes": "Visuelt kontrollert: Snitt viser potetskiver, blomkål og hvite bønner under osteskorpe. Illustrasjonsbilde, ikke dokumentasjon av en koketest.",
+    "alt": "Potet- og blomkålgrateng med synlige hvite bønner under en gyllen osteskorpe.",
+    "variants": [
+      {
+        "file": "public/images/meals/potet-og-blomkalgrateng.webp",
+        "width": 960,
+        "height": 640,
+        "bytes": 63192,
+        "sha256": "ceba3e243ea39ea5286f537a1c3c15fa64f26afa32b2990b5441d0e235e005b2"
+      },
+      {
+        "file": "public/images/meals/potet-og-blomkalgrateng-480.webp",
+        "width": 480,
+        "height": 320,
+        "bytes": 20330,
+        "sha256": "7f864f53da923d83b08eb3d7b1f2e4bed1d1c3f8c585d6363593e0d282150c46"
+      }
+    ],
+    "originalFile": "work/sprint03a/originals/potet-og-blomkalgrateng.png",
+    "prompt": "Use case: photorealistic-natural. Asset type: original recipe illustration for Middagen.no. Generate ONE 3:2 landscape realistic food photograph. Natural Norwegian home weekday dinner, soft neutral daylight, simple off-white ceramic plate or bowl on a quiet pale neutral table, camera about 45 degrees. A generous realistic single dinner portion, whole food and vessel inside frame with safe margins, clear focus on food, believable textures. No text, logos, people, restaurant styling, collage, fake gloss or extreme bokeh. Follow exactly the specified ingredients; do not invent garnish. Subject: A generous rustic serving of potato and cauliflower gratin on an off-white plate. Thin potato slices, cauliflower florets and visible white cannellini beans in a pale milk-and-cheese sauce, under a lightly golden melted-cheese top. Show the cut side so cauliflower, potatoes and beans can be distinguished. Only potato, cauliflower, white beans, milk sauce, cheese, butter, flour, salt and black pepper. No broccoli, bacon, parsley, herbs, tomato or garnish."
+  },
+  {
+    "mealId": "gronn-ertesuppe",
+    "file": "public/images/meals/gronn-ertesuppe.webp",
+    "source": "OpenAI image_gen.imagegen, built-in generation",
+    "provenance": "Originalt KI-generert bilde laget for Middagen.no fra ingredienslisten og fremgangsmåten. Ingen eksterne fotografier brukt.",
+    "classification": "generated",
+    "date": "2026-10-15",
+    "dateTimeUtc": "2026-10-14T22:06:50.230Z",
+    "notes": "Visuelt kontrollert: Grønn suppe med grovt brød; fløten er blandet inn, uten dekorativ topping. Illustrasjonsbilde, ikke dokumentasjon av en koketest.",
+    "alt": "Tykk grønn ertesuppe i en lys bolle med grovt brød ved siden av.",
+    "variants": [
+      {
+        "file": "public/images/meals/gronn-ertesuppe.webp",
+        "width": 960,
+        "height": 640,
+        "bytes": 82764,
+        "sha256": "59abb5b62b4141d47d5e553e551ccc2c492d41314bc57613b8bc9efaa4b345b3"
+      },
+      {
+        "file": "public/images/meals/gronn-ertesuppe-480.webp",
+        "width": 480,
+        "height": 320,
+        "bytes": 25490,
+        "sha256": "cd56a64d6002b66ef6daf8bf77171ff6af34a0adb332673a9b594cdeba394e47"
+      }
+    ],
+    "originalFile": "work/sprint03a/originals/gronn-ertesuppe.png",
+    "prompt": "Use case: photorealistic-natural. Asset type: original recipe illustration for Middagen.no. Generate ONE 3:2 landscape realistic food photograph. Natural Norwegian home weekday dinner, soft neutral daylight, simple off-white ceramic plate or bowl on a quiet pale neutral table, camera about 45 degrees. A generous realistic single dinner portion, whole food and vessel inside frame with safe margins, clear focus on food, believable textures. No text, logos, people, restaurant styling, collage, fake gloss or extreme bokeh. Follow exactly the specified ingredients; do not invent garnish. Subject: A deep off-white bowl of thick vivid natural green pea soup, smooth but with subtle homemade texture, served beside two slices of coarse brown bread. Soup contains green peas, onion, vegetable stock, cream, butter and black pepper. Cream is blended into the soup, not a decorative swirl. No whole pea garnish, fresh herbs, mint, parsley, croutons, bacon, lemon or other garnish."
   }
 ]

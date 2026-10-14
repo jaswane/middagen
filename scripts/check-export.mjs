@@ -15,4 +15,4 @@ for (const meal of meals) {
   assert.ok(!html.includes('noindex'), `${meal.id}: indexable`);
   for (const suffix of ['.webp', '-480.webp']) assert.ok(fs.existsSync(`out/images/meals/${meal.slug}${suffix}`));
 }
-console.log('PASS export: 42 recipe pages, both image variants, dimensions, apex Recipe schema, instructions, indexable');
+console.log('PASS export: 62 recipe pages, both image variants, dimensions, apex Recipe schema, instructions, indexable');

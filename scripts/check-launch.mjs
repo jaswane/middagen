@@ -56,7 +56,7 @@ test('5-6. robots.txt allows crawling and points to the apex sitemap', () => {
   assert.ok(!/^Disallow: \/\s*$/m.test(robots), 'no blanket Disallow');
   assert.match(robots, /^Sitemap: https:\/\/middagen\.no\/sitemap\.xml$/m);
 });
-test('7-9. sitemap: all 42 recipes plus /, /om/, /slik-velger-vi/; unique, canonical, indexable, no lastmod', () => {
+test('7-9. sitemap: all 62 recipes plus /, /om/, /slik-velger-vi/; unique, canonical, indexable, no lastmod', () => {
   const xml = fs.readFileSync('out/sitemap.xml', 'utf8');
   const locs = [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m => m[1]);
   assert.equal(locs.length, sitemapPages.length);

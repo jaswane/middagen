@@ -26,9 +26,10 @@ function webpDimensions(bytes) {
   throw new Error('WebP has no dimensions');
 }
 
-assert.equal(meals.length, 42);
-assert.equal(manifest.length, 42);
+assert.equal(meals.length, 62);
+assert.equal(manifest.length, 62);
 unique(meals.map(m => m.id), 'meal IDs');
+unique(meals.map(m => m.title.trim().toLocaleLowerCase('nb')), 'titles');
 unique(meals.map(m => m.slug), 'slugs');
 unique(meals.map(m => m.shortDescription.trim().toLocaleLowerCase('nb')), 'descriptions');
 unique(meals.map(m => m.image?.src), 'image paths');
@@ -75,5 +76,5 @@ for (const m of meals) {
     totalBytes += bytes.length;
   }
 }
-console.log(`PASS content: 42 recipes, unique descriptions/slugs, recipe fields and objective display tags`);
-console.log(`PASS images: 84 local WebP files, dimensions, alt, SHA-256 and provenance (${totalBytes} bytes)`);
+console.log(`PASS content: 62 recipes, unique descriptions/slugs, recipe fields and objective display tags`);
+console.log(`PASS images: 124 local WebP files, dimensions, alt, SHA-256 and provenance (${totalBytes} bytes)`);
