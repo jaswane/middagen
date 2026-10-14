@@ -28,7 +28,7 @@ await test('robots.txt allows crawling and points to the apex sitemap', async ()
   assert.ok(!/^Disallow: \/\s*$/m.test(robots));
   assert.match(robots, /^Sitemap: https:\/\/middagen\.no\/sitemap\.xml$/m);
 });
-await test('sitemap.xml lists 45 unique apex URLs that answer 200', async () => {
+await test(`sitemap.xml lists ${meals.length + 3} unique apex URLs that answer 200`, async () => {
   const res = await get(`${SITE}/sitemap.xml`);
   assert.equal(res.status, 200);
   const locs = [...(await res.text()).matchAll(/<loc>([^<]+)<\/loc>/g)].map(m => m[1]);
