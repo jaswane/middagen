@@ -5,12 +5,13 @@ import assert from 'node:assert/strict';
 
 const SITE = 'https://middagen.no';
 const meals = JSON.parse(fs.readFileSync('lib/meals.json', 'utf8'));
+const sitemapStatic = ['/', '/middager/', '/om/', '/slik-velger-vi/'];
 const get = (url, redirect = 'follow') => fetch(url, { redirect, headers: { 'user-agent': 'middagen-launch-check' } });
 let checks = 0;
 async function test(name, fn) { await fn(); checks++; console.log(`PASS ${name}`); }
 
 await test('public pages: 200, apex self-canonical, indexable, no old host', async () => {
-  const sample = ['/', '/om/', '/slik-velger-vi/', '/personvern/', '/kontakt/', ...meals.slice(0, 6).map(m => `/middag/${m.slug}/`)];
+  const sample = ['/', '/middager/', '/om/', '/slik-velger-vi/', '/personvern/', '/kontakt/', ...meals.slice(0, 6).map(m => `/middag/${m.slug}/`)];
   for (const page of sample) {
     const res = await get(SITE + page, 'manual');
     assert.equal(res.status, 200, page);
@@ -28,11 +29,11 @@ await test('robots.txt allows crawling and points to the apex sitemap', async ()
   assert.ok(!/^Disallow: \/\s*$/m.test(robots));
   assert.match(robots, /^Sitemap: https:\/\/middagen\.no\/sitemap\.xml$/m);
 });
-await test(`sitemap.xml lists ${meals.length + 3} unique apex URLs that answer 200`, async () => {
+await test(`sitemap.xml lists ${sitemapStatic.length + meals.length} unique apex URLs that answer 200`, async () => {
   const res = await get(`${SITE}/sitemap.xml`);
   assert.equal(res.status, 200);
   const locs = [...(await res.text()).matchAll(/<loc>([^<]+)<\/loc>/g)].map(m => m[1]);
-  assert.equal(locs.length, meals.length + 3);
+  assert.equal(locs.length, sitemapStatic.length + meals.length);
   assert.equal(new Set(locs).size, locs.length);
   for (const loc of locs) { assert.ok(loc.startsWith(`${SITE}/`)); assert.equal((await get(loc, 'manual')).status, 200, loc); }
 });

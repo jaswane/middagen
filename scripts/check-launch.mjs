@@ -5,8 +5,11 @@ import assert from 'node:assert/strict';
 
 const SITE = 'https://middagen.no';
 const meals = JSON.parse(fs.readFileSync('lib/meals.json', 'utf8'));
-const publicPages = ['/', '/om/', '/slik-velger-vi/', '/personvern/', '/kontakt/', ...meals.map(m => `/middag/${m.slug}/`)];
-const sitemapPages = ['/', '/om/', '/slik-velger-vi/', ...meals.map(m => `/middag/${m.slug}/`)];
+// Fixed pages with search value; /personvern/ and /kontakt/ are indexable but stay out of the sitemap.
+const sitemapStatic = ['/', '/middager/', '/om/', '/slik-velger-vi/'];
+const recipePages = meals.map(m => `/middag/${m.slug}/`);
+const publicPages = [...sitemapStatic, '/personvern/', '/kontakt/', ...recipePages];
+const sitemapPages = [...sitemapStatic, ...recipePages];
 const oldHosts = /chatgpt\.site|chatgpt-team|vercel\.app|localhost|127\.0\.0\.1|www\.middagen\.no/;
 const read = page => fs.readFileSync(path.join('out', page, 'index.html'), 'utf8');
 const attr = (html, re) => html.match(re)?.[1] ?? null;
@@ -56,7 +59,7 @@ test('5-6. robots.txt allows crawling and points to the apex sitemap', () => {
   assert.ok(!/^Disallow: \/\s*$/m.test(robots), 'no blanket Disallow');
   assert.match(robots, /^Sitemap: https:\/\/middagen\.no\/sitemap\.xml$/m);
 });
-test('7-9. sitemap: all 62 recipes plus /, /om/, /slik-velger-vi/; unique, canonical, indexable, no lastmod', () => {
+test(`7-9. sitemap: all ${meals.length} recipes plus ${sitemapStatic.join(', ')}; unique, canonical, indexable, no lastmod`, () => {
   const xml = fs.readFileSync('out/sitemap.xml', 'utf8');
   const locs = [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m => m[1]);
   assert.equal(locs.length, sitemapPages.length);
@@ -89,5 +92,18 @@ test('14. footer credit on every page; the contact address only on /kontakt', ()
   const kontakt = read('/kontakt/');
   assert.ok(kontakt.includes('mailto:kontakt@swanecreative.no'));
   assert.ok(!kontakt.match(/<footer[\s\S]*<\/footer>/)[0].includes('kontakt@swanecreative.no'), 'not in the footer');
+});
+test('15. /middager/ links every recipe exactly once with plain crawlable hrefs in the static HTML', () => {
+  const html = read('/middager/');
+  const hrefs = [...html.matchAll(/<a\b[^>]*\bhref="(\/middag\/[^"]+)"/g)].map(m => m[1]);
+  assert.equal(hrefs.length, meals.length, 'one link per recipe');
+  assert.equal(new Set(hrefs).size, hrefs.length, 'no duplicate recipe links');
+  assert.deepEqual([...hrefs].sort(), [...recipePages].sort(), 'no recipe missing');
+  assert.equal(canonicalOf(html), `${SITE}/middager/`);
+  assert.ok(!html.includes('noindex'));
+  assert.ok(fs.readFileSync('out/sitemap.xml', 'utf8').includes(`<loc>${SITE}/middager/</loc>`));
+  // The overview is reachable from every page through the footer, and from every recipe page body.
+  for (const page of publicPages) assert.match(read(page).match(/<footer[\s\S]*<\/footer>/)[0], /href="\/middager\/"/, page);
+  for (const page of recipePages) assert.match(read(page).match(/<main[\s\S]*<\/main>/)[0], /href="\/middager\/"/, page);
 });
 console.log(JSON.stringify({ checks, publicPages: publicPages.length, sitemapUrls: sitemapPages.length }));
