@@ -46,7 +46,15 @@ export function AnalyticsConsent() {
   function choose(choice: ConsentChoice) {
     setAnalyticsConsent(choice);
     setOpen(false);
-    opener.current?.focus();
+    // Reopened from «Endre analysevalg»: back to that button. First visit: there is no opener,
+    // so start of the main content, not <body>. The temporary tabindex goes away on blur.
+    const main = document.getElementById('hovedinnhold');
+    if (opener.current) opener.current.focus();
+    else if (main) {
+      main.tabIndex = -1;
+      main.addEventListener('blur', () => main.removeAttribute('tabindex'), { once: true });
+      main.focus({ preventScroll: true });
+    }
     opener.current = null;
   }
   if (!open) return null;

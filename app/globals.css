@@ -71,7 +71,7 @@ body{padding-bottom:var(--consent-space,0)}
 
 /* Card numbers: a quiet visual aid in the image corner, not a ranking. Shares the image's grid cell. */
 @media(min-width:761px){.card-preview{display:grid;grid-template-columns:minmax(0,1fr)}.card-preview>.meal-photo{grid-area:1/1}}
-.card-index{grid-column:1;grid-row:1;align-self:start;justify-self:start;z-index:1;margin:12px 0 0 12px;min-width:28px;height:28px;padding:0 7px;display:grid;place-items:center;border-radius:var(--radius);background:rgba(56,38,61,.58);color:#fff;font-family:var(--font-display);font-size:16px;line-height:1;font-variant-numeric:lining-nums tabular-nums;text-shadow:0 1px 2px rgba(0,0,0,.25);pointer-events:none}
+.card-index{grid-column:1;grid-row:1;align-self:start;justify-self:start;z-index:1;margin:12px 0 0 12px;min-width:28px;height:28px;padding:0 7px;display:grid;place-items:center;border-radius:var(--radius);background:rgba(56,38,61,.72);color:#fff;font-family:var(--font-display);font-size:16px;line-height:1;font-variant-numeric:lining-nums tabular-nums;text-shadow:0 1px 2px rgba(0,0,0,.25);pointer-events:none}
 @media(max-width:760px){.card-index{grid-column:2;margin:6px 0 0 6px;min-width:22px;height:22px;padding:0 5px;font-size:13px}}
 
 /* /middager/: a quiet index of every dinner, built for scanning rather than browsing. */
@@ -85,3 +85,8 @@ body{padding-bottom:var(--consent-space,0)}
 .dinner-index-count{margin-left:4px;font-family:var(--font-body);font-size:14px;letter-spacing:0;color:var(--muted)}
 .recipe-bottom p a{color:var(--ink);text-decoration:underline;text-underline-offset:4px}
 @media(max-width:760px){.dinner-index .dinner-index-list a{grid-template-columns:64px minmax(0,1fr);gap:14px;min-height:60px}.dinner-index-photo{width:64px;height:43px}.dinner-index-title{font-size:18px}}
+
+/* While the consent banner is open, keep keyboard focus scrolled above it. The temporary focus
+   target after a first consent choice is the main landmark; it needs no ring of its own. */
+html{scroll-padding-bottom:var(--consent-space,0)}
+#hovedinnhold:focus{outline:none!important}
