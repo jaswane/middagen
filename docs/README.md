@@ -25,6 +25,8 @@ Middagen.no er i offentlig produksjon på https://middagen.no. Nettstedet er en 
 - Eneste canonical host er https://middagen.no (`../lib/site.ts`). Alle offentlige sider er indekserbare og peker til seg selv.
 - `robots.txt` tillater crawling og peker til `https://middagen.no/sitemap.xml`.
 - `../app/sitemap.ts` lister /, /middager/, /om/, /slik-velger-vi/ og alle middagssidene fra `meals.json`, i dag 66 URL-er. /personvern/ og /kontakt/ er indekserbare, men står ikke i sitemapen. Ingen `lastmod`, fordi det ikke finnes en pålitelig dato per side.
+- Recipe-schemaet på hver oppskrift har bare felt med reelt grunnlag i `meals.json`: navn, beskrivelse, bilde, total tid, porsjoner, kategori, ingredienser, `keywords` (hovedråvarer og visningstagger) og stegene. Hvert steg har `text` og `url` til sitt synlige steg (`#steg-N`). `HowToStep.name` mangler med vilje: navn utledet fra stegteksten ble misvisende eller for lange på mange steg, og må skrives redaksjonelt. Næringsinnhold, video og stegbilder finnes ikke og er ikke lagt inn.
+- /middager/ har `ItemList` (bare `position` og `url`) over alle middagene i samme rekkefølge som siden, som oppsummeringsside for Googles vertskarusell.
 - www.middagen.no og middagen-gamma.vercel.app redirecter med 308 til apex. Begge er domeneinnstillinger i Vercel-prosjektet. `vercel.json` brukes ikke, fordi Vercel ikke leser redirects derfra for dette Next.js-prosjektet.
 
 ## Analyse og samtykke
@@ -53,6 +55,7 @@ node scripts/check-sprint.mjs     # søk, tilbakeflyt, porsjoner, beslutningshis
 node scripts/check-sprint03a.mjs  # de 20 nye middagene, gamle 42 uendret
 node scripts/check-export.mjs     # oppskriftssidene i out/
 node scripts/check-launch.mjs     # canonical, robots, sitemap, /middager/-lenker, footer/kontakt
+node scripts/check-schema.mjs     # Recipe- og ItemList-schema mot synlig HTML og data
 node scripts/check-analytics.mjs  # samtykke, GA-lasting, hendelser, vertsbegrensning
 node scripts/check-live.mjs       # produksjon etter deploy (bruker nettverk)
 ```
